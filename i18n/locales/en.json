@@ -1,0 +1,22 @@
+{
+  "nav": {
+    "accueil": "Welcome",
+    "parc": "The park",
+    "animations": "Our shows",
+    "infos": "Visitor info",
+    "principale": "Main navigation"
+  },
+  "header": {
+    "retourAccueil": "Les Suricates, back to home",
+    "compte": "My account",
+    "changerLangue": "Passer en français",
+    "installer": "Install the app",
+    "billetterie": "Tickets",
+    "ouvrirMenu": "Open menu"
+  },
+  "menu": {
+    "titre": "Menu",
+    "fermer": "Close menu",
+    "reserver": "Book my tickets"
+  }
+}

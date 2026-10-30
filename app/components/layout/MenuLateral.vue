@@ -6,6 +6,7 @@ import { fondu, apparaitreEnCascade, glisserDepuisDroite } from "~/animations/ap
 const ouvert = defineModel<boolean>({ required: true });
 const { liens, estActif } = useNavigation();
 const route = useRoute();
+const localePath = useLocalePath();
 const dialogue = ref<HTMLDialogElement>();
 
 watch(ouvert, (valeur) => valeur && dialogue.value?.showModal(), {
@@ -37,16 +38,16 @@ watch(
         v-if="ouvert"
         key="panneau"
         v-bind="glisserDepuisDroite"
-        aria-label="Navigation principale"
+        :aria-label="$t('nav.principale')"
         class="fixed inset-y-0 right-0 flex w-80 max-w-[85vw] flex-col overflow-y-auto rounded-l-2xl bg-white p-5 shadow-2xl sm:p-6"
       >
         <div class="flex items-center justify-between">
-          <span class="text-sm font-medium text-galerie/60">Menu</span>
+          <span class="text-sm font-medium text-galerie/60">{{ $t("menu.titre") }}</span>
           <button
             type="button"
             autofocus
             class="rounded-lg p-2 text-terracotta transition-colors hover:bg-terracotta/10"
-            aria-label="Fermer le menu"
+            :aria-label="$t('menu.fermer')"
             @click="ouvert = false"
           >
             <X class="size-7" aria-hidden="true" />
@@ -78,13 +79,13 @@ watch(
           v-bind="apparaitreEnCascade(liens.length)"
           class="mt-auto flex flex-col gap-3 pt-6"
         >
-          <UiButton to="/compte" couleur="acacia" class="w-full">
+          <UiButton :to="localePath('/compte')" couleur="acacia" class="w-full">
             <User class="size-5" aria-hidden="true" />
-            Mon compte
+            {{ $t("header.compte") }}
           </UiButton>
-          <UiButton to="/billetterie" class="w-full">
+          <UiButton :to="localePath('/billetterie')" class="w-full">
             <Ticket class="size-5" aria-hidden="true" />
-            Réserver mes billets
+            {{ $t("menu.reserver") }}
           </UiButton>
         </motion.div>
       </motion.nav>

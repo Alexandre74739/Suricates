@@ -1,5 +1,9 @@
 <script setup lang="ts">
 import { MotionConfig } from "motion-v";
+
+// Met à jour <html lang> selon la langue choisie (lecteurs d'écran, moteurs de recherche).
+const head = useLocaleHead();
+useHead(() => ({ htmlAttrs: head.value.htmlAttrs }));
 </script>
 
 <template>
@@ -7,5 +11,6 @@ import { MotionConfig } from "motion-v";
   <MotionConfig reduced-motion="user">
     <NuxtRouteAnnouncer />
     <LayoutHeader />
+    <NuxtPage />
   </MotionConfig>
 </template>

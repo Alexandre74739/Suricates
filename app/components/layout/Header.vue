@@ -4,6 +4,13 @@ import logo from "~/assets/images/logos/logo-principal.svg";
 
 const { liens, estActif } = useNavigation();
 const menuOuvert = ref(false);
+
+const { locale } = useI18n();
+const localePath = useLocalePath();
+const switchLocalePath = useSwitchLocalePath();
+// Le bouton propose toujours l'autre langue.
+const autreLangue = computed(() => (locale.value === "fr" ? "en" : "fr"));
+
 </script>
 
 <template>
@@ -12,9 +19,9 @@ const menuOuvert = ref(false);
       class="mx-auto flex max-w-7xl items-center justify-between gap-3 rounded-2xl bg-white px-4 py-3 shadow-lg shadow-galerie/5 sm:gap-8 sm:px-5 sm:py-4 md:px-8"
     >
       <NuxtLink
-        to="/"
+        :to="localePath('/')"
         class="min-w-0"
-        aria-label="Les Suricates, retour à l'accueil"
+        :aria-label="$t('header.retourAccueil')"
       >
         <img
           :src="logo"
@@ -25,26 +32,30 @@ const menuOuvert = ref(false);
 
       <div class="flex shrink-0 flex-col items-end lg:flex-1">
         <div class="flex items-center sm:gap-2">
-          <UiIconButton to="/compte" label="Mon compte" class="max-sm:hidden">
+          <UiIconButton :to="localePath('/compte')" :label="$t('header.compte')" class="max-sm:hidden">
             <User class="size-5" aria-hidden="true" />
           </UiIconButton>
 
-          <UiIconButton label="Switch to English" lang="en">
+          <UiIconButton
+            :label="$t('header.changerLangue')"
+            :lang="autreLangue"
+            :to="switchLocalePath(autreLangue)"
+          >
             <Globe class="size-5 max-sm:hidden" aria-hidden="true" />
-            EN
+            {{ autreLangue.toUpperCase() }}
           </UiIconButton>
 
-          <UiIconButton label="Installer l'application">
+          <UiIconButton :label="$t('header.installer')">
             <Grid2x2Plus class="size-5" aria-hidden="true" />
           </UiIconButton>
 
-          <UiButton to="/billetterie" class="ml-2 max-md:hidden">
+          <UiButton :to="localePath('/billetterie')" class="ml-2 max-md:hidden">
             <Ticket class="size-5" aria-hidden="true" />
-            Billetterie
+            {{ $t("header.billetterie") }}
           </UiButton>
 
           <UiIconButton
-            label="Ouvrir le menu"
+            :label="$t('header.ouvrirMenu')"
             class="lg:hidden"
             :aria-expanded="menuOuvert"
             aria-controls="menu-lateral"
@@ -55,7 +66,7 @@ const menuOuvert = ref(false);
         </div>
 
         <nav
-          aria-label="Navigation principale"
+          :aria-label="$t('nav.principale')"
           class="mt-3 hidden w-full border-t border-galerie/15 pt-3 lg:block"
         >
           <ul class="flex items-center justify-end gap-10">

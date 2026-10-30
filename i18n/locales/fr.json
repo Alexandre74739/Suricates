@@ -1,0 +1,22 @@
+{
+  "nav": {
+    "accueil": "Bienvenue",
+    "parc": "Le parc",
+    "animations": "Nos animations",
+    "infos": "Infos pratiques",
+    "principale": "Navigation principale"
+  },
+  "header": {
+    "retourAccueil": "Les Suricates, retour à l'accueil",
+    "compte": "Mon compte",
+    "changerLangue": "Switch to English",
+    "installer": "Installer l'application",
+    "billetterie": "Billetterie",
+    "ouvrirMenu": "Ouvrir le menu"
+  },
+  "menu": {
+    "titre": "Menu",
+    "fermer": "Fermer le menu",
+    "reserver": "Réserver mes billets"
+  }
+}
