@@ -8,7 +8,7 @@ useHead(() => ({ htmlAttrs: head.value.htmlAttrs }));
 
 const routeBaseName = useRouteBaseName();
 const clePage = (route: RouteLocationNormalizedLoaded) =>
-  `${routeBaseName(route)}:${JSON.stringify(route.params)}`;
+  `${String(routeBaseName(route))}:${JSON.stringify(route.params)}`;
 </script>
 
 <template>
