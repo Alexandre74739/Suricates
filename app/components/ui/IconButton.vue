@@ -5,7 +5,7 @@ defineProps<{
 }>();
 
 const classes =
-  "inline-flex h-10 min-w-10 items-center justify-center gap-1 rounded-lg px-2.5 text-sm font-semibold text-galerie transition-colors hover:bg-terracotta/10 hover:text-terracotta focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-terracotta";
+  "inline-flex h-10 min-w-10 items-center justify-center gap-1 rounded-lg px-2.5 text-sm font-semibold text-galerie transition-colors hover:bg-terracotta-pale hover:text-terracotta-fonce focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-terracotta";
 </script>
 
 <template>

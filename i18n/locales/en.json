@@ -7,7 +7,7 @@
     "principale": "Main navigation"
   },
   "header": {
-    "retourAccueil": "Les Suricates, back to home",
+    "retourAccueil": "Le Domaine des Suricates, back to home",
     "compte": "My account",
     "changerLangue": "Passer en français",
     "installer": "Install the app",
@@ -18,5 +18,25 @@
     "titre": "Menu",
     "fermer": "Close menu",
     "reserver": "Book my tickets"
+  },
+  "accueil": {
+    "seo": {
+      "titre": "Le Domaine des Suricates · Zoo and wildlife park in Chartreuse",
+      "description": "Zoo and wildlife park in Chartreuse, France: discover meerkats and many other species at Le Domaine des Suricates. Daily feedings free to attend, dated tickets online."
+    },
+    "hero": {
+      "titre": "Le Domaine des Suricates awaits you in the heart of Chartreuse",
+      "texte": "Meerkats and many other species live here in enclosures designed for their well-being. A zoo and wildlife park for the whole family, with daily animations free to attend.",
+      "decouvrir": "Explore the park",
+      "alt": "A family of meerkats on the lookout on a log",
+      "nomVertical": "The Meerkat Estate"
+    },
+    "raccourcis": {
+      "titre": "Shortcuts",
+      "especes": "Meet the residents",
+      "programme": "What's on today",
+      "acces": "Getting here",
+      "plan": "Download the map"
+    }
   }
 }

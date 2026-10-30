@@ -2,7 +2,7 @@
 import { Globe, Grid2x2Plus, Menu, Ticket, User } from "lucide-vue-next";
 import logo from "~/assets/images/logos/logo-principal.svg";
 
-const { liens, estActif } = useNavigation();
+const { liens } = useNavigation();
 const menuOuvert = ref(false);
 
 const { locale } = useI18n();
@@ -11,12 +11,18 @@ const switchLocalePath = useSwitchLocalePath();
 // Le bouton propose toujours l'autre langue.
 const autreLangue = computed(() => (locale.value === "fr" ? "en" : "fr"));
 
+const route = useRoute();
+const routeBaseName = useRouteBaseName();
+const surHero = computed(() => routeBaseName(route) === "index");
 </script>
 
 <template>
-  <header class="px-2 pt-2 sm:px-3 sm:pt-3 md:px-6 md:pt-5">
+  <header
+    class="px-2 pt-2 sm:px-3 sm:pt-3 md:px-6 md:pt-5"
+    :class="{ 'absolute inset-x-0 top-0 z-20': surHero }"
+  >
     <div
-      class="mx-auto flex max-w-7xl items-center justify-between gap-3 rounded-2xl bg-white px-4 py-3 shadow-lg shadow-galerie/5 sm:gap-8 sm:px-5 sm:py-4 md:px-8"
+      class="mx-auto flex max-w-site items-center justify-between gap-3 rounded-2xl bg-white px-4 py-3 shadow-lg shadow-galerie/5 sm:gap-8 sm:px-5 sm:py-4 md:px-8"
     >
       <NuxtLink
         :to="localePath('/')"
@@ -25,7 +31,7 @@ const autreLangue = computed(() => (locale.value === "fr" ? "en" : "fr"));
       >
         <img
           :src="logo"
-          alt="Les Suricates"
+          alt="Le Domaine des Suricates"
           class="h-8 w-auto max-w-full object-contain object-left sm:h-12 lg:h-16"
         />
       </NuxtLink>
@@ -50,7 +56,7 @@ const autreLangue = computed(() => (locale.value === "fr" ? "en" : "fr"));
           </UiIconButton>
 
           <UiButton :to="localePath('/billetterie')" class="ml-2 max-md:hidden">
-            <Ticket class="size-5" aria-hidden="true" />
+            <Ticket aria-hidden="true" />
             {{ $t("header.billetterie") }}
           </UiButton>
 
@@ -73,9 +79,9 @@ const autreLangue = computed(() => (locale.value === "fr" ? "en" : "fr"));
             <li v-for="lien in liens" :key="lien.to">
               <NuxtLink
                 :to="lien.to"
-                class="text-base font-semibold tracking-tight transition-colors hover:text-acacia"
-                :class="estActif(lien.to) ? 'text-acacia' : 'text-terracotta'"
-                :aria-current="estActif(lien.to) ? 'page' : undefined"
+                class="text-base font-semibold tracking-tight duration-200 transition-colors hover:text-acacia"
+                :class="lien.actif ? 'text-acacia' : 'text-terracotta-fonce'"
+                :aria-current="lien.actif ? 'page' : undefined"
               >
                 {{ lien.label }}
               </NuxtLink>

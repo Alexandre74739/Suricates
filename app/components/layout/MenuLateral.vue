@@ -4,7 +4,7 @@ import { AnimatePresence, motion } from "motion-v";
 import { fondu, apparaitreEnCascade, glisserDepuisDroite } from "~/animations/apparitionCote";
 
 const ouvert = defineModel<boolean>({ required: true });
-const { liens, estActif } = useNavigation();
+const { liens } = useNavigation();
 const route = useRoute();
 const localePath = useLocalePath();
 const dialogue = ref<HTMLDialogElement>();
@@ -46,7 +46,7 @@ watch(
           <button
             type="button"
             autofocus
-            class="rounded-lg p-2 text-terracotta transition-colors hover:bg-terracotta/10"
+            class="rounded-lg p-2 text-terracotta-fonce transition-colors hover:bg-terracotta-pale"
             :aria-label="$t('menu.fermer')"
             @click="ouvert = false"
           >
@@ -64,11 +64,11 @@ watch(
               :to="lien.to"
               class="block rounded-lg px-3 py-3 text-lg font-semibold tracking-tight transition-colors sm:text-xl"
               :class="
-                estActif(lien.to)
-                  ? 'bg-terracotta/10 text-galerie'
-                  : 'text-terracotta hover:bg-acacia/10 hover:text-acacia'
+                lien.actif
+                  ? 'bg-terracotta-pale text-galerie'
+                  : 'text-terracotta-fonce hover:bg-acacia-pale hover:text-acacia'
               "
-              :aria-current="estActif(lien.to) ? 'page' : undefined"
+              :aria-current="lien.actif ? 'page' : undefined"
             >
               {{ lien.label }}
             </NuxtLink>
@@ -80,11 +80,11 @@ watch(
           class="mt-auto flex flex-col gap-3 pt-6"
         >
           <UiButton :to="localePath('/compte')" couleur="acacia" class="w-full">
-            <User class="size-5" aria-hidden="true" />
+            <User aria-hidden="true" />
             {{ $t("header.compte") }}
           </UiButton>
           <UiButton :to="localePath('/billetterie')" class="w-full">
-            <Ticket class="size-5" aria-hidden="true" />
+            <Ticket aria-hidden="true" />
             {{ $t("menu.reserver") }}
           </UiButton>
         </motion.div>

@@ -7,7 +7,7 @@
     "principale": "Navigation principale"
   },
   "header": {
-    "retourAccueil": "Les Suricates, retour à l'accueil",
+    "retourAccueil": "Le Domaine des Suricates, retour à l'accueil",
     "compte": "Mon compte",
     "changerLangue": "Switch to English",
     "installer": "Installer l'application",
@@ -18,5 +18,25 @@
     "titre": "Menu",
     "fermer": "Fermer le menu",
     "reserver": "Réserver mes billets"
+  },
+  "accueil": {
+    "seo": {
+      "titre": "Le Domaine des Suricates · Zoo et parc animalier en Chartreuse",
+      "description": "Zoo et parc animalier en Chartreuse : découvrez les suricates et bien d'autres espèces au Domaine des Suricates. Nourrissages chaque jour en accès libre, billets datés en ligne."
+    },
+    "hero": {
+      "titre": "Le Domaine des Suricates vous attend au cœur de la Chartreuse",
+      "texte": "Suricates et bien d'autres espèces vivent ici dans des enclos pensés pour leur bien-être. Un zoo et parc animalier à découvrir en famille, avec des animations chaque jour en accès libre.",
+      "decouvrir": "Découvrir le parc",
+      "alt": "Une famille de suricates aux aguets sur un tronc",
+      "nomVertical": "Le Domaine des Suricates"
+    },
+    "raccourcis": {
+      "titre": "Raccourcis",
+      "especes": "Nos habitants",
+      "programme": "Au programme aujourd'hui",
+      "acces": "Venir nous voir",
+      "plan": "Télécharger le plan"
+    }
   }
 }

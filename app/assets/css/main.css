@@ -7,8 +7,28 @@
   --color-terracotta: #c0663f;
   --color-galerie: #26221d;
 
+  --color-terracotta-fonce: #a9542f;
+  --color-terracotta-pale: #f9f0ec;
+  --color-acacia-clair: #708558;
+  --color-acacia-pale: #edf0ec;
+
+  --container-site: 96rem;
+
   --font-titre: "Rubik Dirt", system-ui, sans-serif;
   --font-sans: "Lexend", system-ui, sans-serif;
+}
+
+/* Bord bas d'un bloc en coup de pinceau (traînées sèches).
+   Deux couches : un rectangle plein en haut, la bande pinceau de hauteur fixe en bas,
+   pour que la déformation garde la même taille quelle que soit la hauteur du bloc. */
+@utility masque-pinceau-bas {
+  --hauteur-pinceau: 4.5rem;
+  mask-image: linear-gradient(#000, #000), url("../images/formes/coup-de-pinceau-bas.svg");
+  mask-size:
+    100% calc(100% - var(--hauteur-pinceau) + 1px),
+    100% var(--hauteur-pinceau);
+  mask-position: top, bottom;
+  mask-repeat: no-repeat;
 }
 
 @layer base {

@@ -1,6 +1,6 @@
-# CLAUDE.md — Les Suricates
+# CLAUDE.md — Le Domaine des Suricates
 
-Application web de gestion d'un zoo fictif, **Les Suricates**, centré sur les suricates et leur environnement (Kalahari). Projet d'école en binôme (B3 développement web).
+Application web de gestion d'un zoo fictif, **Le Domaine des Suricates** (parc animalier en Chartreuse), centré sur les suricates et leur environnement (Kalahari). Projet d'école en binôme (B3 développement web).
 
 **Livrables :** MCD/MPD, export de la base de données, code de l'application.
 **Contrainte à venir :** migration de la base vers Supabase (traitée plus tard — garder un schéma simple et des relations propres).
@@ -121,7 +121,7 @@ Modèles et champs **en français** (cohérence avec le MCD). Code technique (fo
 - **Stripe Checkout** en mode test. Carte de démo : `4242 4242 4242 4242`, date future, CVC quelconque.
 - La commande ne passe en `PAYEE` que via le **webhook** `checkout.session.completed`, avec vérification de signature. Jamais depuis la page de retour.
 - Le webhook doit être **idempotent** (un même événement reçu deux fois ne crée pas deux mails).
-- Après paiement, mail Brevo avec le billet en PDF et toutes les mentions légales : société fictive (SAS Les Suricates, Grenoble, SIRET et TVA fictifs signalés comme tels), numéro de commande, détail des tarifs, total TTC, absence de droit de rétractation, lien vers les CGV. TVA : à définir plus tard.
+- Après paiement, mail Brevo avec le billet en PDF et toutes les mentions légales : société fictive (SAS Le Domaine des Suricates, Chartreuse, SIRET et TVA fictifs signalés comme tels), numéro de commande, détail des tarifs, total TTC, absence de droit de rétractation, lien vers les CGV. TVA : à définir plus tard.
 - En local : `stripe listen --forward-to localhost:3000/api/stripe/webhook`.
 
 ---

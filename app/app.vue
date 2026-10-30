@@ -1,9 +1,14 @@
 <script setup lang="ts">
 import { MotionConfig } from "motion-v";
+import type { RouteLocationNormalizedLoaded } from "vue-router";
 
 // Met à jour <html lang> selon la langue choisie (lecteurs d'écran, moteurs de recherche).
 const head = useLocaleHead();
 useHead(() => ({ htmlAttrs: head.value.htmlAttrs }));
+
+const routeBaseName = useRouteBaseName();
+const clePage = (route: RouteLocationNormalizedLoaded) =>
+  `${routeBaseName(route)}:${JSON.stringify(route.params)}`;
 </script>
 
 <template>
@@ -11,6 +16,6 @@ useHead(() => ({ htmlAttrs: head.value.htmlAttrs }));
   <MotionConfig reduced-motion="user">
     <NuxtRouteAnnouncer />
     <LayoutHeader />
-    <NuxtPage />
+    <NuxtPage :page-key="clePage" />
   </MotionConfig>
 </template>
