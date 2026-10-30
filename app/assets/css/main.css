@@ -15,4 +15,15 @@
   body {
     @apply bg-sable text-galerie font-sans;
   }
+
+  /* Une fenêtre <dialog> ouverte (ex. menu latéral) bloque le défilement de la page. */
+  body:has(dialog[open]) {
+    overflow: hidden;
+  }
+
+  /* Tailwind v4 ne met plus de curseur main sur les boutons par défaut. */
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
 }
