@@ -1,0 +1,18 @@
+@import "tailwindcss";
+
+@theme {
+  --color-sable: #f2ebd9;
+  --color-sauge: #b7be92;
+  --color-acacia: #4f6b3e;
+  --color-terracotta: #c0663f;
+  --color-galerie: #26221d;
+
+  --font-titre: "Rubik Dirt", system-ui, sans-serif;
+  --font-sans: "Lexend", system-ui, sans-serif;
+}
+
+@layer base {
+  body {
+    @apply bg-sable text-galerie font-sans;
+  }
+}
