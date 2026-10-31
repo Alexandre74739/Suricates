@@ -67,7 +67,7 @@ const tarifs = computed(() => [
         </motion.h2>
         <motion.p
           v-bind="auDefilement(monterEnCascade(1))"
-          class="mt-5 max-w-xl leading-relaxed text-pretty text-sable/80 sm:text-lg"
+          class="mt-5 max-w-xl leading-relaxed text-pretty text-sable/85 sm:text-lg"
         >
           {{ $t("horairesTarifs.intro") }}
         </motion.p>
