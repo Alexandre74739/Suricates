@@ -31,6 +31,36 @@
   mask-repeat: no-repeat;
 }
 
+@utility masque-pinceau {
+  mask-image: url("../images/formes/coup-de-pinceau-cadre.svg");
+  mask-size: 100% 100%;
+  mask-repeat: no-repeat;
+}
+
+@utility masque-pinceau-haut-bas {
+  mask-image:
+    url("../images/formes/coup-de-pinceau-haut.svg"), linear-gradient(#000, #000),
+    url("../images/formes/coup-de-pinceau-bas.svg");
+  mask-size:
+    100% var(--bord-pinceau, 1.5rem),
+    100% calc(100% - 2 * var(--bord-pinceau, 1.5rem) + 2px),
+    100% var(--bord-pinceau, 1.5rem);
+  mask-position: top, center, bottom;
+  mask-repeat: no-repeat;
+}
+
+@utility masque-pinceau-cotes {
+  mask-image:
+    url("../images/formes/coup-de-pinceau-gauche.svg"), linear-gradient(#000, #000),
+    url("../images/formes/coup-de-pinceau-droite.svg");
+  mask-size:
+    var(--bord-pinceau, 1.5rem) 100%,
+    calc(100% - 2 * var(--bord-pinceau, 1.5rem) + 2px) 100%,
+    var(--bord-pinceau, 1.5rem) 100%;
+  mask-position: left, center, right;
+  mask-repeat: no-repeat;
+}
+
 @layer base {
   body {
     @apply bg-sable text-galerie font-sans;
