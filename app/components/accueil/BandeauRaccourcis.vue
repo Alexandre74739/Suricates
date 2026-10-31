@@ -3,9 +3,9 @@ import { CalendarClock, MapPin, MapPlus, PawPrint } from "lucide-vue-next";
 import { PLAN_PDF } from "#shared/parc";
 
 const raccourcis = [
-  { cle: "especes", href: "#especes", icone: PawPrint },
   { cle: "acces", href: "#horaires&tarifs", icone: MapPin },
   { cle: "programme", href: "#programme", icone: CalendarClock },
+  { cle: "especes", href: "#especes", icone: PawPrint },
   { cle: "plan", href: PLAN_PDF, icone: MapPlus, telecharger: true },
 ];
 
