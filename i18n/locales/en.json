@@ -80,6 +80,7 @@
     }
   },
   "commun": {
-    "nouvelOnglet": "(opens in a new tab)"
+    "nouvelOnglet": "(opens in a new tab)",
+    "retourEnHaut": "Back to top"
   }
 }

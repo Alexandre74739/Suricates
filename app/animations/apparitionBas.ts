@@ -2,7 +2,11 @@ const sortieDouce = [0.22, 1, 0.36, 1] as const;
 
 export const sortirDuTerrier = (rang: number) => ({
   initial: { y: "100%" },
-  animate: { y: 0, transition: { duration: 0.8, ease: sortieDouce, delay: 0.15 + rang * 0.1 } },
+  animate: {
+    y: 0,
+    transition: { duration: 0.8, ease: sortieDouce, delay: 0.15 + rang * 0.1 },
+  },
+  exit: { y: "100%", transition: { duration: 0.3, ease: "easeIn" } },
 });
 
 export const monterEnCascade = (rang: number) => ({

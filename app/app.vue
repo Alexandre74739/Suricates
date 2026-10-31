@@ -17,5 +17,6 @@ const clePage = (route: RouteLocationNormalizedLoaded) =>
     <NuxtRouteAnnouncer />
     <LayoutHeader />
     <NuxtPage :page-key="clePage" />
+    <LayoutBackTop />
   </MotionConfig>
 </template>
