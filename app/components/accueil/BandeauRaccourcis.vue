@@ -1,11 +1,12 @@
 <script setup lang="ts">
 import { CalendarClock, MapPin, MapPlus, PawPrint } from "lucide-vue-next";
+import { PLAN_PDF } from "#shared/parc";
 
 const raccourcis = [
   { cle: "especes", href: "#especes", icone: PawPrint },
   { cle: "acces", href: "#horaires&tarifs", icone: MapPin },
   { cle: "programme", href: "#programme", icone: CalendarClock },
-  { cle: "plan", icone: MapPlus },
+  { cle: "plan", href: PLAN_PDF, icone: MapPlus, telecharger: true },
 ];
 
 const { allerA } = useDefilement();
@@ -27,6 +28,7 @@ const { allerA } = useDefilement();
         <component
           :is="r.href ? 'a' : 'button'"
           :href="r.href"
+          :download="r.telecharger || undefined"
           :type="r.href ? undefined : 'button'"
           @click="allerA($event, r.href)"
           class="group flex w-full flex-col items-center gap-3 bg-terracotta-fonce px-3 py-5 text-center text-base font-bold tracking-tight text-white transition-colors duration-200 hover:bg-acacia focus-visible:outline-2 focus-visible:-outline-offset-4 focus-visible:outline-white sm:py-6 sm:text-lg"
