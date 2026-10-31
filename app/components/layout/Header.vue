@@ -40,12 +40,16 @@ const surHero = computed(() => routeBaseName(route) === "index");
 
       <div class="flex shrink-0 flex-col items-end lg:flex-1">
         <div class="flex items-center sm:gap-2">
-          <UiIconButton :to="localePath('/compte')" :label="$t('header.compte')" class="max-sm:hidden">
+          <UiIconButton
+            :to="localePath('/compte')"
+            :label="$t('header.compte')"
+            class="max-sm:hidden"
+          >
             <User class="size-5" aria-hidden="true" />
           </UiIconButton>
 
           <UiIconButton
-            :label="$t('header.changerLangue')"
+            :label="`${autreLangue.toUpperCase()} – ${$t('header.changerLangue')}`"
             :lang="autreLangue"
             :to="switchLocalePath(autreLangue)"
           >
