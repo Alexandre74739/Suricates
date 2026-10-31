@@ -50,9 +50,18 @@ const animations = computed(() =>
   <section
     id="programme"
     :aria-labelledby="titreId"
-    class="overflow-x-clip px-6 py-20 sm:px-12 lg:py-28"
+    class="relative overflow-x-clip px-6 py-20 sm:px-12 lg:py-28"
   >
-    <div class="mx-auto max-w-6xl text-center">
+    <UiEmpreintes
+      :pattes="2"
+      class="absolute top-10 -left-20 w-44 rotate-20 sm:w-60 lg:-left-12 lg:w-72"
+    />
+    <UiEmpreintes
+      :pattes="3"
+      class="absolute -right-24 bottom-0 w-56 rotate-100 sm:w-72 lg:w-80 xl:-right-28 xl:w-96"
+    />
+
+    <div class="relative mx-auto max-w-6xl text-center">
       <motion.h2
         :id="titreId"
         v-bind="auDefilement(monterEnCascade(0))"
