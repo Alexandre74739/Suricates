@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { motion } from "motion-v";
 import {
-  Download,
+  MapPlus,
   Sandwich,
   SquareParking,
   Toilet,
@@ -84,7 +84,7 @@ const pratique = computed(() =>
               {
                 libelle: $t('accueil.zones.telecharger'),
                 lien: PLAN_PDF,
-                icone: Download,
+                icone: MapPlus,
                 telecharger: true,
               },
               {
