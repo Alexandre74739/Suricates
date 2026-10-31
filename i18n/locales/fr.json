@@ -84,6 +84,34 @@
       "toutes": "Voir toutes les animations",
       "precedent": "Animation précédente",
       "suivant": "Animation suivante"
+    },
+    "zones": {
+      "titre": "Les cinq régions du monde à explorer",
+      "texte": "Du désert du Kalahari aux forêts d'Asie, le Domaine se parcourt comme un petit tour du monde. Repérez les allées et les services avant de partir à l'aventure.",
+      "planAlt": "Plan illustré de la zone piétonne du Domaine : les zones colorées reliées par les allées, avec les restaurants, boutiques, toilettes, aires de pique-nique, l'infirmerie et les parkings.",
+      "agrandir": "Voir le plan en grand",
+      "decouvrir": "Découvrir le parc",
+      "telecharger": "Télécharger le plan",
+      "fermer": "Fermer le plan",
+      "pratique": {
+        "titre": "Bon à savoir",
+        "restauration": {
+          "titre": "Restaurants et snacks",
+          "texte": "Cinq haltes gourmandes, du glacier au self-service."
+        },
+        "piqueNique": {
+          "titre": "Aires de pique-nique",
+          "texte": "Votre panier-repas est le bienvenu."
+        },
+        "services": {
+          "titre": "Toilettes et infirmerie",
+          "texte": "Réparties le long des allées."
+        },
+        "parkings": {
+          "titre": "Parkings",
+          "texte": "Places réservées aux personnes à mobilité réduite et parking vélos."
+        }
+      }
     }
   },
   "horairesTarifs": {

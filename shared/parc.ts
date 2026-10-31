@@ -14,3 +14,5 @@ export const FERMETURE_HIVERNALE: { debut: JourDuMois; fin: JourDuMois } = {
 
 // Provisoire : les prix viendront de la table Tarif, modifiable par l'admin.
 export const TARIFS_CENTIMES = { PLEIN: 2000, REDUIT: 1200 } as const;
+
+export const PLAN_PDF = "/plan-du-domaine-des-suricates.pdf";

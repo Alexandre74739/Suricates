@@ -16,5 +16,6 @@ useSeoMeta({
     <AccueilAbout />
     <InfosHorairesTarifs id="horaires&tarifs" />
     <AccueilAnimations />
+    <AccueilZones id="especes" />
   </main>
 </template>

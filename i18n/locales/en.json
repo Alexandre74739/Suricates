@@ -84,6 +84,34 @@
       "toutes": "See all shows",
       "precedent": "Previous show",
       "suivant": "Next show"
+    },
+    "zones": {
+      "titre": "The five regions of the world to explore",
+      "texte": "From the Kalahari desert to the forests of Asia, a visit to the Domaine is like a little trip around the world. Find the paths and facilities before you set off.",
+      "planAlt": "Illustrated map of the Domaine's pedestrian area: coloured areas linked by paths, with restaurants, shops, toilets, picnic areas, the first-aid post and car parks.",
+      "agrandir": "View the full-size map",
+      "decouvrir": "Explore the park",
+      "telecharger": "Download the map",
+      "fermer": "Close the map",
+      "pratique": {
+        "titre": "Good to know",
+        "restauration": {
+          "titre": "Restaurants and snacks",
+          "texte": "Five places to eat, from the ice-cream stand to the self-service."
+        },
+        "piqueNique": {
+          "titre": "Picnic areas",
+          "texte": "Packed lunches are welcome."
+        },
+        "services": {
+          "titre": "Toilets and first aid",
+          "texte": "Spread along the paths."
+        },
+        "parkings": {
+          "titre": "Car parks",
+          "texte": "Spaces reserved for people with reduced mobility, and bike parking."
+        }
+      }
     }
   },
   "horairesTarifs": {
