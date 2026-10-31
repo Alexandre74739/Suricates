@@ -1,13 +1,27 @@
 <script setup lang="ts">
-import { motion } from "motion-v";
-import { monterEnCascade, sortirDuTerrier } from "~/animations/apparitionBas";
 import cover from "~/assets/images/illustrations/suricates-tronc.webp";
 
 const localePath = useLocalePath();
+
+// onload en attribut : se déclenche avant le chargement de Vue.
+const SIGNALER_PHOTO = "document.documentElement.dataset.heroPret = ''";
+
+useHead({
+  link: [{ rel: "preload", as: "image", href: cover, fetchpriority: "high" }],
+});
+
+const hero = useTemplateRef<HTMLElement>("hero");
+if (import.meta.client && !useNuxtApp().isHydrating) {
+  delete document.documentElement.dataset.heroPret;
+}
+onMounted(() => {
+  if (hero.value?.querySelector("img")?.complete)
+    document.documentElement.dataset.heroPret = "";
+});
 </script>
 
 <template>
-  <section>
+  <section ref="hero">
     <div
       class="masque-pinceau-bas relative flex min-h-svh flex-col justify-center overflow-hidden"
     >
@@ -15,6 +29,7 @@ const localePath = useLocalePath();
         :src="cover"
         :alt="$t('accueil.hero.alt')"
         fetchpriority="high"
+        :onload="SIGNALER_PHOTO"
         class="absolute inset-0 size-full object-cover object-[72%_45%] lg:object-top"
       />
       <div
@@ -33,24 +48,21 @@ const localePath = useLocalePath();
         class="relative mx-auto flex w-full max-w-6xl flex-col items-center px-6 pt-26 pb-40 text-center sm:px-12 sm:pt-32 lg:pt-48 lg:pb-48"
       >
         <div class="overflow-hidden pb-1">
-          <motion.h1
-            v-bind="sortirDuTerrier(0)"
-            class="font-titre text-4xl leading-[1.05] text-balance text-white sm:text-5xl md:text-6xl xl:text-7xl"
+          <h1
+            class="animate-terrier attendre-photo-hero font-titre [animation-delay:150ms] motion-reduce:animate-none text-4xl leading-[1.05] text-balance text-white sm:text-5xl md:text-6xl xl:text-7xl"
           >
             {{ $t("accueil.hero.titre") }}
-          </motion.h1>
+          </h1>
         </div>
 
-        <motion.p
-          v-bind="monterEnCascade(4)"
-          class="mt-6 max-w-4xl text-base leading-relaxed text-balance text-white sm:text-lg"
+        <p
+          class="mt-6 animate-cascade attendre-photo-hero [animation-delay:550ms] motion-reduce:animate-none max-w-4xl text-base leading-relaxed text-balance text-white sm:text-lg"
         >
           {{ $t("accueil.hero.texte") }}
-        </motion.p>
+        </p>
 
-        <motion.div
-          v-bind="monterEnCascade(6)"
-          class="mt-10 flex flex-wrap justify-center gap-4"
+        <div
+          class="mt-10 animate-cascade attendre-photo-hero [animation-delay:750ms] motion-reduce:animate-none flex flex-wrap justify-center gap-4"
         >
           <UiButton :to="localePath('/billetterie')" taille="xl">
             {{ $t("menu.reserver") }}
@@ -58,7 +70,7 @@ const localePath = useLocalePath();
           <UiButton :to="localePath('/parc')" couleur="acacia" taille="xl">
             {{ $t("accueil.hero.decouvrir") }}
           </UiButton>
-        </motion.div>
+        </div>
       </div>
     </div>
   </section>

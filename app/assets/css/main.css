@@ -19,6 +19,21 @@
   --font-sans: "Lexend", system-ui, sans-serif;
 
   --animate-blob: blob 9s ease-in-out infinite;
+  --animate-terrier: terrier 0.8s cubic-bezier(0.22, 1, 0.36, 1) both;
+  --animate-cascade: cascade 0.6s cubic-bezier(0.22, 1, 0.36, 1) both;
+
+  @keyframes terrier {
+    from {
+      translate: 0 calc(100% + 0.5rem);
+    }
+  }
+
+  @keyframes cascade {
+    from {
+      opacity: 0;
+      translate: 0 24px;
+    }
+  }
 
   @keyframes blob {
     0%,
@@ -46,6 +61,14 @@
     100% var(--hauteur-pinceau);
   mask-position: top, bottom;
   mask-repeat: no-repeat;
+}
+
+@utility attendre-photo-hero {
+  animation-play-state: paused;
+
+  :root[data-hero-pret] & {
+    animation-play-state: running;
+  }
 }
 
 @utility masque-pinceau {
