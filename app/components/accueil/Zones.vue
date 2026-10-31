@@ -11,7 +11,6 @@ import { monterEnCascade } from "~/animations/apparitionBas";
 import { arriverDeCote } from "~/animations/apparitionCote";
 import { auDefilement } from "~/animations/auDefilement";
 import { PLAN_PDF } from "#shared/parc";
-import plan from "~/assets/images/illustrations/plan-du-domaine.webp";
 
 const { t } = useI18n();
 const localePath = useLocalePath();
@@ -65,7 +64,7 @@ const pratique = computed(() =>
           class="min-w-0 -rotate-1 lg:col-span-8"
         >
           <UiImageAgrandissable
-            :src="plan"
+            src="/images/illustrations/plan-du-domaine.webp"
             :alt="$t('accueil.zones.planAlt')"
             :largeur="1800"
             :hauteur="1166"

@@ -4,7 +4,6 @@ import { FERMETURE_HIVERNALE, SAISONS, TARIFS_CENTIMES } from "#shared/parc";
 import { monterEnCascade } from "~/animations/apparitionBas";
 import { arriverDeCote } from "~/animations/apparitionCote";
 import { auDefilement } from "~/animations/auDefilement";
-import suricate from "~/assets/images/illustrations/suricate-sentinelle.webp";
 
 const { t } = useI18n();
 const localePath = useLocalePath();
@@ -81,10 +80,10 @@ const tarifs = computed(() => [
           class="masque-pinceau absolute inset-0 translate-x-3 translate-y-3 rotate-3 bg-terracotta-fonce"
           aria-hidden="true"
         />
-        <img
-          :src="suricate"
+        <UiPhoto
+          src="/images/illustrations/suricate-sentinelle.webp"
           :alt="$t('horairesTarifs.alt')"
-          loading="lazy"
+          sizes="(min-width: 1024px) 560px, 384px"
           class="masque-pinceau relative aspect-4/5 w-full object-cover"
         />
       </motion.div>

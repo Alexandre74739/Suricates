@@ -4,7 +4,7 @@ import tailwindcss from '@tailwindcss/vite'
 export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
   devtools: { enabled: true },
-  modules: ['@nuxt/fonts', '@nuxtjs/i18n'],
+  modules: ['@nuxt/fonts', '@nuxtjs/i18n', '@nuxt/image'],
   // Français sans préfixe (/parc), anglais sous /en avec des chemins traduits (/en/park).
   // Fichiers de traduction dans i18n/locales/.
   i18n: {
@@ -52,6 +52,9 @@ export default defineNuxtConfig({
   },
   nitro: {
     compressPublicAssets: true
+  },
+  image: {
+    screens: { xs: 320, '3xl': 1920 }
   },
   hooks: {
     // Nuxt précharge par défaut toutes les images importées, même hors écran :

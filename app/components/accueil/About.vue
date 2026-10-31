@@ -1,8 +1,4 @@
 <script setup lang="ts">
-import pandaRoux from "~/assets/images/illustrations/panda-roux.webp";
-import tigres from "~/assets/images/illustrations/tigres.webp";
-import girafes from "~/assets/images/illustrations/girafes-soigneuse.webp";
-
 const localePath = useLocalePath();
 </script>
 
@@ -16,7 +12,7 @@ const localePath = useLocalePath();
     </h2>
 
     <AccueilAboutPart
-      :image="pandaRoux"
+      image="/images/illustrations/panda-roux.webp"
       :alt="$t('accueil.apropos.habitants.alt')"
       format="carre"
       :titre="$t('accueil.apropos.habitants.titre')"
@@ -34,7 +30,7 @@ const localePath = useLocalePath();
     />
 
     <AccueilAboutPart
-      :image="tigres"
+      image="/images/illustrations/tigres.webp"
       :alt="$t('accueil.apropos.bienEtre.alt')"
       format="paysage"
       :titre="$t('accueil.apropos.bienEtre.titre')"
@@ -49,7 +45,7 @@ const localePath = useLocalePath();
     />
 
     <AccueilAboutPart
-      :image="girafes"
+      image="/images/illustrations/girafes-soigneuse.webp"
       :alt="$t('accueil.apropos.sensibilisation.alt')"
       format="portrait"
       :titre="$t('accueil.apropos.sensibilisation.titre')"

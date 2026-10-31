@@ -1,14 +1,8 @@
 <script setup lang="ts">
-import cover from "~/assets/images/illustrations/suricates-tronc.webp";
-
 const localePath = useLocalePath();
 
 // onload en attribut : se déclenche avant le chargement de Vue.
 const SIGNALER_PHOTO = "document.documentElement.dataset.heroPret = ''";
-
-useHead({
-  link: [{ rel: "preload", as: "image", href: cover, fetchpriority: "high" }],
-});
 
 const hero = useTemplateRef<HTMLElement>("hero");
 if (import.meta.client && !useNuxtApp().isHydrating) {
@@ -25,10 +19,12 @@ onMounted(() => {
     <div
       class="masque-pinceau-bas relative flex min-h-svh flex-col justify-center overflow-hidden"
     >
-      <img
-        :src="cover"
+      <UiPhoto
+        src="/images/illustrations/suricates-tronc.webp"
         :alt="$t('accueil.hero.alt')"
-        fetchpriority="high"
+        :largeurs="[640, 1024, 1280, 1920]"
+        sizes="max(100vw, 139vh)"
+        prioritaire
         :onload="SIGNALER_PHOTO"
         class="absolute inset-0 size-full object-cover object-[72%_45%] lg:object-top"
       />

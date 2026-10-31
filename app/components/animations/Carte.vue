@@ -23,9 +23,10 @@ withDefaults(
     class="group flex h-full cursor-pointer flex-col overflow-hidden rounded-2xl bg-white shadow-lg shadow-galerie/10 transition duration-300 hover:-translate-y-1 hover:shadow-xl focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-terracotta"
   >
     <div class="relative aspect-4/3 overflow-hidden bg-sauge/40">
-      <img
+      <UiPhoto
         :src="image"
         :alt="alt"
+        sizes="(min-width: 1024px) 400px, 50vw"
         :loading="chargement"
         decoding="async"
         draggable="false"

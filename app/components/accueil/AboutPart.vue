@@ -29,7 +29,9 @@ const formats: Record<Format, string> = {
   portrait: "aspect-4/5",
 };
 
-const puces = computed(() => props.points.map((texte, rang) => ({ texte, ...monterEnCascade(2 + rang) })));
+const puces = computed(() =>
+  props.points.map((texte, rang) => ({ texte, ...monterEnCascade(2 + rang) })),
+);
 const liste = useTemplateRef<HTMLUListElement>("liste");
 const listeVue = useInView(liste, { once: true, amount: "some" });
 </script>
@@ -50,14 +52,19 @@ const listeVue = useInView(liste, { once: true, amount: "some" });
     <div
       class="relative mx-auto grid max-w-6xl items-center gap-10 lg:grid-cols-2 lg:gap-20"
     >
-      <motion.img
+      <motion.div
         v-bind="auDefilement(arriverDeCote(inverse ? 'droite' : 'gauche'))"
-        :src="image"
-        :alt="alt"
-        loading="lazy"
-        class="masque-pinceau mx-auto w-full max-w-md object-cover"
-        :class="[formats[format], { 'lg:order-last': inverse }]"
-      />
+        class="mx-auto w-full max-w-md"
+        :class="{ 'lg:order-last': inverse }"
+      >
+        <UiPhoto
+          :src="image"
+          :alt="alt"
+          sizes="(min-width: 640px) 448px, calc(100vw - 3rem)"
+          class="masque-pinceau w-full object-cover"
+          :class="formats[format]"
+        />
+      </motion.div>
 
       <div>
         <motion.h3

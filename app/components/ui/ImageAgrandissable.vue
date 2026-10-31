@@ -23,12 +23,13 @@ const fenetre = useTemplateRef<HTMLDialogElement>("fenetre");
       class="masque-pinceau relative cursor-pointer bg-sable p-4 sm:p-6"
       @click="fenetre?.showModal()"
     >
-      <img
+      <UiPhoto
         :src="src"
         :alt="alt"
+        :largeurs="[640, 1024, 1536]"
+        sizes="(min-width: 1024px) 760px, 100vw"
         :width="largeur"
         :height="hauteur"
-        loading="lazy"
         class="w-full"
       />
     </div>
@@ -52,12 +53,13 @@ const fenetre = useTemplateRef<HTMLDialogElement>("fenetre");
         class="flex size-full items-center overflow-auto p-4 sm:p-10"
         @click.self="fenetre?.close()"
       >
-        <img
+        <UiPhoto
           :src="src"
           :alt="alt"
+          :largeurs="[1280, 1920]"
+          sizes="1280px"
           :width="largeur"
           :height="hauteur"
-          loading="lazy"
           class="m-auto w-full max-w-7xl min-w-3xl rounded-2xl bg-sable"
         />
       </div>
