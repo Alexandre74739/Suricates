@@ -77,6 +77,13 @@
         },
         "alt": "Une soigneuse tend la main vers une girafe penchée au-dessus de la palissade"
       }
+    },
+    "animations": {
+      "titre": "Chaque jour, un nouveau rendez-vous",
+      "texte": "Les guépards à table, les pandas roux au goûter, les rapaces qui frôlent les gradins… Nos soigneurs vous embarquent dans le quotidien de leurs protégés. C'est gratuit, sans réservation : il suffit d'être là au bon moment.",
+      "toutes": "Voir toutes les animations",
+      "precedent": "Animation précédente",
+      "suivant": "Animation suivante"
     }
   },
   "horairesTarifs": {
@@ -108,6 +115,39 @@
         "nom": "Tout-petits",
         "condition": "Moins de 3 ans",
         "prix": "Gratuit"
+      }
+    }
+  },
+  "animations": {
+    "carte": {
+      "decouvrir": "Découvrir"
+    },
+    "horaire": {
+      "quotidien": "Tous les jours · {heure}",
+      "ponctuel": "{date} · {heure}",
+      "libre": "En accès libre",
+      "libreCourt": "Accès libre"
+    },
+    "liste": {
+      "nourrissage-guepards": {
+        "titre": "Le nourrissage des guépards",
+        "description": "Tous les jours, assistez au repas des guépards et découvrez comment nos soigneurs stimulent leur instinct de chasseur.",
+        "alt": "Deux guépards à l'affût entre les palmiers de leur enclos"
+      },
+      "show-faucons": {
+        "titre": "Le show des rapaces",
+        "description": "Un rendez-vous exceptionnel : nos fauconniers font voler leurs rapaces au-dessus du public et dévoilent leurs secrets de chasse.",
+        "alt": "Des dizaines de rapaces tournoient au-dessus d'une arène remplie de spectateurs"
+      },
+      "repas-pandas-roux": {
+        "titre": "Le repas des pandas roux",
+        "description": "Bambou, fruits et petites friandises : observez nos pandas roux grimper et grignoter, au calme dans leur forêt.",
+        "alt": "Un panda roux grignote une branche de bambou sur une barrière en bois"
+      },
+      "ferme-pedagogique": {
+        "titre": "La ferme pédagogique",
+        "description": "En accès libre toute la journée, venez rencontrer chèvres, moutons et lapins, et apprendre à prendre soin d'eux.",
+        "alt": "Des visiteurs se promènent entre les enclos et les chaumières de la ferme"
       }
     }
   },

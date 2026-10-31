@@ -77,6 +77,13 @@
         },
         "alt": "A keeper reaching out to a giraffe leaning over the fence"
       }
+    },
+    "animations": {
+      "titre": "Something new to see every day",
+      "texte": "Cheetahs at dinnertime, red pandas at snack time, birds of prey swooping over the stands… Our keepers bring you into the daily lives of the animals in their care. It's free, no booking needed: just be there at the right time.",
+      "toutes": "See all shows",
+      "precedent": "Previous show",
+      "suivant": "Next show"
     }
   },
   "horairesTarifs": {
@@ -108,6 +115,39 @@
         "nom": "Little ones",
         "condition": "Under 3",
         "prix": "Free"
+      }
+    }
+  },
+  "animations": {
+    "carte": {
+      "decouvrir": "Discover"
+    },
+    "horaire": {
+      "quotidien": "Every day · {heure}",
+      "ponctuel": "{date} · {heure}",
+      "libre": "Open all day",
+      "libreCourt": "Open all day"
+    },
+    "liste": {
+      "nourrissage-guepards": {
+        "titre": "Cheetah feeding",
+        "description": "Every day, watch the cheetahs' meal and see how our keepers keep their hunting instincts sharp.",
+        "alt": "Two cheetahs on the lookout among the palm trees of their enclosure"
+      },
+      "show-faucons": {
+        "titre": "The birds of prey show",
+        "description": "A special event: our falconers fly their birds of prey above the crowd and reveal their hunting secrets.",
+        "alt": "Dozens of birds of prey circling above an arena full of spectators"
+      },
+      "repas-pandas-roux": {
+        "titre": "Red panda mealtime",
+        "description": "Bamboo, fruit and little treats: watch our red pandas climb and nibble in the calm of their forest.",
+        "alt": "A red panda nibbling a bamboo branch on a wooden fence"
+      },
+      "ferme-pedagogique": {
+        "titre": "The petting farm",
+        "description": "Open all day, come and meet goats, sheep and rabbits, and learn how to look after them.",
+        "alt": "Visitors strolling between the pens and thatched cottages of the farm"
       }
     }
   },

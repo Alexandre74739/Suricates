@@ -15,5 +15,6 @@ useSeoMeta({
     <AccueilBandeauRaccourcis />
     <AccueilAbout />
     <InfosHorairesTarifs id="horaires&tarifs" />
+    <AccueilAnimations />
   </main>
 </template>
