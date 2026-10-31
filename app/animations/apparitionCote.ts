@@ -12,6 +12,11 @@ export const glisserDepuisDroite = {
   exit: { x: "100%", transition: { duration: 0.3, ease: "easeIn" } },
 };
 
+export const arriverDeCote = (cote: "gauche" | "droite") => ({
+  initial: { opacity: 0, x: cote === "gauche" ? -48 : 48 },
+  animate: { opacity: 1, x: 0, transition: { duration: 0.8, ease: sortieDouce } },
+});
+
 export const apparaitreEnCascade = (rang: number) => ({
   initial: { opacity: 0, x: 24 },
   animate: {
