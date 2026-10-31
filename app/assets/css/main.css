@@ -10,6 +10,7 @@
   --color-terracotta-fonce: #a9542f;
   --color-terracotta-pale: #f9f0ec;
   --color-acacia-clair: #708558;
+  --color-galerie-clair: #4a4038;
   --color-acacia-pale: #edf0ec;
 
   --container-site: 96rem;
@@ -38,7 +39,8 @@
    pour que la déformation garde la même taille quelle que soit la hauteur du bloc. */
 @utility masque-pinceau-bas {
   --hauteur-pinceau: 4.5rem;
-  mask-image: linear-gradient(#000, #000), url("../images/formes/coup-de-pinceau-bas.svg");
+  mask-image:
+    linear-gradient(#000, #000), url("../images/formes/coup-de-pinceau-bas.svg");
   mask-size:
     100% calc(100% - var(--hauteur-pinceau) + 1px),
     100% var(--hauteur-pinceau);
@@ -54,8 +56,8 @@
 
 @utility masque-pinceau-haut-bas {
   mask-image:
-    url("../images/formes/coup-de-pinceau-haut.svg"), linear-gradient(#000, #000),
-    url("../images/formes/coup-de-pinceau-bas.svg");
+    url("../images/formes/coup-de-pinceau-haut.svg"),
+    linear-gradient(#000, #000), url("../images/formes/coup-de-pinceau-bas.svg");
   mask-size:
     100% var(--bord-pinceau, 1.5rem),
     100% calc(100% - 2 * var(--bord-pinceau, 1.5rem) + 2px),
@@ -66,7 +68,8 @@
 
 @utility masque-pinceau-cotes {
   mask-image:
-    url("../images/formes/coup-de-pinceau-gauche.svg"), linear-gradient(#000, #000),
+    url("../images/formes/coup-de-pinceau-gauche.svg"),
+    linear-gradient(#000, #000),
     url("../images/formes/coup-de-pinceau-droite.svg");
   mask-size:
     var(--bord-pinceau, 1.5rem) 100%,

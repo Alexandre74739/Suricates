@@ -1,5 +1,5 @@
 <script setup lang="ts">
-type Couleur = "terracotta" | "acacia" | "clair";
+type Couleur = "terracotta" | "acacia" | "galerie" | "clair";
 type Taille = "xs" | "sm" | "xl";
 
 const props = withDefaults(
@@ -21,6 +21,7 @@ const props = withDefaults(
 const styles: Record<Couleur, string> = {
   terracotta: "bg-terracotta-fonce hover:bg-terracotta",
   acacia: "bg-acacia hover:bg-acacia-clair",
+  galerie: "bg-galerie hover:bg-galerie-clair",
   clair: "ring-2 ring-white ring-inset hover:bg-white hover:text-galerie",
 };
 
