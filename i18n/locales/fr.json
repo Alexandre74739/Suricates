@@ -38,5 +38,8 @@
       "acces": "Venir nous voir",
       "plan": "Télécharger le plan"
     }
+  },
+  "commun": {
+    "nouvelOnglet": "(s'ouvre dans un nouvel onglet)"
   }
 }
