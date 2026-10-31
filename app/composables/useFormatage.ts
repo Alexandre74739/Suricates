@@ -37,5 +37,25 @@ export function useFormatage() {
       : texte;
   };
 
-  return { formatPrix, formatHeure, formatJour };
+  // Date UTC → { date: « sam. 14 nov. », dateCourte: « 14 nov. », heure: « 14 h 30 » }, à l'heure de Paris.
+  const formatDateHeure = (iso: string) => {
+    const instant = new Date(iso);
+    const formatDate = (weekday?: "short") =>
+      new Intl.DateTimeFormat(langue.value, {
+        weekday,
+        day: "numeric",
+        month: "short",
+        timeZone: "Europe/Paris",
+      }).format(instant);
+    const date = formatDate("short");
+    const dateCourte = formatDate();
+    const heure = new Intl.DateTimeFormat("fr-FR", {
+      hour: "2-digit",
+      minute: "2-digit",
+      timeZone: "Europe/Paris",
+    }).format(instant);
+    return { date, dateCourte, heure: formatHeure(heure) };
+  };
+
+  return { formatPrix, formatHeure, formatJour, formatDateHeure };
 }
