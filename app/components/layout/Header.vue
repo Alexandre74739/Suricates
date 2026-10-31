@@ -2,6 +2,10 @@
 import { Globe, Grid2x2Plus, Menu, Ticket, User } from "lucide-vue-next";
 import logo from "~/assets/images/logos/logo-principal.svg";
 
+useHead({
+  link: [{ rel: "preload", as: "image", href: logo, fetchpriority: "high" }],
+});
+
 const { liens } = useNavigation();
 const menuOuvert = ref(false);
 

@@ -50,6 +50,18 @@ export default defineNuxtConfig({
   vite: {
     plugins: [tailwindcss()]
   },
+  nitro: {
+    compressPublicAssets: true
+  },
+  hooks: {
+    // Nuxt précharge par défaut toutes les images importées, même hors écran :
+    // seules la photo du Hero et le logo le sont, explicitement (useHead).
+    'build:manifest': (manifest) => {
+      for (const entry of Object.values(manifest)) {
+        entry.assets = []
+      }
+    }
+  },
   fonts: {
     families: [
       { name: 'Rubik Dirt', provider: 'google', weights: [400] },
