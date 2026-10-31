@@ -57,6 +57,7 @@ const fenetre = useTemplateRef<HTMLDialogElement>("fenetre");
           :alt="alt"
           :width="largeur"
           :height="hauteur"
+          loading="lazy"
           class="m-auto w-full max-w-7xl min-w-3xl rounded-2xl bg-sable"
         />
       </div>

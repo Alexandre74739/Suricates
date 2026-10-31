@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import pandaRoux from "~/assets/images/illustrations/panda-roux.png";
-import tigres from "~/assets/images/illustrations/tigres.png";
-import girafes from "~/assets/images/illustrations/girafes-soigneuse.png";
+import pandaRoux from "~/assets/images/illustrations/panda-roux.webp";
+import tigres from "~/assets/images/illustrations/tigres.webp";
+import girafes from "~/assets/images/illustrations/girafes-soigneuse.webp";
 
 const localePath = useLocalePath();
 </script>

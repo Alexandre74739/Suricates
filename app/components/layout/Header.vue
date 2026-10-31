@@ -32,7 +32,9 @@ const surHero = computed(() => routeBaseName(route) === "index");
         <img
           :src="logo"
           alt="Le Domaine des Suricates"
-          class="h-8 w-auto max-w-full object-contain object-left sm:h-12 lg:h-16"
+          width="706"
+          height="174"
+          class="h-8 w-auto max-w-full object-contain object-left text-transparent sm:h-12 lg:h-16"
         />
       </NuxtLink>
 
