@@ -32,9 +32,10 @@ export default defineNuxtConfig({
       'billetterie-confirmation': { en: '/tickets/confirmation' },
       'connexion': { en: '/login' },
       'inscription': { en: '/sign-up' },
-      'legal-mentions-legales': { en: '/legal/legal-notice' },
-      'legal-cgv': { en: '/legal/terms' },
-      'legal-confidentialite': { en: '/legal/privacy' },
+      'legal-mentions-legales': { en: '/legal-notice' },
+      'legal-cgv': { en: '/terms' },
+      'legal-confidentialite': { en: '/privacy' },
+      'legal-cookies': { en: '/cookies' },
       'compte': { en: '/account' },
       'compte-billets': { en: '/account/tickets' }
     }

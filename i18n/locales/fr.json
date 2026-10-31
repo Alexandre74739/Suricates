@@ -179,6 +179,21 @@
       }
     }
   },
+  "footer": {
+    "description": "Au cœur de la Chartreuse, nos suricates et toute leur bande vous accueillent dans des enclos pensés pour leur bien-être. Un zoo à vivre en famille, avec des animations chaque jour en accès libre.",
+    "decouvrir": "Découvrir le parc",
+    "visite": "Préparer ma visite",
+    "horaires": "Horaires et tarifs",
+    "cgv": "Conditions générales de vente",
+    "nousTrouver": "Nous trouver",
+    "telephone": "Téléphone :",
+    "navLegale": "Informations légales",
+    "mentionsLegales": "Mentions légales",
+    "confidentialite": "Politique de confidentialité",
+    "cookies": "Cookies",
+    "reseaux": "Nos réseaux sociaux",
+    "credits": "Conçu et développé par Alexandre-Philippe Perez chez {studio}"
+  },
   "commun": {
     "nouvelOnglet": "(s'ouvre dans un nouvel onglet)",
     "retourEnHaut": "Revenir en haut de la page"

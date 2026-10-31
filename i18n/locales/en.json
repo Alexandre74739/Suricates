@@ -179,6 +179,21 @@
       }
     }
   },
+  "footer": {
+    "description": "In the heart of the Chartreuse mountains, our meerkats and all their friends welcome you in enclosures designed for their well-being. A zoo to enjoy as a family, with free activities every day.",
+    "decouvrir": "Explore the park",
+    "visite": "Plan my visit",
+    "horaires": "Opening times and prices",
+    "cgv": "Terms and conditions of sale",
+    "nousTrouver": "Find us",
+    "telephone": "Phone:",
+    "navLegale": "Legal information",
+    "mentionsLegales": "Legal notice",
+    "confidentialite": "Privacy policy",
+    "cookies": "Cookies",
+    "reseaux": "Our social media",
+    "credits": "Designed and developed by Alexandre-Philippe Perez at {studio}"
+  },
   "commun": {
     "nouvelOnglet": "(opens in a new tab)",
     "retourEnHaut": "Back to top"

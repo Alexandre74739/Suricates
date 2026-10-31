@@ -63,6 +63,18 @@
   mask-repeat: no-repeat;
 }
 
+/* Bord haut d'un bloc en coup de pinceau, de hauteur fixe quelle que soit la hauteur du bloc. */
+@utility masque-pinceau-haut {
+  --hauteur-pinceau: 3rem;
+  mask-image:
+    url("../images/formes/coup-de-pinceau-haut.svg"), linear-gradient(#000, #000);
+  mask-size:
+    100% var(--hauteur-pinceau),
+    100% calc(100% - var(--hauteur-pinceau) + 1px);
+  mask-position: top, bottom;
+  mask-repeat: no-repeat;
+}
+
 @utility attendre-photo-hero {
   animation-play-state: paused;
 
