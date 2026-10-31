@@ -25,11 +25,14 @@ Application web de gestion d'un zoo fictif, **Le Domaine des Suricates** (parc a
 ## Le produit en bref
 
 - Le zoo est **payant**. Billet daté valable uniquement à la date choisie, réservable jusqu'à **12 mois** à l'avance.
-- **Deux tarifs** : plein tarif (20 €) et réduit (12 €, enfants jusqu'à 12 ans et personnes en situation de handicap). Les prix sont **modifiables par l'admin**, seulement ces deux-là.
+- **Deux tarifs** : plein tarif (20 €, à partir de 13 ans) et réduit (12 €, de 3 à 12 ans et personnes en situation de handicap). Les prix sont **modifiables par l'admin**, seulement ces deux-là. En attendant le branchement de la table `Tarif`, ils sont codés en dur dans `shared/parc.ts`.
+- **Moins de 3 ans : gratuit**, mais ils sont déclarés dans la commande et **comptent dans la jauge**. Ce n'est pas un troisième tarif.
 - **Jauge journalière** fixée par l'admin. Les ventes en ligne et au guichet comptent dans la même jauge.
 - **Aucun remboursement** (billet de loisir daté, exclu du droit de rétractation — art. L221-28 du Code de la consommation). À afficher dans les CGV et le mail.
 - **Billet unique par commande** (ex. « 2 plein tarif + 1 réduit »), pas de billet nominatif, pas de nombre maximum.
-- Le zoo est **fermé les jours fériés** (liste à définir). Horaires et jours de fermeture **codés en dur** dans un fichier de config, pas en base.
+- **Horaires** : 10 h – 17 h d'octobre à mars, 9 h 30 – 18 h 30 d'avril à juin et en septembre, 9 h 30 – 19 h 30 en juillet-août. Dernière entrée 1 h avant la fermeture.
+- **Fermetures** : fermeture annuelle du 5 janvier au 6 février (repos des animaux), et les 1er janvier, 1er mai et 25 décembre. Les autres jours fériés sont ouverts.
+- Horaires et fermeture annuelle **codés en dur** dans `shared/parc.ts`, pas en base. Les jours fériés fermés y seront ajoutés avec la billetterie.
 - **Animations** : gratuites, en accès libre, **sans réservation**. Deux types : à horaire fixe quotidien (nourrissages) ou ponctuelles (show des suricates). Publiées directement par les employés du pôle animations ; l'admin peut tout modifier, retirer ou créer.
 - **Animaux suivis par enclos** (espèce + effectif), jamais individuellement.
 
@@ -98,7 +101,7 @@ Modèles et champs **en français** (cohérence avec le MCD). Code technique (fo
 | `Utilisateur` | `authId` (Neon Auth, unique), email, nom, prénom, `role`, `pole?`, `actif` |
 | `Tarif` | `code` (`PLEIN`, `REDUIT`), `prixCentimes` — 2 lignes seulement |
 | `Parametre` | `jaugeJournaliere` — ligne unique |
-| `Commande` | `numero` (unique, ex. `SUR-2026-00412`), `utilisateurId?`, `canal` (`EN_LIGNE`, `GUICHET`), `dateVisite`, `nbPlein`, `nbReduit`, prix unitaires **copiés au moment de l'achat**, `totalCentimes`, `statut` (`EN_ATTENTE`, `PAYEE`, `EXPIREE`), `stripeSessionId?`, `venduParId?`, `entreeValideeLe?`, `entreeValideeParId?` |
+| `Commande` | `numero` (unique, ex. `SUR-2026-00412`), `utilisateurId?`, `canal` (`EN_LIGNE`, `GUICHET`), `dateVisite`, `nbPlein`, `nbReduit`, `nbGratuit` (moins de 3 ans), prix unitaires **copiés au moment de l'achat**, `totalCentimes`, `statut` (`EN_ATTENTE`, `PAYEE`, `EXPIREE`), `stripeSessionId?`, `venduParId?`, `entreeValideeLe?`, `entreeValideeParId?` |
 | `Zone`, `Espece`, `Enclos` | Enclos = une espèce + effectif + état (`OUVERT`, `FERME`, `TRAVAUX`) |
 | `Animation` | `type` (`FIXE`, `PONCTUELLE`), `heure` (si fixe), `dateHeure` (si ponctuelle), durée, `enclosId?`, `creeParId`, `active` |
 | `Tache` | type (`SOIN`, `NOURRISSAGE`, `NETTOYAGE`, `ACCUEIL`, `ANIMATION`), `enclosId?`, `assigneeId`, `creeParId`, date prévue, statut, compte rendu |
@@ -110,7 +113,7 @@ Modèles et champs **en français** (cohérence avec le MCD). Code technique (fo
 - **Montants en centimes** (entiers), jamais en flottants.
 - **Prix figés dans la commande** : un changement de tarif ne modifie jamais une commande existante.
 - **Dates** stockées en UTC, affichées en `Europe/Paris`.
-- **Jauge** : vérifiée côté serveur à la création de la session Stripe et à la vente au guichet (somme des personnes des commandes `PAYEE` de la date).
+- **Jauge** : vérifiée côté serveur à la création de la session Stripe et à la vente au guichet (somme `nbPlein + nbReduit + nbGratuit` des commandes `PAYEE` de la date). Aucune vente possible un jour de fermeture.
 - **Suppression** : un employé supprimé ne supprime pas l'historique (`onDelete: SetNull`). Préférer la désactivation (`actif = false`).
 - Toute évolution du schéma passe par `prisma migrate dev` avec une migration nommée.
 
@@ -193,5 +196,4 @@ Le seed doit créer de quoi faire la démo en classe : un admin, un adjoint et u
 ## Points ouverts
 
 - Taux de TVA applicable.
-- Liste exacte des jours fériés et des horaires d'ouverture.
 - Migration vers Supabase.
