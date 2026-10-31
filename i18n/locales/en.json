@@ -79,6 +79,38 @@
       }
     }
   },
+  "horairesTarifs": {
+    "titre": "Zoo opening hours and prices",
+    "intro": "Open almost all year round in Chartreuse, Le Domaine des Suricates adapts its opening hours to the seasons. Book your dated ticket online, or buy it on site on the day.",
+    "alt": "A meerkat standing on its hind legs keeps watch on a tree stump",
+    "horaires": {
+      "titre": "Opening hours",
+      "saisons": {
+        "basse": "October to March",
+        "moyenne": "April to June and September",
+        "haute": "July and August"
+      },
+      "periodeFermeture": "From {debut} to {fin}",
+      "ferme": "Closed",
+      "derniereEntree": "Last entry 1 hour before closing"
+    },
+    "tarifs": {
+      "titre": "Prices",
+      "plein": {
+        "nom": "Adult",
+        "condition": "Ages 13 and over"
+      },
+      "reduit": {
+        "nom": "Reduced",
+        "condition": "Ages 3 to 12 and people with disabilities"
+      },
+      "gratuit": {
+        "nom": "Little ones",
+        "condition": "Under 3",
+        "prix": "Free"
+      }
+    }
+  },
   "commun": {
     "nouvelOnglet": "(opens in a new tab)",
     "retourEnHaut": "Back to top"

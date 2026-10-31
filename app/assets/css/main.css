@@ -76,6 +76,10 @@
   mask-repeat: no-repeat;
 }
 
+@utility motif-feuilles {
+  mask-image: url("../images/formes/fond-feuilles.svg");
+  mask-size: 72rem;
+}
 @layer base {
   body {
     @apply bg-sable text-galerie font-sans;

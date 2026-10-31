@@ -79,6 +79,38 @@
       }
     }
   },
+  "horairesTarifs": {
+    "titre": "Horaires et tarifs du zoo",
+    "intro": "Ouvert presque toute l'année en Chartreuse, le Domaine des Suricates adapte ses horaires aux saisons. Réservez votre billet daté en ligne, ou achetez-le sur place le jour même.",
+    "alt": "Un suricate dressé sur ses pattes arrière monte la garde sur une souche",
+    "horaires": {
+      "titre": "Horaires",
+      "saisons": {
+        "basse": "D'octobre à mars",
+        "moyenne": "D'avril à juin et en septembre",
+        "haute": "En juillet et en août"
+      },
+      "periodeFermeture": "Du {debut} au {fin}",
+      "ferme": "Fermé",
+      "derniereEntree": "Dernière entrée 1 h avant la fermeture"
+    },
+    "tarifs": {
+      "titre": "Tarifs",
+      "plein": {
+        "nom": "Plein tarif",
+        "condition": "À partir de 13 ans"
+      },
+      "reduit": {
+        "nom": "Tarif réduit",
+        "condition": "De 3 à 12 ans et personnes en situation de handicap"
+      },
+      "gratuit": {
+        "nom": "Tout-petits",
+        "condition": "Moins de 3 ans",
+        "prix": "Gratuit"
+      }
+    }
+  },
   "commun": {
     "nouvelOnglet": "(s'ouvre dans un nouvel onglet)",
     "retourEnHaut": "Revenir en haut de la page"
