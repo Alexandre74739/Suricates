@@ -26,6 +26,7 @@ export default defineNuxtConfig({
       'parc': { en: '/park' },
       'parc-id': { en: '/park/[id]' },
       'animations': { en: '/shows' },
+      'animations-slug': { en: '/shows/[slug]' },
       'infos-pratiques': { en: '/visitor-info' },
       'billetterie': { en: '/tickets' },
       'billetterie-confirmation': { en: '/tickets/confirmation' },

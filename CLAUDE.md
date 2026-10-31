@@ -70,7 +70,7 @@ Application web de gestion d'un zoo fictif, **Le Domaine des Suricates** (parc a
 pages/
 ├── index.vue                     Accueil                      tous
 ├── parc/index.vue, [id].vue      Le parc, fiche enclos        tous
-├── animations.vue                Programme des animations     tous
+├── animations/index.vue, [slug].vue  Programme, fiche animation  tous
 ├── billetterie/
 │   ├── index.vue                 Tarifs, calendrier, quantités (paiement : client)
 │   └── confirmation.vue          Confirmation de commande     client
