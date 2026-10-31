@@ -37,6 +37,46 @@
       "programme": "Au programme aujourd'hui",
       "acces": "Venir nous voir",
       "plan": "Télécharger le plan"
+    },
+    "apropos": {
+      "titre": "À propos du Domaine",
+      "habitants": {
+        "titre": "Les suricates et toute leur bande",
+        "texte": "Nos suricates veillent sur le Domaine, mais ils ne sont pas seuls ! Pandas roux, tigres, girafes… chaque espèce vit dans un enclos qui recrée son milieu d'origine, au cœur de la Chartreuse.",
+        "points": {
+          "milieux": "Des enclos inspirés du Kalahari, de la savane ou des forêts d'Asie",
+          "regions": "Un parcours organisé par grandes régions du monde",
+          "famille": "Une balade à faire à son rythme, des plus petits aux plus grands"
+        },
+        "bouton": "Découvrir le parc",
+        "alt": "Un panda roux grignote du bambou, perché sur un tronc"
+      },
+      "bienEtre": {
+        "titre": "Leur bien-⁠être passe avant tout",
+        "texte": "Ici, ce sont les animaux qui donnent le rythme. Chaque jour, nos soigneurs adaptent repas, soins et activités à chaque espèce, pour qu'elle garde ses comportements naturels.",
+        "points": {
+          "repli": "Des enclos spacieux, avec des coins pour s'isoler des regards",
+          "enrichissement": "Des jeux et des cachettes renouvelés pour éveiller leur curiosité",
+          "veterinaire": "Un suivi vétérinaire régulier, et un enclos fermé dès qu'ils ont besoin de calme"
+        },
+        "alt": "Deux tigres se frottent la tête, allongés dans l'herbe"
+      },
+      "sensibilisation": {
+        "titre": "Les découvrir pour mieux les protéger",
+        "texte": "Pendant les nourrissages et les animations, nos soigneurs racontent la vie de leurs protégés et les menaces qui pèsent sur eux dans la nature. Gratuit et sans réservation : il suffit d'être là.",
+        "points": {
+          "nourrissages": "Des nourrissages commentés chaque jour, à heure fixe",
+          "rendezVous": "Des rendez-vous ponctuels, comme le show des suricates",
+          "gestes": "Des gestes simples à adopter, même de retour à la maison"
+        },
+        "cadre": {
+          "titre": "Envie d'aller plus loin ?",
+          "texte": "Le WWF protège les espèces menacées et leurs milieux partout dans le monde. Découvrez ses actions et comment les soutenir.",
+          "bouton": "Découvrir le WWF",
+          "lien": "https://www.wwf.fr"
+        },
+        "alt": "Une soigneuse tend la main vers une girafe penchée au-dessus de la palissade"
+      }
     }
   },
   "commun": {

@@ -13,5 +13,6 @@ useSeoMeta({
   <main>
     <AccueilHero />
     <AccueilBandeauRaccourcis />
+    <AccueilAbout />
   </main>
 </template>

@@ -37,6 +37,46 @@
       "programme": "What's on today",
       "acces": "Getting here",
       "plan": "Download the map"
+    },
+    "apropos": {
+      "titre": "About the park",
+      "habitants": {
+        "titre": "Meet the meerkats and their friends",
+        "texte": "Our meerkats keep watch over the park, but they're not alone! Red pandas, tigers, giraffes… each species lives in an enclosure that recreates its natural habitat, in the heart of Chartreuse.",
+        "points": {
+          "milieux": "Enclosures inspired by the Kalahari, the savanna or the forests of Asia",
+          "regions": "A trail organised by major regions of the world",
+          "famille": "A walk to enjoy at your own pace, for all ages"
+        },
+        "bouton": "Explore the park",
+        "alt": "A red panda munching bamboo, perched on a log"
+      },
+      "bienEtre": {
+        "titre": "Their well-⁠being comes first",
+        "texte": "Here, the animals set the pace. Every day, our keepers adapt meals, care and activities to each species, so it can keep its natural behaviour.",
+        "points": {
+          "repli": "Spacious enclosures, with quiet spots away from view",
+          "enrichissement": "New games and hiding places to spark their curiosity",
+          "veterinaire": "Regular veterinary checks, and an enclosure closes whenever its residents need calm"
+        },
+        "alt": "Two tigers rubbing heads, lying in the grass"
+      },
+      "sensibilisation": {
+        "titre": "Get to know them, help protect them",
+        "texte": "During feedings and shows, our keepers share the life of the animals in their care and the threats they face in the wild. Free, no booking needed: just come along.",
+        "points": {
+          "nourrissages": "Feedings with commentary every day, at set times",
+          "rendezVous": "Special events, like the meerkat show",
+          "gestes": "Simple things you can do, even back home"
+        },
+        "cadre": {
+          "titre": "Want to go further?",
+          "texte": "WWF protects endangered species and their habitats all over the world. Discover its work and how to support it.",
+          "bouton": "Discover WWF",
+          "lien": "https://wwf.panda.org"
+        },
+        "alt": "A keeper reaching out to a giraffe leaning over the fence"
+      }
     }
   },
   "commun": {
