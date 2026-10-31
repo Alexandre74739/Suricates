@@ -3,10 +3,12 @@ import { CalendarClock, MapPin, MapPlus, PawPrint } from "lucide-vue-next";
 
 const raccourcis = [
   { cle: "especes", href: "#especes", icone: PawPrint },
+  { cle: "acces", href: "#horaires&tarifs", icone: MapPin },
   { cle: "programme", href: "#programme", icone: CalendarClock },
-  { cle: "acces", href: "#acces", icone: MapPin },
   { cle: "plan", icone: MapPlus },
 ];
+
+const { allerA } = useDefilement();
 </script>
 
 <template>
@@ -26,6 +28,7 @@ const raccourcis = [
           :is="r.href ? 'a' : 'button'"
           :href="r.href"
           :type="r.href ? undefined : 'button'"
+          @click="allerA($event, r.href)"
           class="group flex w-full flex-col items-center gap-3 bg-terracotta-fonce px-3 py-5 text-center text-base font-bold tracking-tight text-white transition-colors duration-200 hover:bg-acacia focus-visible:outline-2 focus-visible:-outline-offset-4 focus-visible:outline-white sm:py-6 sm:text-lg"
         >
           <span

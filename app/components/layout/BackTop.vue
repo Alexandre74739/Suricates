@@ -12,10 +12,7 @@ const visible = ref(false);
 const { scrollY } = useScroll();
 useMotionValueEvent(scrollY, "change", (y) => (visible.value = y > 80));
 
-function remonter() {
-  const reduit = matchMedia("(prefers-reduced-motion: reduce)").matches;
-  window.scrollTo({ top: 0, behavior: reduit ? "auto" : "smooth" });
-}
+const { remonter } = useDefilement();
 </script>
 
 <template>
