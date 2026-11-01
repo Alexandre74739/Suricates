@@ -1,5 +1,5 @@
 <script setup lang="ts">
-type Couleur = "terracotta" | "acacia" | "galerie" | "clair";
+type Couleur = "terracotta" | "acacia" | "galerie" | "clair" | "sable";
 type Taille = "xs" | "sm" | "xl";
 
 const props = withDefaults(
@@ -19,10 +19,11 @@ const props = withDefaults(
 );
 
 const styles: Record<Couleur, string> = {
-  terracotta: "bg-terracotta-fonce hover:bg-terracotta",
-  acacia: "bg-acacia hover:bg-acacia-clair",
-  galerie: "bg-galerie hover:bg-galerie-clair",
-  clair: "ring-2 ring-white ring-inset hover:bg-white hover:text-galerie",
+  terracotta: "bg-terracotta-fonce text-white hover:bg-terracotta",
+  acacia: "bg-acacia text-white hover:bg-acacia-clair",
+  galerie: "bg-galerie text-white hover:bg-galerie-clair",
+  clair: "text-white ring-2 ring-white ring-inset hover:bg-white hover:text-galerie",
+  sable: "bg-sable text-galerie hover:bg-acacia hover:text-white",
 };
 
 const tailles: Record<Taille, string> = {
@@ -32,7 +33,7 @@ const tailles: Record<Taille, string> = {
 };
 
 const classes = computed(() => [
-  "inline-flex items-center justify-center rounded-lg font-semibold tracking-tight text-white transition-colors duration-200",
+  "inline-flex items-center justify-center rounded-lg font-semibold tracking-tight transition-colors duration-200",
   "focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-terracotta",
   "disabled:pointer-events-none disabled:opacity-50",
   tailles[props.taille],
