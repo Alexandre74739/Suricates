@@ -267,6 +267,9 @@
           "alt": "Trois otaries bondissent hors de l'eau devant les gradins remplis de spectateurs"
         }
       }
+    },
+    "zone": {
+      "retour": "Toutes les zones"
     }
   },
   "especes": {

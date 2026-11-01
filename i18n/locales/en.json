@@ -267,6 +267,9 @@
           "alt": "Three sea lions leap out of the water in front of stands full of spectators"
         }
       }
+    },
+    "zone": {
+      "retour": "All areas"
     }
   },
   "especes": {
