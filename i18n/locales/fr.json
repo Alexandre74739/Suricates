@@ -206,6 +206,58 @@
       }
     }
   },
+  "parc": {
+    "zones": {
+      "titre": "Un petit tour du monde en cinq régions",
+      "texte": "Du Kalahari des suricates aux forêts d'Asie, chaque zone recrée le milieu de ses habitants. Choisissez votre prochaine étape et partez explorer !",
+      "navigation": "Aller à une zone",
+      "milieu": "Le milieu",
+      "habitants": "Les habitants",
+      "tous": "Tous les découvrir",
+      "liste": {
+        "chemin-de-brousse": {
+          "nom": "Le Chemin de Brousse",
+          "accroche": "Bienvenue chez nos suricates ! Dressés sur leurs pattes arrière, ils montent la garde à l'entrée d'une savane où girafes et zèbres se partagent l'ombre des acacias.",
+          "milieu": "Sable chaud, termitières et acacias : on se croirait dans le désert du Kalahari, avant de déboucher sur la savane et ses points d'eau.",
+          "habitants": "Nos suricates montent la garde pendant que girafes, zèbres et rhinocéros profitent des grands espaces.",
+          "bouton": "Découvrir le Chemin de Brousse",
+          "alt": "Deux girafes et un zèbre avec son petit à l'ombre d'un grand arbre, dans la savane"
+        },
+        "territoire-des-fauves": {
+          "nom": "Le Territoire des Fauves",
+          "accroche": "Ici, ce sont les grands félins qui font la loi. Du haut des miradors, guettez le lion qui se prélasse au soleil ou le tigre qui patrouille dans les hautes herbes.",
+          "milieu": "Hautes herbes, rochers chauffés au soleil et miradors en bois : de quoi observer les fauves sans qu'ils ne vous remarquent.",
+          "habitants": "Des grands chats d'Afrique et d'Asie, et une famille de gorilles juste à côté.",
+          "bouton": "Découvrir le Territoire des Fauves",
+          "alt": "Un lion à la crinière dorée allongé sur un rocher, au soleil"
+        },
+        "temple-de-la-jungle": {
+          "nom": "Le Temple de la Jungle",
+          "accroche": "Entrez dans une forêt de bambous où le temps ralentit. Le panda géant y grignote tranquillement pendant que les pandas roux se faufilent de branche en branche.",
+          "milieu": "Bambous, ruisseaux et portiques rouges : une forêt d'Asie fraîche et calme, idéale les jours de grosse chaleur.",
+          "habitants": "Le panda géant grignote son bambou, les pandas roux grimpent aux arbres et les loutres jouent dans l'eau.",
+          "bouton": "Découvrir le Temple de la Jungle",
+          "alt": "Un panda géant croque une tige de bambou au milieu de la végétation"
+        },
+        "sentier-des-incas": {
+          "nom": "Le Sentier des Incas",
+          "accroche": "Passez la grande porte inca et suivez le sentier jusqu'aux lagunes. Lamas, flamants roses et aras multicolores vous attendent au fil de l'eau.",
+          "milieu": "On passe sous la porte inca pour suivre un chemin entre lagunes et forêt humide, comme en Amazonie.",
+          "habitants": "Lamas et tapirs se promènent, les flamants roses pataugent et les aras font un vacarme joyeux.",
+          "bouton": "Découvrir le Sentier des Incas",
+          "alt": "Un calao au grand bec jaune perché sur une branche, devant une palissade en bois"
+        },
+        "cite-marine": {
+          "nom": "La Cité Marine",
+          "accroche": "Éclaboussures garanties ! Au bord des grands bassins, les otaries enchaînent les plongeons et les manchots se dandinent sur leur plage de galets.",
+          "milieu": "De grands bassins d'eau claire et des plages de galets, avec des vitres pour les observer sous l'eau.",
+          "habitants": "Otaries bavardes, dauphins joueurs et manchots, champions de la glisse.",
+          "bouton": "Découvrir la Cité Marine",
+          "alt": "Trois otaries bondissent hors de l'eau devant les gradins remplis de spectateurs"
+        }
+      }
+    }
+  },
   "especes": {
     "suricates": "Suricates",
     "girafes": "Girafes",

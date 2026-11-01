@@ -206,6 +206,58 @@
       }
     }
   },
+  "parc": {
+    "zones": {
+      "titre": "A little trip around the world in five regions",
+      "texte": "From the meerkats' Kalahari to the forests of Asia, each area recreates its residents' habitat. Pick your next stop and start exploring!",
+      "navigation": "Jump to an area",
+      "milieu": "The habitat",
+      "habitants": "The residents",
+      "tous": "Discover them all",
+      "liste": {
+        "chemin-de-brousse": {
+          "nom": "The Bush Trail",
+          "accroche": "Welcome to meerkat country! Standing tall on their hind legs, they keep watch at the edge of a savannah where giraffes and zebras share the shade of the acacias.",
+          "milieu": "Warm sand, termite mounds and acacias: it feels like the Kalahari desert, before you reach the savannah and its watering holes.",
+          "habitants": "Our meerkats stand guard while giraffes, zebras and rhinos enjoy the wide open spaces.",
+          "bouton": "Discover the Bush Trail",
+          "alt": "Two giraffes and a zebra with its foal in the shade of a large tree on the savannah"
+        },
+        "territoire-des-fauves": {
+          "nom": "Big Cat Territory",
+          "accroche": "Here, the big cats rule. From the lookout towers, spot the lion lazing in the sun or the tiger patrolling the tall grass.",
+          "milieu": "Tall grass, sun-warmed rocks and wooden lookout towers: watch the big cats without them noticing you.",
+          "habitants": "Big cats from Africa and Asia, with a family of gorillas right next door.",
+          "bouton": "Discover Big Cat Territory",
+          "alt": "A lion with a golden mane lying on a rock in the sun"
+        },
+        "temple-de-la-jungle": {
+          "nom": "The Jungle Temple",
+          "accroche": "Step into a bamboo forest where time slows down. The giant panda munches away while red pandas slip from branch to branch.",
+          "milieu": "Bamboo, streams and red gateways: a cool, quiet Asian forest, perfect on hot days.",
+          "habitants": "The giant panda munches its bamboo, red pandas climb the trees and otters play in the water.",
+          "bouton": "Discover the Jungle Temple",
+          "alt": "A giant panda munching a bamboo stalk among the greenery"
+        },
+        "sentier-des-incas": {
+          "nom": "The Inca Trail",
+          "accroche": "Walk through the great Inca gate and follow the trail to the lagoons. Llamas, flamingos and colourful macaws await you along the water.",
+          "milieu": "Walk through the Inca gate and follow a path between lagoons and rainforest, just like in the Amazon.",
+          "habitants": "Llamas and tapirs wander, flamingos paddle and macaws make a happy racket.",
+          "bouton": "Discover the Inca Trail",
+          "alt": "A hornbill with a large yellow beak perched on a branch in front of a wooden fence"
+        },
+        "cite-marine": {
+          "nom": "The Marine City",
+          "accroche": "Splashes guaranteed! Around the big pools, sea lions dive again and again while penguins waddle along their pebble beach.",
+          "milieu": "Large clear-water pools and pebble beaches, with windows to watch them underwater.",
+          "habitants": "Chatty sea lions, playful dolphins and penguins, true masters of the glide.",
+          "bouton": "Discover the Marine City",
+          "alt": "Three sea lions leap out of the water in front of stands full of spectators"
+        }
+      }
+    }
+  },
   "especes": {
     "suricates": "Meerkats",
     "girafes": "Giraffes",
