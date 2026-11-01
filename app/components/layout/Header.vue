@@ -16,8 +16,7 @@ const switchLocalePath = useSwitchLocalePath();
 const autreLangue = computed(() => (locale.value === "fr" ? "en" : "fr"));
 
 const route = useRoute();
-const routeBaseName = useRouteBaseName();
-const surHero = computed(() => routeBaseName(route) === "index");
+const surHero = computed(() => route.meta.surHero === true);
 </script>
 
 <template>
