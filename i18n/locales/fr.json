@@ -224,5 +224,12 @@
   "commun": {
     "nouvelOnglet": "(s'ouvre dans un nouvel onglet)",
     "retourEnHaut": "Revenir en haut de la page"
+  },
+  "erreur": {
+    "titre": "Ce terrier ne mène nulle part",
+    "texte": "Cette page s’est perdue entre deux enclos. Pas d’inquiétude, le chemin du retour est tout tracé.",
+    "retour": "Retour à l’accueil",
+    "titreAutre": "Petit éboulement dans le terrier",
+    "texteAutre": "Un souci technique nous empêche d’afficher cette page. Réessayez dans un instant."
   }
 }

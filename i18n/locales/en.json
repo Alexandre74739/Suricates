@@ -224,5 +224,12 @@
   "commun": {
     "nouvelOnglet": "(opens in a new tab)",
     "retourEnHaut": "Back to top"
+  },
+  "erreur": {
+    "titre": "This burrow leads nowhere",
+    "texte": "This page wandered off between two enclosures. No worries, the way back is clearly marked.",
+    "retour": "Back to home",
+    "titreAutre": "A small cave-in in the burrow",
+    "texteAutre": "A technical hiccup is stopping this page from loading. Please try again shortly."
   }
 }
