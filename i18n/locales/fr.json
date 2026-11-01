@@ -78,6 +78,33 @@
         "alt": "Une soigneuse tend la main vers une girafe penchée au-dessus de la palissade"
       }
     },
+    "faq": {
+      "titre": "On a creusé les questions pour vous",
+      "texte": "Billets, animations, pique-nique… Voici les réponses aux questions qu'on nous pose le plus souvent, pour arriver au Domaine l'esprit léger.",
+      "alt": "Trois girafes, dont deux girafons, dans leur enclos ensoleillé, un zèbre au premier plan",
+      "questions": {
+        "billet": {
+          "question": "Mon billet est-il valable n'importe quel jour ?",
+          "reponse": "Non, votre billet est daté : il n'est valable qu'à la date choisie lors de la réservation. Vous pouvez réserver jusqu'à 12 mois à l'avance."
+        },
+        "animations": {
+          "question": "Faut-il réserver les animations ?",
+          "reponse": "Pas du tout ! Nourrissages et shows sont gratuits et en accès libre. Il suffit d'être là à l'heure indiquée dans le programme : les enfants adorent."
+        },
+        "duree": {
+          "question": "Combien de temps prévoir ?",
+          "reponse": "Comptez une demi-journée pour faire le tour du parc, une journée entière pour profiter des nourrissages et des animations. Dernière entrée une heure avant la fermeture."
+        },
+        "repas": {
+          "question": "Où manger pendant la visite ?",
+          "reponse": "Des aires de pique-nique vous attendent tout au long du parcours, ainsi que des points de restauration pour les petites faims et ceux avec une faim de loup."
+        },
+        "groupes": {
+          "question": "Vous venez en groupe (école, centre de loisirs, association) ?",
+          "reponse": "Appelez-nous avant votre venue : nous préparons la visite avec vous et adaptons l'accueil à votre groupe, avec un tarif dédié."
+        }
+      }
+    },
     "animations": {
       "titre": "Chaque jour, un nouveau rendez-vous",
       "texte": "Les guépards à table, les pandas roux au goûter, les rapaces qui frôlent les gradins… Nos soigneurs vous embarquent dans le quotidien de leurs protégés. C'est gratuit, sans réservation : il suffit d'être là au bon moment.",

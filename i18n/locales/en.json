@@ -78,6 +78,33 @@
         "alt": "A keeper reaching out to a giraffe leaning over the fence"
       }
     },
+    "faq": {
+      "titre": "We dug into your questions",
+      "texte": "Tickets, animal talks, picnics… Here are the answers to the questions we hear most often, so you can arrive with a light heart.",
+      "alt": "Three giraffes, two of them calves, in their sunny enclosure, with a zebra in the foreground",
+      "questions": {
+        "billet": {
+          "question": "Is my ticket valid on any day?",
+          "reponse": "No, your ticket is dated: it is only valid on the date chosen when booking. You can book up to 12 months in advance."
+        },
+        "animations": {
+          "question": "Do I need to book the animal talks?",
+          "reponse": "Not at all! Feedings and shows are free and open to all. Just be there at the time shown in the programme: kids love them."
+        },
+        "duree": {
+          "question": "How long should we plan for?",
+          "reponse": "Allow half a day to tour the park, or a full day to enjoy the feedings and animal talks. Last entry one hour before closing."
+        },
+        "repas": {
+          "question": "Where can we eat during the visit?",
+          "reponse": "Picnic areas await you all along the trail, as well as food outlets for small appetites and anyone as hungry as a wolf."
+        },
+        "groupes": {
+          "question": "Coming as a group (school, holiday club, association)?",
+          "reponse": "Give us a call before your visit: we'll plan it with you and adapt our welcome to your group, with a dedicated rate."
+        }
+      }
+    },
     "animations": {
       "titre": "Something new to see every day",
       "texte": "Cheetahs at dinnertime, red pandas at snack time, birds of prey swooping over the stands… Our keepers bring you into the daily lives of the animals in their care. It's free, no booking needed: just be there at the right time.",
