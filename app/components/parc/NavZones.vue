@@ -34,17 +34,15 @@ const titreId = useId();
         class="masque-pinceau absolute inset-0 translate-x-2 translate-y-2.5 rotate-1 bg-terracotta-fonce"
         aria-hidden="true"
       />
-      <div
-        class="masque-pinceau relative bg-white px-10 py-9 sm:px-14 lg:px-16"
-      >
+      <div class="masque-pinceau relative bg-white px-8 py-9 sm:px-14 lg:px-16">
         <nav :aria-label="$t('parc.zones.navigation')">
           <ul
-            class="-mx-10 flex snap-x scroll-px-10 gap-4 overflow-x-auto px-10 sm:-mx-14 sm:px-14 lg:mx-0 lg:grid lg:grid-cols-5 lg:gap-6 lg:overflow-visible lg:px-0"
+            class="flex flex-wrap justify-center gap-x-4 gap-y-6 lg:flex-nowrap lg:gap-6"
           >
             <li
               v-for="zone in zones"
               :key="zone.slug"
-              class="w-40 shrink-0 snap-start sm:w-48 lg:w-auto"
+              class="basis-[calc(50%-0.5rem)] sm:basis-[calc((100%-2rem)/3)] lg:flex-1 lg:basis-0"
             >
               <a
                 :href="`#${zone.slug}`"
@@ -60,7 +58,7 @@ const titreId = useId();
                     :src="zone.image"
                     alt=""
                     :largeurs="[320, 640]"
-                    sizes="(min-width: 1024px) 240px, 192px"
+                    sizes="(min-width: 1024px) 240px, (min-width: 640px) 30vw, 45vw"
                     class="size-full object-cover"
                   />
                 </div>
