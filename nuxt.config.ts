@@ -24,7 +24,8 @@ export default defineNuxtConfig({
     customRoutes: 'config',
     pages: {
       'parc': { en: '/park' },
-      'parc-id': { en: '/park/[id]' },
+      'parc-zone': { en: '/park/[zone]' },
+      'parc-zone-enclos': { en: '/park/[zone]/[enclos]' },
       'animations': { en: '/shows' },
       'animations-slug': { en: '/shows/[slug]' },
       'infos-pratiques': { en: '/visitor-info' },
