@@ -207,6 +207,17 @@
     }
   },
   "parc": {
+    "seo": {
+      "titre": "Le parc · Le Domaine des Suricates",
+      "description": "Cinq régions du monde à explorer au Domaine des Suricates : du Kalahari des suricates aux forêts d'Asie, découvrez les zones du parc et leurs habitants."
+    },
+    "hero": {
+      "titre": "Partez à la rencontre de nos habitants",
+      "texte": "Au Domaine, nos soigneurs vivent au plus près des animaux. Suivez les allées à votre rythme, d'une région du monde à l'autre, et découvrez qui se cache dans chaque enclos.",
+      "alt": "Une soigneuse caresse le museau d'un rhinocéros qui mâchouille des feuilles par-dessus la clôture en bois",
+      "zones": "Explorer les zones",
+      "plan": "Télécharger le plan"
+    },
     "zones": {
       "titre": "Un petit tour du monde en cinq régions",
       "texte": "Du Kalahari des suricates aux forêts d'Asie, chaque zone recrée le milieu de ses habitants. Choisissez votre prochaine étape et partez explorer !",

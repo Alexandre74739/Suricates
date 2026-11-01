@@ -207,6 +207,17 @@
     }
   },
   "parc": {
+    "seo": {
+      "titre": "The park · Le Domaine des Suricates",
+      "description": "Five regions of the world to explore at the Domaine des Suricates: from the meerkats' Kalahari to the forests of Asia, discover the park's areas and their residents."
+    },
+    "hero": {
+      "titre": "Come and meet our residents",
+      "texte": "At the Domaine, our keepers work right alongside the animals. Follow the paths at your own pace, from one region of the world to the next, and find out who lives in each enclosure.",
+      "alt": "A keeper strokes the muzzle of a rhino chewing leaves over the wooden fence",
+      "zones": "Explore the areas",
+      "plan": "Download the map"
+    },
     "zones": {
       "titre": "A little trip around the world in five regions",
       "texte": "From the meerkats' Kalahari to the forests of Asia, each area recreates its residents' habitat. Pick your next stop and start exploring!",
