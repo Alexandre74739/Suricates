@@ -150,6 +150,7 @@ Palette « Terrier et acacia » :
 | Vert acacia | `#4F6B3E` | Titres, couleur principale |
 | Terracotta | `#C0663F` | Boutons d'action, accents |
 | Galerie | `#26221D` | Texte |
+| Ocre | `#C9973F` | Accent ponctuel (couleur de zone) |
 
 - **Rubik Dirt** : titres et logo uniquement, jamais en petit.
 - **Lexend** : tout le reste.
