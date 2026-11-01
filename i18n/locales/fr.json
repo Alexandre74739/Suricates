@@ -270,6 +270,9 @@
     },
     "zone": {
       "retour": "Toutes les zones"
+    },
+    "enclos": {
+      "texte": "Leur fiche complète arrive très bientôt ! En attendant, venez les observer au fil de votre visite."
     }
   },
   "especes": {
