@@ -22,11 +22,12 @@ const questions = computed(() =>
   <main>
     <AccueilHero />
     <AccueilBandeauRaccourcis />
-    <AccueilAbout />
-    <InfosHorairesTarifs id="horaires&tarifs" />
-    <AccueilAnimations />
-    <AccueilZones id="especes" />
-    <UiFaq
+    <LazyAccueilAbout hydrate-on-visible />
+    <LazyInfosHorairesTarifs id="horaires&tarifs" hydrate-on-visible />
+    <LazyAccueilAnimations hydrate-on-visible />
+    <LazyAccueilZones id="especes" hydrate-on-visible />
+    <LazyUiFaq
+      hydrate-on-visible
       id="faq"
       image="/images/illustrations/girafes-zebre.webp"
       :alt="$t('accueil.faq.alt')"

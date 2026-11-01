@@ -37,7 +37,7 @@ useSeoMeta({
         {{ $t("parc.hero.plan") }}
       </UiButton>
     </LayoutSemiHero>
-    <ParcNavZones id="zones" />
-    <ParcZones />
+    <LazyParcNavZones id="zones" hydrate-on-visible />
+    <LazyParcZones hydrate-on-visible />
   </main>
 </template>

@@ -21,8 +21,8 @@ withDefaults(
       v-if="image"
       :src="image"
       :alt="alt ?? ''"
-      :largeurs="[640, 1024, 1280, 1920]"
-      sizes="max(100vw, 168vh)"
+      :largeurs="[640, 1024, 1280, 1536]"
+      sizes="(max-width: 767px) 640px, max(100vw, 168vh)"
       prioritaire
       class="absolute inset-0 -z-10 size-full object-cover"
       :class="position"
