@@ -26,8 +26,9 @@ useSeoMeta({
     <LayoutSemiHero
       :titre="zone.nom"
       :texte="zone.accroche"
-      :image="zone.image"
-      :alt="zone.alt"
+      :image="zone.hero?.image ?? zone.image"
+      :alt="zone.hero ? zone.altHero : zone.alt"
+      :position="zone.hero?.position"
       :fond="zone.fond"
     >
       <UiButton :to="localePath('/parc')" couleur="terracotta" taille="xl">

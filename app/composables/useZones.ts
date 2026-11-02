@@ -17,6 +17,7 @@ export function useZones() {
         milieu: t(`${cle}.milieu`),
         habitants: t(`${cle}.habitants`),
         alt: zone.image ? t(`${cle}.alt`) : undefined,
+        altHero: zone.hero ? t(`${cle}.altHero`) : undefined,
         especes: zone.especes.map((espece) => ({
           slug: espece,
           nom: t(`especes.${espece}`),

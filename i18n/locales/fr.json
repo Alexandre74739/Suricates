@@ -232,7 +232,8 @@
           "milieu": "Sable chaud, termitières et acacias : on se croirait dans le désert du Kalahari, avant de déboucher sur la savane et ses points d'eau.",
           "habitants": "Nos suricates montent la garde pendant que girafes, zèbres et rhinocéros profitent des grands espaces.",
           "bouton": "Découvrir le Chemin de Brousse",
-          "alt": "Deux girafes et un zèbre avec son petit à l'ombre d'un grand arbre, dans la savane"
+          "alt": "Deux girafes et un zèbre avec son petit à l'ombre d'un grand arbre, dans la savane",
+          "altHero": "Un éléphanteau enroule sa trompe autour de celle d'un éléphant adulte, sur un sol de terre humide"
         },
         "territoire-des-fauves": {
           "nom": "Le Territoire des Fauves",
@@ -240,7 +241,8 @@
           "milieu": "Hautes herbes, rochers chauffés au soleil et miradors en bois : de quoi observer les fauves sans qu'ils ne vous remarquent.",
           "habitants": "Des grands chats d'Afrique et d'Asie, et une famille de gorilles juste à côté.",
           "bouton": "Découvrir le Territoire des Fauves",
-          "alt": "Un lion à la crinière dorée allongé sur un rocher, au soleil"
+          "alt": "Un lion à la crinière dorée allongé sur un rocher, au soleil",
+          "altHero": "Un tigre assis au soleil devant un mur de pierre, le regard tourné au loin"
         },
         "temple-de-la-jungle": {
           "nom": "Le Temple de la Jungle",
@@ -248,7 +250,8 @@
           "milieu": "Bambous, ruisseaux et portiques rouges : une forêt d'Asie fraîche et calme, idéale les jours de grosse chaleur.",
           "habitants": "Le panda géant grignote son bambou, les pandas roux grimpent aux arbres et les loutres jouent dans l'eau.",
           "bouton": "Découvrir le Temple de la Jungle",
-          "alt": "Un panda géant croque une tige de bambou au milieu de la végétation"
+          "alt": "Un panda géant croque une tige de bambou au milieu de la végétation",
+          "altHero": "Un panda géant assis sur un tronc couché, entouré de feuillages"
         },
         "sentier-des-incas": {
           "nom": "Le Sentier des Incas",
@@ -256,7 +259,8 @@
           "milieu": "On passe sous la porte inca pour suivre un chemin entre lagunes et forêt humide, comme en Amazonie.",
           "habitants": "Lamas et tapirs se promènent, les flamants roses pataugent et les aras font un vacarme joyeux.",
           "bouton": "Découvrir le Sentier des Incas",
-          "alt": "Un calao au grand bec jaune perché sur une branche, devant une palissade en bois"
+          "alt": "Un calao au grand bec jaune perché sur une branche, devant une palissade en bois",
+          "altHero": "Un capybara et son petit assis côte à côte sur l'herbe, au soleil"
         },
         "cite-marine": {
           "nom": "La Cité Marine",
@@ -264,7 +268,8 @@
           "milieu": "De grands bassins d'eau claire et des plages de galets, avec des vitres pour les observer sous l'eau.",
           "habitants": "Otaries bavardes, dauphins joueurs et manchots, champions de la glisse.",
           "bouton": "Découvrir la Cité Marine",
-          "alt": "Trois otaries bondissent hors de l'eau devant les gradins remplis de spectateurs"
+          "alt": "Trois otaries bondissent hors de l'eau devant les gradins remplis de spectateurs",
+          "altHero": "Un groupe de manchots de Humboldt sur une plage de galets, au bord de l'eau"
         }
       }
     },
@@ -277,6 +282,7 @@
   },
   "especes": {
     "suricates": "Suricates",
+    "elephants": "Éléphants",
     "girafes": "Girafes",
     "zebres": "Zèbres",
     "rhinoceros": "Rhinocéros",
