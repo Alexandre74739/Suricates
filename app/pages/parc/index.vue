@@ -5,6 +5,7 @@ import { PLAN_PDF } from "#shared/parc";
 definePageMeta({ surHero: true });
 
 const { t } = useI18n();
+const localePath = useLocalePath();
 
 useSeoMeta({
   title: () => t("parc.seo.titre"),
@@ -23,8 +24,8 @@ useSeoMeta({
       :alt="$t('parc.hero.alt')"
       position="object-[62%_center]"
     >
-      <UiButton to="#zones" taille="xl">
-        {{ $t("parc.hero.zones") }}
+      <UiButton :to="localePath('/billetterie')" taille="xl">
+        {{ $t("menu.reserver") }}
       </UiButton>
       <UiButton
         :to="PLAN_PDF"
