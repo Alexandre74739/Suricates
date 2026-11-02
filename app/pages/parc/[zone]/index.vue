@@ -30,7 +30,7 @@ useSeoMeta({
       :alt="zone.alt"
       :fond="zone.fond"
     >
-      <UiButton :to="localePath('/parc')" couleur="acacia" taille="xl">
+      <UiButton :to="localePath('/parc')" couleur="terracotta" taille="xl">
         {{ $t("parc.zone.retour") }}
       </UiButton>
     </LayoutSemiHero>

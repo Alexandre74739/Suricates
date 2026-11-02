@@ -28,7 +28,7 @@ useSeoMeta({
       :texte="$t('parc.enclos.texte')"
       :fond="zone.fond"
     >
-      <UiButton :to="zone.lien" couleur="acacia" taille="xl">
+      <UiButton :to="zone.lien" couleur="terracotta" taille="xl">
         {{ zone.bouton }}
       </UiButton>
     </LayoutSemiHero>
