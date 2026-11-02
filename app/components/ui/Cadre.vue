@@ -21,9 +21,10 @@ defineProps<{
     </div>
     <div class="flex gap-4 sm:gap-5">
       <span
-        class="flex size-12 shrink-0 items-center justify-center rounded-[46%_54%_42%_58%/55%_45%_55%_45%] bg-sable text-acacia sm:size-14"
+        class="relative flex size-12 shrink-0 items-center justify-center text-acacia sm:size-14"
       >
-        <Earth class="size-6 sm:size-7" aria-hidden="true" />
+        <UiBlob class="absolute inset-0 size-full fill-sable" />
+        <Earth class="relative size-6 sm:size-7" aria-hidden="true" />
       </span>
       <div>
         <p class="text-lg font-semibold tracking-tight">{{ titre }}</p>
