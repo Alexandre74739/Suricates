@@ -233,7 +233,14 @@
           "habitants": "Our meerkats stand guard while giraffes, zebras and rhinos enjoy the wide open spaces.",
           "bouton": "Discover the Bush Trail",
           "alt": "Two giraffes and a zebra with its foal in the shade of a large tree on the savannah",
-          "altHero": "An elephant calf wraps its trunk around an adult elephant's trunk on muddy ground"
+          "altHero": "An elephant calf wraps its trunk around an adult elephant's trunk on muddy ground",
+          "milieuNaturel": {
+            "titre": "To the rhythm of the African savannah",
+            "texte": "On the great plains of eastern and southern Africa, all life revolves around the watering holes. Elephants dig into the ground to drink, giraffes pick the highest acacia leaves and ostriches race along at nearly 70 km/h.",
+            "region": "Eastern and southern Africa, all the way to the island of Madagascar.",
+            "climat": "Hot and dry, with short rainy seasons that turn the plains green again.",
+            "paysage": "Grassy plains, umbrella acacias, termite mounds and watering holes."
+          }
         },
         "territoire-des-fauves": {
           "nom": "Big Cat Territory",
@@ -242,7 +249,14 @@
           "habitants": "Big cats from Africa and Asia, with a family of gorillas right next door.",
           "bouton": "Discover Big Cat Territory",
           "alt": "A lion with a golden mane lying on a rock in the sun",
-          "altHero": "A tiger sitting in the sun in front of a stone wall, gazing into the distance"
+          "altHero": "A tiger sitting in the sun in front of a stone wall, gazing into the distance",
+          "milieuNaturel": {
+            "titre": "On the trail of the great predators",
+            "texte": "From the savannahs of Africa to the forests of Asia, every predator has its own technique: the cheetah sprints, the tiger happily swims and African wild dogs hunt in packs. In the shade, the gorillas spend their days nibbling leaves and fruit.",
+            "region": "African savannahs, Central African forests and the jungles of South Asia.",
+            "climat": "Tropical, with a distinct dry season and rainy season.",
+            "paysage": "Tall grass, rocky outcrops and the edge of dense forest."
+          }
         },
         "temple-de-la-jungle": {
           "nom": "The Jungle Temple",
@@ -251,7 +265,14 @@
           "habitants": "The giant panda munches its bamboo, red pandas climb the trees and otters play in the water.",
           "bouton": "Discover the Jungle Temple",
           "alt": "A giant panda munching a bamboo stalk among the greenery",
-          "altHero": "A giant panda sitting on a fallen log, surrounded by leaves"
+          "altHero": "A giant panda sitting on a fallen log, surrounded by leaves",
+          "milieuNaturel": {
+            "titre": "In the misty forests of Asia",
+            "texte": "In the misty mountains of China, the giant panda spends up to 12 hours a day eating bamboo. Further south, the jungle belongs to the climbers: gibbons, red pandas and binturongs spend almost their whole lives in the trees.",
+            "region": "The mountains of central China, the Himalayas and Southeast Asia.",
+            "climat": "Cool and damp in the mountains, hot and rainy in the valleys.",
+            "paysage": "Bamboo forests, mountain streams and a thick canopy."
+          }
         },
         "sentier-des-incas": {
           "nom": "The Inca Trail",
@@ -260,7 +281,14 @@
           "habitants": "Llamas and tapirs wander, flamingos paddle and macaws make a happy racket.",
           "bouton": "Discover the Inca Trail",
           "alt": "A hornbill with a large yellow beak perched on a branch in front of a wooden fence",
-          "altHero": "A capybara and its young sitting side by side on the grass in the sun"
+          "altHero": "A capybara and its young sitting side by side on the grass in the sun",
+          "milieuNaturel": {
+            "titre": "From the Andes to the Amazon",
+            "texte": "On the high plateaus of the Andes, llamas and alpacas make do with short grass. Heading down towards the Amazon, you meet the flamingos of the lagoons, then the capybara, the world's largest rodent, which never strays far from water.",
+            "region": "South America, from the Andes mountains to the Amazon basin.",
+            "climat": "Cold and dry at altitude, hot and very humid in the Amazon.",
+            "paysage": "High plateaus, shallow lagoons and tropical forest."
+          }
         },
         "cite-marine": {
           "nom": "The Marine City",
@@ -269,12 +297,25 @@
           "habitants": "Chatty sea lions, playful dolphins and penguins, true masters of the glide.",
           "bouton": "Discover the Marine City",
           "alt": "Three sea lions leap out of the water in front of stands full of spectators",
-          "altHero": "A group of Humboldt penguins on a pebble beach by the water"
+          "altHero": "A group of Humboldt penguins on a pebble beach by the water",
+          "milieuNaturel": {
+            "titre": "Along the ocean shores",
+            "texte": "Where cold currents make the ocean rich in fish, sea lions and penguins split their lives between fishing at sea and resting on the pebbles. Out at sea, dolphins follow the shoals of fish, talking to each other with whistles.",
+            "region": "Pacific and Atlantic coasts, from temperate waters to cold seas.",
+            "climat": "Cool and oceanic, with cold water all year round.",
+            "paysage": "Rocky coasts, pebble beaches and open sea."
+          }
         }
       }
     },
     "zone": {
-      "retour": "All areas"
+      "retour": "All areas",
+      "milieu": {
+        "apercu": "At a glance",
+        "region": "Region of the world",
+        "climat": "Climate",
+        "paysage": "Landscape"
+      }
     },
     "enclos": {
       "texte": "Their full profile is coming very soon! In the meantime, come and see them during your visit."

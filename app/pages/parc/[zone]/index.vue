@@ -35,5 +35,9 @@ useSeoMeta({
         {{ $t("parc.zone.retour") }}
       </UiButton>
     </LayoutSemiHero>
+    <LazyParcZoneMilieuNaturel
+      v-bind="zone.milieuNaturel"
+      hydrate-on-visible
+    />
   </main>
 </template>

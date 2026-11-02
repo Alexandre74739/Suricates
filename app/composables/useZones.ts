@@ -18,6 +18,13 @@ export function useZones() {
         habitants: t(`${cle}.habitants`),
         alt: zone.image ? t(`${cle}.alt`) : undefined,
         altHero: zone.hero ? t(`${cle}.altHero`) : undefined,
+        milieuNaturel: {
+          titre: t(`${cle}.milieuNaturel.titre`),
+          texte: t(`${cle}.milieuNaturel.texte`),
+          region: t(`${cle}.milieuNaturel.region`),
+          climat: t(`${cle}.milieuNaturel.climat`),
+          paysage: t(`${cle}.milieuNaturel.paysage`),
+        },
         especes: zone.especes.map((espece) => ({
           slug: espece,
           nom: t(`especes.${espece}`),

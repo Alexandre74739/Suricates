@@ -233,7 +233,14 @@
           "habitants": "Nos suricates montent la garde pendant que girafes, zèbres et rhinocéros profitent des grands espaces.",
           "bouton": "Découvrir le Chemin de Brousse",
           "alt": "Deux girafes et un zèbre avec son petit à l'ombre d'un grand arbre, dans la savane",
-          "altHero": "Un éléphanteau enroule sa trompe autour de celle d'un éléphant adulte, sur un sol de terre humide"
+          "altHero": "Un éléphanteau enroule sa trompe autour de celle d'un éléphant adulte, sur un sol de terre humide",
+          "milieuNaturel": {
+            "titre": "Au rythme de la savane africaine",
+            "texte": "Dans les grandes plaines d'Afrique de l'Est et australe, toute la vie s'organise autour des points d'eau. Les éléphants y creusent le sol pour boire, les girafes cueillent les feuilles d'acacia les plus hautes et les autruches filent à près de 70 km/h.",
+            "region": "Afrique de l'Est et australe, jusqu'à l'île de Madagascar.",
+            "climat": "Chaud et sec, avec de courtes saisons des pluies qui font reverdir la plaine.",
+            "paysage": "Plaines herbeuses, acacias en parasol, termitières et points d'eau."
+          }
         },
         "territoire-des-fauves": {
           "nom": "Le Territoire des Fauves",
@@ -242,7 +249,14 @@
           "habitants": "Des grands chats d'Afrique et d'Asie, et une famille de gorilles juste à côté.",
           "bouton": "Découvrir le Territoire des Fauves",
           "alt": "Un lion à la crinière dorée allongé sur un rocher, au soleil",
-          "altHero": "Un tigre assis au soleil devant un mur de pierre, le regard tourné au loin"
+          "altHero": "Un tigre assis au soleil devant un mur de pierre, le regard tourné au loin",
+          "milieuNaturel": {
+            "titre": "Sur la piste des grands prédateurs",
+            "texte": "Des savanes d'Afrique aux forêts d'Asie, chaque prédateur a sa technique : le guépard sprinte, le tigre n'hésite pas à nager et les lycaons chassent en meute. À l'ombre, les gorilles passent leurs journées à grignoter feuilles et fruits.",
+            "region": "Savanes d'Afrique, forêts d'Afrique centrale et jungles d'Asie du Sud.",
+            "climat": "Tropical, avec une saison sèche et une saison des pluies bien marquées.",
+            "paysage": "Hautes herbes, amas de rochers et lisières de forêt dense."
+          }
         },
         "temple-de-la-jungle": {
           "nom": "Le Temple de la Jungle",
@@ -251,7 +265,14 @@
           "habitants": "Le panda géant grignote son bambou, les pandas roux grimpent aux arbres et les loutres jouent dans l'eau.",
           "bouton": "Découvrir le Temple de la Jungle",
           "alt": "Un panda géant croque une tige de bambou au milieu de la végétation",
-          "altHero": "Un panda géant assis sur un tronc couché, entouré de feuillages"
+          "altHero": "Un panda géant assis sur un tronc couché, entouré de feuillages",
+          "milieuNaturel": {
+            "titre": "Dans les forêts brumeuses d'Asie",
+            "texte": "Dans les montagnes brumeuses de Chine, le panda géant passe jusqu'à 12 heures par jour à manger du bambou. Plus au sud, la jungle appartient aux grimpeurs : gibbons, pandas roux et binturongs vivent presque toute leur vie dans les arbres.",
+            "region": "Montagnes du centre de la Chine, Himalaya et Asie du Sud-Est.",
+            "climat": "Frais et humide en altitude, chaud et pluvieux dans les vallées.",
+            "paysage": "Forêts de bambous, ruisseaux de montagne et canopée épaisse."
+          }
         },
         "sentier-des-incas": {
           "nom": "Le Sentier des Incas",
@@ -260,7 +281,14 @@
           "habitants": "Lamas et tapirs se promènent, les flamants roses pataugent et les aras font un vacarme joyeux.",
           "bouton": "Découvrir le Sentier des Incas",
           "alt": "Un calao au grand bec jaune perché sur une branche, devant une palissade en bois",
-          "altHero": "Un capybara et son petit assis côte à côte sur l'herbe, au soleil"
+          "altHero": "Un capybara et son petit assis côte à côte sur l'herbe, au soleil",
+          "milieuNaturel": {
+            "titre": "Des Andes à l'Amazonie",
+            "texte": "Sur les hauts plateaux des Andes, lamas et alpagas se contentent d'une herbe rase. En descendant vers l'Amazonie, on croise les flamants des lagunes, puis le capybara, plus grand rongeur du monde, qui ne s'éloigne jamais de l'eau.",
+            "region": "Amérique du Sud, de la cordillère des Andes au bassin amazonien.",
+            "climat": "Froid et sec en altitude, chaud et très humide en Amazonie.",
+            "paysage": "Hauts plateaux, lagunes peu profondes et forêt tropicale."
+          }
         },
         "cite-marine": {
           "nom": "La Cité Marine",
@@ -269,12 +297,25 @@
           "habitants": "Otaries bavardes, dauphins joueurs et manchots, champions de la glisse.",
           "bouton": "Découvrir la Cité Marine",
           "alt": "Trois otaries bondissent hors de l'eau devant les gradins remplis de spectateurs",
-          "altHero": "Un groupe de manchots de Humboldt sur une plage de galets, au bord de l'eau"
+          "altHero": "Un groupe de manchots de Humboldt sur une plage de galets, au bord de l'eau",
+          "milieuNaturel": {
+            "titre": "Le long des côtes océaniques",
+            "texte": "Là où les courants froids rendent l'océan riche en poissons, otaries et manchots partagent leur vie entre la pêche en mer et le repos sur les galets. Au large, les dauphins suivent les bancs de poissons en communiquant par sifflements.",
+            "region": "Côtes du Pacifique et de l'Atlantique, des eaux tempérées aux mers froides.",
+            "climat": "Océanique et frais, avec une eau froide toute l'année.",
+            "paysage": "Côtes rocheuses, plages de galets et pleine mer."
+          }
         }
       }
     },
     "zone": {
-      "retour": "Toutes les zones"
+      "retour": "Toutes les zones",
+      "milieu": {
+        "apercu": "En un coup d'œil",
+        "region": "Région du monde",
+        "climat": "Climat",
+        "paysage": "Paysage"
+      }
     },
     "enclos": {
       "texte": "Leur fiche complète arrive très bientôt ! En attendant, venez les observer au fil de votre visite."
