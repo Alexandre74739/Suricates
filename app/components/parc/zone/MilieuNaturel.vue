@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { motion } from "motion-v";
-import { ArrowRight, Earth, ThermometerSun, Trees } from "lucide-vue-next";
+import { Earth, ThermometerSun, Trees } from "lucide-vue-next";
 import { monterEnCascade } from "~/animations/apparitionBas";
 import { arriverDeCote } from "~/animations/apparitionCote";
 import { auDefilement } from "~/animations/auDefilement";
@@ -58,7 +58,6 @@ const points = computed(() => [
         <motion.div v-bind="auDefilement(monterEnCascade(2))" class="mt-8">
           <UiButton :to="localePath('/billetterie')">
             {{ $t("menu.reserver") }}
-            <ArrowRight aria-hidden="true" />
           </UiButton>
         </motion.div>
       </div>

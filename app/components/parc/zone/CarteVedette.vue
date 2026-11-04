@@ -1,12 +1,6 @@
 <script setup lang="ts">
 import { motion } from "motion-v";
-import {
-  ArrowRight,
-  Lightbulb,
-  MapPin,
-  Users,
-  Utensils,
-} from "lucide-vue-next";
+import { Lightbulb, MapPin, Users, Utensils } from "lucide-vue-next";
 import { monterEnCascade } from "~/animations/apparitionBas";
 import { arriverDeCote } from "~/animations/apparitionCote";
 import { auDefilement } from "~/animations/auDefilement";
@@ -141,7 +135,6 @@ const infos = computed(() => [
         <UiButton :to="lien">
           {{ $t("parc.zone.habitants.voir") }}
           <span class="sr-only">: {{ nom }}</span>
-          <ArrowRight aria-hidden="true" />
         </UiButton>
       </motion.div>
     </div>
