@@ -239,6 +239,10 @@
             "region": "Eastern and southern Africa, all the way to the island of Madagascar.",
             "climat": "Hot and dry, with short rainy seasons that turn the plains green again.",
             "paysage": "Grassy plains, umbrella acacias, termite mounds and watering holes."
+          },
+          "habitantsSection": {
+            "titre": "The animals of the Bush Trail",
+            "texte": "Under the acacias of the Bush Trail, every species has its own character, habits and favourite spot. Meerkats on guard, elephants as a family, giraffes on the lookout: meet the animals that bring the savannah to life at Le Domaine des Suricates, in the Chartreuse mountains."
           }
         },
         "territoire-des-fauves": {
@@ -255,6 +259,10 @@
             "region": "African savannahs, Central African forests and the jungles of South Asia.",
             "climat": "Tropical, with a distinct dry season and rainy season.",
             "paysage": "Tall grass, rocky outcrops and the edge of dense forest."
+          },
+          "habitantsSection": {
+            "titre": "The animals of Big Cat Territory",
+            "texte": "In Big Cat Territory, the great predators of Africa and Asia live in large enclosures designed for their well-being. Lazy lions, swimming tigers, well-organised hyenas: each has its own way of owning the territory."
           }
         },
         "temple-de-la-jungle": {
@@ -271,6 +279,10 @@
             "region": "The mountains of central China, the Himalayas and Southeast Asia.",
             "climat": "Cool and damp in the mountains, hot and rainy in the valleys.",
             "paysage": "Bamboo forests, mountain streams and a thick canopy."
+          },
+          "habitantsSection": {
+            "titre": "The animals of the Jungle Temple",
+            "texte": "Among bamboo and overgrown ruins, the Jungle Temple is home to Asian species as discreet as they are surprising. Hungry pandas, singing gibbons, popcorn-scented binturongs: come and meet them."
           }
         },
         "sentier-des-incas": {
@@ -287,6 +299,10 @@
             "region": "South America, from the Andes mountains to the Amazon basin.",
             "climat": "Cold and dry at altitude, hot and very humid in the Amazon.",
             "paysage": "High plateaus, shallow lagoons and tropical forest."
+          },
+          "habitantsSection": {
+            "titre": "The animals of the Inca Trail",
+            "texte": "From the peaks of the Andes to the lagoons of the Amazon, the Inca Trail brings together the animals of South America. Chatty llamas, unflappable capybaras, dazzling macaws: each adds its own touch to the journey."
           }
         },
         "cite-marine": {
@@ -303,6 +319,10 @@
             "region": "Pacific and Atlantic coasts, from temperate waters to cold seas.",
             "climat": "Cool and oceanic, with cold water all year round.",
             "paysage": "Rocky coasts, pebble beaches and open sea."
+          },
+          "habitantsSection": {
+            "titre": "The animals of the Marine City",
+            "texte": "Pools, pebble beaches and rocks: the Marine City welcomes animals from the coasts and oceans. Chatty sea lions, torpedo penguins, fishing pelicans: discover what makes each of them unique."
           }
         }
       }
@@ -314,6 +334,21 @@
         "region": "Region of the world",
         "climat": "Climate",
         "paysage": "Landscape"
+      },
+      "habitants": {
+        "origine": "Origin",
+        "regime": "Diet",
+        "effectif": "At the park",
+        "effectifValeur": "{n} animal | {n} animals",
+        "saviezVous": "Did you know?",
+        "voir": "See their enclosure",
+        "recherche": "Search for a resident",
+        "rechercheExemple": "An animal, e.g. panda",
+        "resultats": "No residents found | 1 resident found | {n} residents found",
+        "aucun": "No resident matches “{recherche}”. Try another name!",
+        "erreur": "We can't show the residents right now. Please try again in a moment.",
+        "effacer": "Clear search",
+        "pagination": "Animal pages"
       }
     },
     "enclos": {
@@ -351,7 +386,626 @@
     "alpagas": "Alpacas",
     "capybaras": "Capybaras",
     "phoques": "Seals",
-    "pelicans": "Pelicans"
+    "pelicans": "Pelicans",
+    "hippopotames": "Hippos",
+    "gnous": "Wildebeest",
+    "phacocheres": "Warthogs",
+    "babouins": "Baboons",
+    "oryx": "Oryx",
+    "servals": "Servals",
+    "calaos": "Hornbills",
+    "marabouts": "Marabou storks",
+    "springboks": "Springboks",
+    "tortues-sillonnees": "Sulcata tortoises",
+    "leopards": "Leopards",
+    "pantheres-des-neiges": "Snow leopards",
+    "caracals": "Caracals",
+    "chimpanzes": "Chimpanzees",
+    "mandrills": "Mandrills",
+    "ours-malais": "Sun bears",
+    "dholes": "Dholes",
+    "fennecs": "Fennec foxes",
+    "chacals": "Jackals",
+    "pantheres-nebuleuses": "Clouded leopards",
+    "orangs-outans": "Orangutans",
+    "dragons-de-komodo": "Komodo dragons",
+    "paons": "Peafowl",
+    "tapirs-malais": "Malayan tapirs",
+    "entelles": "Hanuman langurs",
+    "loris": "Lorises",
+    "pythons": "Pythons",
+    "nasiques": "Proboscis monkeys",
+    "gavials": "Gharials",
+    "gaurs": "Gaurs",
+    "jaguars": "Jaguars",
+    "tamanoirs": "Giant anteaters",
+    "paresseux": "Sloths",
+    "tatous": "Armadillos",
+    "toucans": "Toucans",
+    "condors": "Andean condors",
+    "vigognes": "Vicuñas",
+    "nandous": "Rheas",
+    "tamarins": "Tamarins",
+    "loups-a-criniere": "Maned wolves",
+    "tortues-marines": "Sea turtles",
+    "requins": "Sharks",
+    "raies": "Rays",
+    "meduses": "Jellyfish",
+    "poissons-clowns": "Clownfish",
+    "loutres-de-mer": "Sea otters",
+    "macareux": "Puffins",
+    "morses": "Walruses",
+    "hippocampes": "Seahorses",
+    "pieuvres": "Octopuses"
+  },
+  "especesFiches": {
+    "suricates": {
+      "texte": "While the colony digs its burrows, one of them always stands on its hind legs to watch the sky. Our mascots have a different call for every danger.",
+      "origine": "Kalahari Desert, southern Africa",
+      "regime": "Insects, scorpions and small lizards",
+      "anecdote": "Meerkats are immune to some scorpion venoms, and adults teach the young to remove the sting before eating.",
+      "vedette": "At the park, the colony has a large heated sand burrow to dig in as much as they like. Come in the morning, when the whole gang comes out to sunbathe, tummies turned towards the rays."
+    },
+    "elephants": {
+      "texte": "Led by the matriarch, the family moves as one and greets each other trunk to trunk. Their daily dust bath is quite a show.",
+      "origine": "Savannahs of East Africa",
+      "regime": "Grass, leaves, fruit and bark",
+      "anecdote": "An elephant can eat up to 150 kg of plants a day and drink almost 200 litres of water.",
+      "vedette": "Their enclosure stretches around a large pool where they splash and bathe as soon as the sun comes out. In late morning, keepers scatter fresh branches: the perfect time to watch them at work."
+    },
+    "girafes": {
+      "texte": "Standing 5 metres tall, they spot anything that moves on the savannah. Their 45 cm blue tongue grabs the highest acacia leaves.",
+      "origine": "Savannahs of eastern and southern Africa",
+      "regime": "Acacia leaves and buds",
+      "anecdote": "A giraffe sleeps only 30 minutes to 2 hours a day, often in short naps standing up.",
+      "vedette": "At the park, their feeders are set up high to match the way they naturally eat. From the walkway, you'll see them almost eye to eye."
+    },
+    "zebres": {
+      "texte": "No two zebras share the same stripes: it's their fingerprint. Foals recognise their mother by her pattern.",
+      "origine": "Plains of eastern and southern Africa",
+      "regime": "Savannah grasses",
+      "anecdote": "Their stripes seem to confuse biting flies, which struggle to land on a striped coat.",
+      "vedette": "They share the great plain with the giraffes, just like on the savannah. Watch the herd closely: everyone has their rank, and the foals never leave their mother's side."
+    },
+    "rhinoceros": {
+      "texte": "Over two tonnes of calm who swear by their mud bath, a natural sunscreen. Their eyesight is poor, but they never forget a smell.",
+      "origine": "Savannahs of southern Africa",
+      "regime": "Short grass and small shrubs",
+      "anecdote": "Their horn is made of keratin, the same material as our nails and hair.",
+      "vedette": "Their enclosure has several mud wallows kept up by the keepers. They love being brushed, which is also a gentle way to check on their health."
+    },
+    "lemuriens": {
+      "texte": "Every morning the troop sits arms wide open facing the sun to warm up. Their long striped tail works as a rallying flag.",
+      "origine": "Dry forests of Madagascar",
+      "regime": "Fruit, leaves and flowers",
+      "anecdote": "Lemurs live in the wild only in Madagascar and nowhere else on the planet.",
+      "vedette": "At the park, the troop lives on a wooded island surrounded by water, with no fences. Don't be surprised to see them leaping from tree to tree right above the path."
+    },
+    "autruches": {
+      "texte": "The world's largest bird can't fly, but races at 70 km/h on just two toes. Its eye is bigger than its brain.",
+      "origine": "Savannahs and drylands of Africa",
+      "regime": "Plants, seeds and small insects",
+      "anecdote": "The ostrich egg, the largest in the world, weighs as much as about twenty hen's eggs.",
+      "vedette": "Their large sandy run gives them plenty of room for a sprint. Come close to the fence: they're very curious and will probably come over to look at you."
+    },
+    "lions": {
+      "texte": "The pride spends up to 20 hours a day resting in the shade. The male's roar carries over 8 kilometres; you can sometimes hear it from the entrance.",
+      "origine": "Sub-Saharan African savannahs",
+      "regime": "Meat",
+      "anecdote": "Lionesses do most of the hunting, as a team and with a real encircling strategy.",
+      "vedette": "The pride has its favourite heated rocks, from which it watches over the whole territory. Best time to see them active? Late in the day, when the heat drops."
+    },
+    "tigres": {
+      "texte": "Unlike other big cats, our tigers love water and dive in as soon as it gets warm. Their stripes go all the way down to their skin.",
+      "origine": "Forests of South and Southeast Asia",
+      "regime": "Meat",
+      "anecdote": "The tiger is the largest cat in the world: some males are over 3 metres long.",
+      "vedette": "Their wooded enclosure has a large pool where they come to cool off. With a little patience at the viewing window, you might see them dive just a few metres away."
+    },
+    "guepards": {
+      "texte": "From 0 to 100 km/h in three seconds, but only over short distances. The black tear marks under their eyes cut the glare.",
+      "origine": "Savannahs of eastern and southern Africa",
+      "regime": "Meat",
+      "anecdote": "Unlike other big cats, cheetahs can't roar: they meow, purr and make little chirping sounds.",
+      "vedette": "At the park, they have a long grassy track to stretch their legs. Don't miss their feeding time, one of the highlights of the day."
+    },
+    "gorilles": {
+      "texte": "A calm, watchful family guided by an imposing silverback. Every evening they build a brand-new nest for the night.",
+      "origine": "Rainforests of Central Africa",
+      "regime": "Leaves, stems, fruit and shoots",
+      "anecdote": "Gorillas share about 98% of their DNA with us.",
+      "vedette": "The family lives in a large planted space with ropes, hammocks and a heated shelter. Keepers hide fruit and vegetables there to keep them busy and curious."
+    },
+    "hyenes": {
+      "texte": "Far more organised than their reputation: females lead the clan. Their famous laugh is mostly a way of talking.",
+      "origine": "Sub-Saharan African savannahs",
+      "regime": "Meat",
+      "anecdote": "The spotted hyena has one of the most powerful jaws in the animal kingdom, strong enough to crush bone.",
+      "vedette": "Their enclosure is designed for a clan, with several dens and lookout points. Listen carefully: their calls often ring out in the early evening."
+    },
+    "lycaons": {
+      "texte": "Each dog has a unique spotted coat, and the pack shares absolutely everything, starting with meals. They even vote to set off by sneezing.",
+      "origine": "Savannahs of southern and East Africa",
+      "regime": "Meat",
+      "anecdote": "The African wild dog is one of Africa's most efficient hunters: nearly 8 hunts out of 10 succeed.",
+      "vedette": "The pack lives on a large hilly area where it always moves as one. It's one of Africa's most endangered species, and the park takes part in its conservation."
+    },
+    "pandas-geants": {
+      "texte": "They spend almost half their day munching bamboo, sitting as if in an armchair. A false thumb helps them hold every stalk.",
+      "origine": "Mountain forests of central China",
+      "regime": "Bamboo, almost exclusively",
+      "anecdote": "A giant panda eats between 12 and 38 kg of bamboo a day to meet its needs.",
+      "vedette": "At the park, their bamboo is delivered fresh several times a week. Each has its own space, with climbing frames, a pool and a cool corner for hot days."
+    },
+    "pandas-roux": {
+      "texte": "Closer to raccoons than to giant pandas, they live their whole life in the branches. Their bushy tail doubles as a winter scarf.",
+      "origine": "Himalayan forests",
+      "regime": "Bamboo, fruit and berries",
+      "anecdote": "The red panda was named 'panda' fifty years before the giant panda.",
+      "vedette": "Look up as you walk through their enclosure: they like to rest at the very top of the branches. They're most active in the morning and late afternoon."
+    },
+    "loutres": {
+      "texte": "Always on the move, they juggle pebbles and hold hands to sleep in the water. A real bundle of energy.",
+      "origine": "Rivers and mangroves of Southeast Asia",
+      "regime": "Fish, crabs and shellfish",
+      "anecdote": "An otter can have up to 100,000 hairs per square centimetre, the densest fur in the animal kingdom.",
+      "vedette": "Their gently flowing river runs right through the enclosure, with a window to watch them underwater. Children love watching them slide around."
+    },
+    "gibbons": {
+      "texte": "Every morning the pair sings a duet that echoes throughout the temple. They swing from branch to branch without ever touching the ground.",
+      "origine": "Rainforests of Southeast Asia",
+      "regime": "Fruit, leaves and insects",
+      "anecdote": "A gibbon can cover 10 metres in a single leap while swinging from branch to branch.",
+      "vedette": "They live on a tree-covered island fitted with long vines for swinging. Arrive early to hear their song, which marks the start of the day at the Temple."
+    },
+    "binturongs": {
+      "texte": "Half cat, half bear, they sleep by day and hang on to branches with their tail. Their surprising scent smells like warm popcorn.",
+      "origine": "Rainforests of Southeast Asia",
+      "regime": "Fruit, figs and small animals",
+      "anecdote": "Binturongs help forests grow by spreading the seeds of the figs they eat.",
+      "vedette": "They spend the day dozing high up in their tropical enclosure. Come closer quietly: their popcorn scent often gives them away."
+    },
+    "muntjacs": {
+      "texte": "These little deer slip through the undergrowth and bark like dogs to sound the alarm. Keep your eyes peeled to spot them.",
+      "origine": "Forests of South and East Asia",
+      "regime": "Leaves, fruit and shoots",
+      "anecdote": "Male muntjacs have small antlers and two long canines that stick out from their lip.",
+      "vedette": "Their dense undergrowth offers plenty of hiding places, just like their native forest. A real treasure hunt for sharp-eyed visitors!"
+    },
+    "lamas": {
+      "texte": "Curious and a little chatty, they talk to each other with soft humming. In the Andes, they have carried loads for centuries.",
+      "origine": "High plateaus of the Andes",
+      "regime": "Grass and hay",
+      "anecdote": "Llamas spit to defend themselves, but mostly at each other, rarely at humans.",
+      "vedette": "Their sloping enclosure recalls the Andes, with a view of the Chartreuse mountains. They're perfectly at home in our cool winters."
+    },
+    "alpagas": {
+      "texte": "Their wool, among the softest in the world, keeps out the cold of the peaks. Smaller than llamas, they always live in groups.",
+      "origine": "High plateaus of the Andes",
+      "regime": "Grass and hay",
+      "anecdote": "Alpacas use a shared 'toilet spot', which makes the keepers' job much easier.",
+      "vedette": "They share the high ground with the llamas. Every spring, keepers shear them to keep them comfortable before the hot weather."
+    },
+    "tapirs": {
+      "texte": "Their small trunk-like nose works as a snorkel when they swim. Calves are born striped and spotted, like watermelons.",
+      "origine": "Rainforests of South America",
+      "regime": "Leaves, fruit and water plants",
+      "anecdote": "Tapirs have been around for over 20 million years with hardly any change in appearance.",
+      "vedette": "Their pool is deep enough for proper dives. Keepers often give them floating fruit, much to their delight."
+    },
+    "capybaras": {
+      "texte": "The world's largest rodents spend hours in the water, completely unbothered. Other animals happily settle down next to them.",
+      "origine": "Wetlands of South America",
+      "regime": "Grass and water plants",
+      "anecdote": "Capybaras can stay underwater for up to 5 minutes to escape danger.",
+      "vedette": "They live by a large pond that they happily share with the birds. Watching them doze in the water, eyes half closed, is pure relaxation."
+    },
+    "saimiris": {
+      "texte": "Lively, curious little monkeys that always move as a group, passing on the news with high-pitched calls.",
+      "origine": "Amazon rainforest",
+      "regime": "Fruit, insects and nectar",
+      "anecdote": "Squirrel monkeys live in groups that can number several dozen individuals.",
+      "vedette": "Their tropical aviary is a real playground, with ropes and tangled branches. There's always something going on."
+    },
+    "flamants": {
+      "texte": "Their bright pink comes from the tiny shrimp they filter from the water. They sleep standing on one leg without ever losing their balance.",
+      "origine": "Lagoons of South America",
+      "regime": "Tiny shrimp and algae",
+      "anecdote": "Flamingos eat upside down, filtering water through their curved beak.",
+      "vedette": "The colony lives on a shallow lagoon in the heart of the Inca Trail. In spring, don't miss their courtship parades, when the whole flock marches in step."
+    },
+    "aras": {
+      "texte": "Dazzling feathers, a beak that cracks the toughest nuts and a voice that carries through the forest. Pairs stay together for life.",
+      "origine": "Rainforests of South America",
+      "regime": "Seeds, nuts and fruit",
+      "anecdote": "Some macaws can live for more than 60 years.",
+      "vedette": "They live in a large aviary where they can fly freely. They're very chatty too, so listen out!"
+    },
+    "otaries": {
+      "texte": "Nimble in the water and on the rocks, they walk on their flippers and never stop talking. Their small ears set them apart from seals.",
+      "origine": "Pacific coasts",
+      "regime": "Fish and squid",
+      "anecdote": "Sea lions can turn their hind flippers under their body to walk, something seals can't do.",
+      "vedette": "Their large seawater pool has rocks and a beach. Medical training sessions with the keepers are open to the public: a special moment you shouldn't miss."
+    },
+    "phoques": {
+      "texte": "They bask in the sun between dives and can hold their breath for half an hour. On land, they wriggle along like caterpillars.",
+      "origine": "North Atlantic coasts",
+      "regime": "Fish and crustaceans",
+      "anecdote": "A seal's whiskers are so sensitive they can detect the wake of a fish in the water.",
+      "vedette": "They share the Marine City with the sea lions, but in a pool of their own. Watch them through the underwater window: that's where they're at their most graceful."
+    },
+    "dauphins": {
+      "texte": "Playful and very social, they recognise each other by a unique whistle, like a name. They only ever sleep with half their brain.",
+      "origine": "Temperate and tropical seas",
+      "regime": "Fish and squid",
+      "anecdote": "Dolphins find their way using echolocation: they 'see' with sound.",
+      "vedette": "Their deep lagoon lets them swim, leap and play at their own pace. Keepers offer them new games every day to keep them curious."
+    },
+    "manchots": {
+      "texte": "Clumsy on land, they turn into rockets underwater. Each pair finds the other in the middle of the colony by its call.",
+      "origine": "Coasts of southern Africa",
+      "regime": "Fish and small crustaceans",
+      "anecdote": "Underwater, African penguins can swim at almost 20 km/h.",
+      "vedette": "Their pebble beach overlooks a clear-water pool. At mealtime, the whole colony rushes towards the keepers: an irresistible sight."
+    },
+    "pelicans": {
+      "texte": "Their big pouched bill can hold more water than their stomach. They fish as a team, herding the fish in a single move.",
+      "origine": "Lakes and coasts of Europe and Africa",
+      "regime": "Fish",
+      "anecdote": "A pelican's pouch can hold up to 11 litres of water.",
+      "vedette": "They live on a large stretch of water where they catch their fish. Watch them spread their wings, nearly 3 metres across!"
+    },
+    "hippopotames": {
+      "texte": "They spend the day underwater and only come out to graze at nightfall. Their spectacular yawn is mostly a way of standing their ground.",
+      "origine": "Rivers and lakes of sub-Saharan Africa",
+      "regime": "Grass",
+      "anecdote": "Their skin secretes a reddish fluid that works as a natural sunscreen.",
+      "vedette": "At the park, their heated pool has a window to watch them underwater, where they walk more than they swim."
+    },
+    "gnous": {
+      "texte": "Bearded and a little gangly, they live in a close-knit herd. In the wild, they travel thousands of kilometres every year.",
+      "origine": "Plains of East Africa",
+      "regime": "Short grass",
+      "anecdote": "A wildebeest calf stands within minutes of birth and runs with the herd within the hour.",
+      "vedette": "They share the great plain with the zebras, their migration companions on the savannah."
+    },
+    "phacocheres": {
+      "texte": "They graze on their knees, resting on calluses that protect their front legs. When they run, their tail sticks straight up like an antenna.",
+      "origine": "Sub-Saharan African savannahs",
+      "regime": "Grass, roots and bulbs",
+      "anecdote": "The 'warts' on their head are actually skin pads that protect their eyes during fights.",
+      "vedette": "Their sandy enclosure is full of burrows, which they back into, tusks facing out."
+    },
+    "babouins": {
+      "texte": "A noisy, highly organised troop where everyone knows their place. Grooming each other takes up a good part of their day.",
+      "origine": "Savannahs and hills of Africa",
+      "regime": "Fruit, seeds, roots and insects",
+      "anecdote": "Baboons use more than thirty different calls to communicate.",
+      "vedette": "Their rocky hill offers plenty of perches: look up, the lookout is never far away."
+    },
+    "oryx": {
+      "texte": "Their long straight horns and black-and-white mask make them unforgettable. They can bear extreme heat without drinking for days.",
+      "origine": "Deserts of southern Africa",
+      "regime": "Dry grass and desert plants",
+      "anecdote": "Oryx can let their body temperature rise to save the water they would lose by sweating.",
+      "vedette": "They live in the driest part of the Bush Trail, among sand and rocks."
+    },
+    "servals": {
+      "texte": "With their huge ears, they can hear a rodent moving under the grass. Their vertical leap can top 3 metres.",
+      "origine": "Wet savannahs of Africa",
+      "regime": "Meat (rodents and birds)",
+      "anecdote": "Servals have the longest legs of any cat relative to their size.",
+      "vedette": "Their tall-grass enclosure lets them practise their famous hunting pounce."
+    },
+    "calaos": {
+      "texte": "The casque on top of their beak gives them a prehistoric look. They often move along the ground in little hops.",
+      "origine": "Savannahs of southern Africa",
+      "regime": "Insects, small reptiles and fruit",
+      "anecdote": "In some hornbill species, the female seals herself into the nest and the male feeds her through a slit.",
+      "vedette": "They live in an aviary near the meerkats, with whom they get along well in the wild."
+    },
+    "marabouts": {
+      "texte": "These bald-headed waders are the savannah's clean-up crew. Their stern look hides very sociable birds.",
+      "origine": "Wetlands of Africa",
+      "regime": "Fish, small animals and carrion",
+      "anecdote": "Their wingspan can reach 3 metres, one of the largest of any bird.",
+      "vedette": "They stroll along the watering hole, often standing still like statues."
+    },
+    "springboks": {
+      "texte": "These small gazelles bounce on the spot, back arched and legs stiff, as if on springs. Quite a show when the group gets excited.",
+      "origine": "Arid plains of southern Africa",
+      "regime": "Grass, leaves and flowers",
+      "anecdote": "Their leaps can reach 2 metres high: it's called 'pronking'.",
+      "vedette": "They share the plain with the zebras and wildebeest, and love a morning run."
+    },
+    "tortues-sillonnees": {
+      "texte": "Africa's largest mainland tortoise can weigh over 80 kg. It digs deep burrows to escape the heat.",
+      "origine": "Sahel, south of the Sahara",
+      "regime": "Grass and dry plants",
+      "anecdote": "A sulcata tortoise can live for more than 80 years.",
+      "vedette": "At the park, they have a heated shelter and come out for a stroll as soon as the sun is strong."
+    },
+    "leopards": {
+      "texte": "Stealthy and powerful, they haul their prey up into trees to keep it safe. Every leopard has unique rosettes.",
+      "origine": "Sub-Saharan Africa and Asia",
+      "regime": "Meat",
+      "anecdote": "A leopard can carry prey heavier than itself up a tree.",
+      "vedette": "Look up in their wooded enclosure: they spend a lot of time lying on the branches."
+    },
+    "pantheres-des-neiges": {
+      "texte": "Ghosts of the mountains, they wrap themselves in their long thick tail to keep warm. They can't roar.",
+      "origine": "Mountains of Central Asia",
+      "regime": "Meat",
+      "anecdote": "Their broad furry paws work like snowshoes.",
+      "vedette": "Their steep rocky enclosure recalls the peaks: Chartreuse winters suit them perfectly."
+    },
+    "caracals": {
+      "texte": "Recognisable by the long black tufts on their ears, they are exceptional jumpers.",
+      "origine": "Africa and the Middle East",
+      "regime": "Meat (birds and small mammals)",
+      "anecdote": "A caracal can catch a bird in flight with a 3-metre leap.",
+      "vedette": "Their dry, rocky enclosure is dotted with high lookout posts."
+    },
+    "chimpanzes": {
+      "texte": "Our closest cousins use tools, make up with a hug and laugh when they play.",
+      "origine": "Forests of Central and West Africa",
+      "regime": "Fruit, leaves, insects",
+      "anecdote": "Chimpanzees use twigs to 'fish' termites out of their nest.",
+      "vedette": "The community lives on a large wooded island with ropes and nets. Keepers hide puzzles there to solve for treats."
+    },
+    "mandrills": {
+      "texte": "The most colourful primate has a red and blue face, all the brighter when the male is dominant.",
+      "origine": "Rainforests of Central Africa",
+      "regime": "Fruit, seeds, insects",
+      "anecdote": "A male's colours fade if he loses his rank in the group.",
+      "vedette": "Their group lives in a dense forest where they forage on the ground for food."
+    },
+    "ours-malais": {
+      "texte": "The smallest bear has a 25 cm tongue to reach honey and termites. It wears a golden patch on its chest.",
+      "origine": "Rainforests of Southeast Asia",
+      "regime": "Insects, honey, fruit",
+      "anecdote": "Every sun bear's chest patch is different, like a signature.",
+      "vedette": "They happily climb the trees in their enclosure and nap in a hammock."
+    },
+    "dholes": {
+      "texte": "These red-coated wild dogs of Asia communicate by whistling. The pack lets the young eat first.",
+      "origine": "Forests of South and East Asia",
+      "regime": "Meat",
+      "anecdote": "They're nicknamed 'whistling dogs' because of their calls.",
+      "vedette": "They live as a pack on wooded, hilly ground, always on the move."
+    },
+    "fennecs": {
+      "texte": "The world's smallest fox has the largest ears for its size. They help it hear and keep cool.",
+      "origine": "Sahara Desert",
+      "regime": "Insects, small rodents, fruit",
+      "anecdote": "Fennec foxes can go without drinking: they get water from their food.",
+      "vedette": "Their warm sandy enclosure lets them dig burrows with several entrances."
+    },
+    "chacals": {
+      "texte": "Loyal to their partner for life, they raise their pups with help from older siblings.",
+      "origine": "East and southern Africa",
+      "regime": "Small animals, fruit, carrion",
+      "anecdote": "Black-backed jackals are named after the dark saddle on their back.",
+      "vedette": "They share the big cats' savannah, at a safe distance from the lions."
+    },
+    "pantheres-nebuleuses": {
+      "texte": "They have the longest canines of any cat relative to their size. Their large spots look like clouds.",
+      "origine": "Forests of Southeast Asia",
+      "regime": "Meat",
+      "anecdote": "They can climb down a tree head first thanks to very flexible ankles.",
+      "vedette": "Their densely planted enclosure is mostly vertical: they live in the trees."
+    },
+    "orangs-outans": {
+      "texte": "Thoughtful red giants, they build a leafy nest every evening. Youngsters stay with their mother until they're 8.",
+      "origine": "Forests of Borneo and Sumatra",
+      "regime": "Fruit, leaves, bark",
+      "anecdote": "Their name comes from Malay and means 'person of the forest'.",
+      "vedette": "Their large covered space offers vines and high platforms, just like the canopy."
+    },
+    "dragons-de-komodo": {
+      "texte": "The world's largest lizard can be over 2.5 metres long. It 'tastes' the air with its forked tongue.",
+      "origine": "Komodo Islands, Indonesia",
+      "regime": "Meat",
+      "anecdote": "Females can lay viable eggs without a male.",
+      "vedette": "Their heated enclosure recreates the warmth of their islands: they love basking under the lamps."
+    },
+    "paons": {
+      "texte": "The male fans out over 150 eye-spotted feathers to win a mate. The peahens do the choosing.",
+      "origine": "Forests of India and Sri Lanka",
+      "regime": "Seeds, insects, small reptiles",
+      "anecdote": "Peacocks shed their long feathers every year and grow a full new set.",
+      "vedette": "They roam freely around the Temple, so don't be surprised to meet one on the path."
+    },
+    "tapirs-malais": {
+      "texte": "Their black and white coat makes them invisible in the forest at night. They are excellent swimmers.",
+      "origine": "Forests of Southeast Asia",
+      "regime": "Leaves, fruit, shoots",
+      "anecdote": "Calves are born striped and spotted, then get their two-tone coat at around 6 months.",
+      "vedette": "They live by a shady pool where they spend much of the day."
+    },
+    "entelles": {
+      "texte": "These grey monkeys with black faces are sacred in India. They live in close-knit troops.",
+      "origine": "India and Nepal",
+      "regime": "Leaves, fruit, flowers",
+      "anecdote": "Their multi-chambered stomach lets them digest leaves that would poison other animals.",
+      "vedette": "Their rocky, wooded enclosure recalls the temple ruins where they're seen in India."
+    },
+    "loris": {
+      "texte": "Small nocturnal primates with huge round eyes, they move with surprising slowness.",
+      "origine": "Forests of Southeast Asia",
+      "regime": "Insects, sap, fruit",
+      "anecdote": "The slow loris is one of the few venomous primates: a gland on its elbow produces the venom.",
+      "vedette": "You'll find them in the Temple's night house, where the lighting is reversed so you can see them active."
+    },
+    "pythons": {
+      "texte": "These large non-venomous snakes ambush and constrict their prey. They can go months without eating.",
+      "origine": "South and Southeast Asia",
+      "regime": "Meat (small mammals and birds)",
+      "anecdote": "Pythons sense the heat of their prey through pits along their lips.",
+      "vedette": "Their tropical terrarium is kept at 30 °C, with a pool they like to slip into."
+    },
+    "nasiques": {
+      "texte": "The male has an enormous nose that amplifies his calls. They're also strong swimmers with webbed feet.",
+      "origine": "Mangroves of Borneo",
+      "regime": "Leaves, seeds, unripe fruit",
+      "anecdote": "The bigger the male's nose, the more attractive he is to females.",
+      "vedette": "Their enclosure borders a river: they don't hesitate to dive in from the branches."
+    },
+    "gavials": {
+      "texte": "Their very slender snout, lined with about a hundred teeth, is built to snap up fish with a flick of the head.",
+      "origine": "Rivers of India and Nepal",
+      "regime": "Fish",
+      "anecdote": "Males have a bulb on the tip of their snout called a 'ghara', after an Indian pot.",
+      "vedette": "They live in the Temple's large pool and bask on the bank in late morning."
+    },
+    "gaurs": {
+      "texte": "The world's largest wild cattle can weigh over a tonne. Despite its size, it's rather shy.",
+      "origine": "Forests of India and Southeast Asia",
+      "regime": "Grass, leaves, shoots",
+      "anecdote": "Their legs look as if they're wearing white socks.",
+      "vedette": "They live in a bamboo-fringed clearing at the entrance to the Temple."
+    },
+    "jaguars": {
+      "texte": "The largest cat in the Americas has the most powerful bite of all. It happily swims and hunts in water.",
+      "origine": "Forests of Central and South America",
+      "regime": "Meat and fish",
+      "anecdote": "Jaguar rosettes often have a small dot in the middle, unlike a leopard's.",
+      "vedette": "Their rainforest enclosure is crossed by a river where they come to fish and cool off."
+    },
+    "tamanoirs": {
+      "texte": "This anteater has no teeth but a 60 cm tongue, which it flicks out up to 150 times a minute.",
+      "origine": "Grasslands and forests of South America",
+      "regime": "Ants and termites",
+      "anecdote": "A giant anteater can swallow up to 35,000 ants a day.",
+      "vedette": "They roam their enclosure sniffing every corner: keepers hide stocked termite mounds there."
+    },
+    "paresseux": {
+      "texte": "Champions of slowness, they sleep up to 15 hours a day upside down. Algae sometimes grow in their fur.",
+      "origine": "Rainforests of South America",
+      "regime": "Leaves, flowers, fruit",
+      "anecdote": "A sloth only comes down from its tree about once a week, to go to the toilet.",
+      "vedette": "They live in the tropical greenhouse, hanging just above visitors: look for them in the branches."
+    },
+    "tatous": {
+      "texte": "Protected by a jointed shell, they're tireless diggers with a keen sense of smell.",
+      "origine": "South America",
+      "regime": "Insects, larvae, fruit",
+      "anecdote": "The three-banded armadillo can roll into a perfect ball to protect itself.",
+      "vedette": "Their sandy enclosure is full of tunnels; they're most active late in the day."
+    },
+    "toucans": {
+      "texte": "Their huge, colourful bill is surprisingly light. They use it to pick fruit at the tips of branches.",
+      "origine": "Rainforests of South America",
+      "regime": "Fruit, insects, small animals",
+      "anecdote": "Their bill helps regulate their body temperature, like a radiator.",
+      "vedette": "They fly freely in the tropical greenhouse, among the macaws and squirrel monkeys."
+    },
+    "condors": {
+      "texte": "With a wingspan of over 3 metres, they soar for hours above the peaks without flapping once.",
+      "origine": "Andes mountains",
+      "regime": "Carrion",
+      "anecdote": "Andean condors can live for more than 70 years.",
+      "vedette": "Their huge high aviary looks out over the Chartreuse: you'll often see them with wings spread in the sun."
+    },
+    "vigognes": {
+      "texte": "The wild ancestors of alpacas have one of the finest wools in the world.",
+      "origine": "High plateaus of the Andes",
+      "regime": "Grass",
+      "anecdote": "In Inca times, only the royal family could wear vicuña wool.",
+      "vedette": "They share the heights of the Trail with the llamas and alpacas."
+    },
+    "nandous": {
+      "texte": "South American cousins of the ostrich, they can't fly but run very fast in zigzags.",
+      "origine": "Pampas of South America",
+      "regime": "Plants, seeds, insects",
+      "anecdote": "The male rhea incubates the eggs and raises the chicks on his own.",
+      "vedette": "They roam the Trail's big meadow, often alongside the capybaras."
+    },
+    "tamarins": {
+      "texte": "These tiny monkeys with white moustaches live in families where everyone carries the babies.",
+      "origine": "Amazon rainforest",
+      "regime": "Fruit, insects, nectar",
+      "anecdote": "Tamarins very often give birth to twins.",
+      "vedette": "Their planted aviary is full of thin branches where they dart about at full speed."
+    },
+    "loups-a-criniere": {
+      "texte": "Perched on very long legs, they look like foxes on stilts. They live alone.",
+      "origine": "Grasslands of South America",
+      "regime": "Fruit, small animals",
+      "anecdote": "More than half their diet is fruit, especially the 'wolf apple'.",
+      "vedette": "They roam their tall-grass meadow mostly at dusk."
+    },
+    "tortues-marines": {
+      "texte": "They travel thousands of kilometres across the oceans and return to lay eggs on the beach where they hatched.",
+      "origine": "Tropical seas",
+      "regime": "Jellyfish, seaweed, crustaceans",
+      "anecdote": "The temperature of the sand decides whether baby turtles are male or female.",
+      "vedette": "Ours were rescued after injuries; they live in the large pool and take part in care programmes."
+    },
+    "requins": {
+      "texte": "Far from the clichés, they are discreet animals, essential to the health of the oceans.",
+      "origine": "Coral reefs",
+      "regime": "Fish",
+      "anecdote": "A shark replaces its teeth throughout its life and can go through thousands.",
+      "vedette": "They glide through the big aquarium, which you cross through a glass tunnel."
+    },
+    "raies": {
+      "texte": "They 'fly' underwater by rippling their large fins. Some hide under the sand with only their eyes showing.",
+      "origine": "Warm and temperate seas",
+      "regime": "Shellfish, crustaceans, small fish",
+      "anecdote": "Rays sense the electric field of prey hidden under the sand.",
+      "vedette": "Their shallow touch pool lets you see them up close, with a keeper."
+    },
+    "meduses": {
+      "texte": "With no brain or heart, they've been around for over 500 million years. Their hypnotic dance is quite a sight.",
+      "origine": "All oceans",
+      "regime": "Plankton",
+      "anecdote": "Some jellyfish can reverse their ageing and start their life cycle again.",
+      "vedette": "They drift in softly lit round tanks in the heart of the Marine City."
+    },
+    "poissons-clowns": {
+      "texte": "They live sheltered in sea anemones, whose mucus protects them from stings. Each anemone is home to a small family.",
+      "origine": "Reefs of the Indian Ocean and Pacific",
+      "regime": "Plankton, algae",
+      "anecdote": "All clownfish are born male; the largest of the group can become female.",
+      "vedette": "Their recreated reef is bursting with colour: children always stop there."
+    },
+    "loutres-de-mer": {
+      "texte": "They float on their backs, crack shellfish on their tummy with a stone and sleep holding hands.",
+      "origine": "North Pacific coasts",
+      "regime": "Sea urchins, crabs, shellfish",
+      "anecdote": "Each sea otter keeps its favourite stone in a pouch of skin under its arm.",
+      "vedette": "Their cold-water pool has rocks and an underwater window."
+    },
+    "macareux": {
+      "texte": "With their multicoloured bill, they're nicknamed 'sea parrots'. They fly and swim with equal ease.",
+      "origine": "North Atlantic",
+      "regime": "Small fish",
+      "anecdote": "A puffin can hold more than ten fish in its bill at once.",
+      "vedette": "Their recreated cliff overlooks a cold-water pool where they dive for fish."
+    },
+    "morses": {
+      "texte": "They use their long tusks to haul themselves onto the ice. Their sensitive whiskers find shellfish on the seabed.",
+      "origine": "Arctic",
+      "regime": "Shellfish, worms, crustaceans",
+      "anecdote": "A walrus can eat more than 3,000 shellfish in a single meal.",
+      "vedette": "They have the coldest pool in the Marine City and love ice-cold showers."
+    },
+    "hippocampes": {
+      "texte": "These horse-headed fish swim upright and cling to seaweed with their tail.",
+      "origine": "Seagrass beds of temperate seas",
+      "regime": "Small crustaceans",
+      "anecdote": "In seahorses, it's the male who carries the eggs and gives birth.",
+      "vedette": "They live in small seagrass tanks, at children's eye level."
+    },
+    "pieuvres": {
+      "texte": "With three hearts and blue blood, they change colour in an instant. They're also escape champions.",
+      "origine": "Temperate seas",
+      "regime": "Crabs, shellfish",
+      "anecdote": "Two thirds of an octopus's neurons are in its arms.",
+      "vedette": "Their tank is full of hiding places and toys: keepers give them jars to open."
+    }
   },
   "footer": {
     "description": "In the heart of the Chartreuse mountains, our meerkats and all their friends welcome you in enclosures designed for their well-being. A zoo to enjoy as a family, with free activities every day.",
@@ -378,5 +1032,10 @@
     "retour": "Back to home",
     "titreAutre": "A small cave-in in the burrow",
     "texteAutre": "A technical hiccup is stopping this page from loading. Please try again shortly."
+  },
+  "pagination": {
+    "page": "Page",
+    "precedente": "Previous",
+    "suivante": "Next"
   }
 }

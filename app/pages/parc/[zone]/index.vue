@@ -29,14 +29,15 @@ useSeoMeta({
       :image="zone.hero?.image ?? zone.image"
       :alt="zone.hero ? zone.altHero : zone.alt"
       :position="zone.hero?.position"
-      :fond="zone.fond"
     >
       <UiButton :to="localePath('/parc')" couleur="terracotta" taille="xl">
         {{ $t("parc.zone.retour") }}
       </UiButton>
     </LayoutSemiHero>
-    <LazyParcZoneMilieuNaturel
-      v-bind="zone.milieuNaturel"
+    <LazyParcZoneMilieuNaturel v-bind="zone.milieuNaturel" hydrate-on-visible />
+    <LazyParcZoneHabitants
+      :zone="zone.slug"
+      v-bind="zone.habitantsSection"
       hydrate-on-visible
     />
   </main>

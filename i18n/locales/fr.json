@@ -239,6 +239,10 @@
             "region": "Afrique de l'Est et australe, jusqu'à l'île de Madagascar.",
             "climat": "Chaud et sec, avec de courtes saisons des pluies qui font reverdir la plaine.",
             "paysage": "Plaines herbeuses, acacias en parasol, termitières et points d'eau."
+          },
+          "habitantsSection": {
+            "titre": "Les animaux du Chemin de Brousse",
+            "texte": "Sous les acacias du Chemin de Brousse, chaque espèce a son caractère, ses habitudes et son coin préféré. Suricates en sentinelle, éléphants en famille, girafes en vigie : faites connaissance avec ceux qui font vivre la savane du Domaine des Suricates, en Chartreuse."
           }
         },
         "territoire-des-fauves": {
@@ -255,6 +259,10 @@
             "region": "Savanes d'Afrique, forêts d'Afrique centrale et jungles d'Asie du Sud.",
             "climat": "Tropical, avec une saison sèche et une saison des pluies bien marquées.",
             "paysage": "Hautes herbes, amas de rochers et lisières de forêt dense."
+          },
+          "habitantsSection": {
+            "titre": "Les animaux du Territoire des Fauves",
+            "texte": "Au Territoire des Fauves, les grands prédateurs d'Afrique et d'Asie vivent dans de vastes enclos pensés pour leur bien-être. Lions paresseux, tigres nageurs, hyènes bien organisées : chacun a sa façon d'occuper son territoire."
           }
         },
         "temple-de-la-jungle": {
@@ -271,6 +279,10 @@
             "region": "Montagnes du centre de la Chine, Himalaya et Asie du Sud-Est.",
             "climat": "Frais et humide en altitude, chaud et pluvieux dans les vallées.",
             "paysage": "Forêts de bambous, ruisseaux de montagne et canopée épaisse."
+          },
+          "habitantsSection": {
+            "titre": "Les animaux du Temple de la Jungle",
+            "texte": "Entre bambous et ruines envahies par la végétation, le Temple de la Jungle accueille des espèces d'Asie aussi discrètes qu'étonnantes. Pandas gourmands, gibbons chanteurs, binturongs au parfum de pop-corn : partez à leur rencontre."
           }
         },
         "sentier-des-incas": {
@@ -287,6 +299,10 @@
             "region": "Amérique du Sud, de la cordillère des Andes au bassin amazonien.",
             "climat": "Froid et sec en altitude, chaud et très humide en Amazonie.",
             "paysage": "Hauts plateaux, lagunes peu profondes et forêt tropicale."
+          },
+          "habitantsSection": {
+            "titre": "Les animaux du Sentier des Incas",
+            "texte": "Des sommets des Andes aux lagunes d'Amazonie, le Sentier des Incas réunit les animaux d'Amérique du Sud. Lamas bavards, capybaras imperturbables, aras éclatants : chacun apporte sa touche au voyage."
           }
         },
         "cite-marine": {
@@ -303,6 +319,10 @@
             "region": "Côtes du Pacifique et de l'Atlantique, des eaux tempérées aux mers froides.",
             "climat": "Océanique et frais, avec une eau froide toute l'année.",
             "paysage": "Côtes rocheuses, plages de galets et pleine mer."
+          },
+          "habitantsSection": {
+            "titre": "Les animaux de la Cité Marine",
+            "texte": "Bassins, plages de galets et rochers : la Cité Marine accueille les animaux des côtes et des océans. Otaries bavardes, manchots torpilles, pélicans pêcheurs : découvrez ce qui rend chacun d'eux unique."
           }
         }
       }
@@ -314,6 +334,21 @@
         "region": "Région du monde",
         "climat": "Climat",
         "paysage": "Paysage"
+      },
+      "habitants": {
+        "origine": "Origine",
+        "regime": "Régime",
+        "effectif": "Au Domaine",
+        "effectifValeur": "{n} individu | {n} individus",
+        "saviezVous": "Le saviez-vous ?",
+        "voir": "Voir leur enclos",
+        "recherche": "Rechercher un habitant",
+        "rechercheExemple": "Un animal, ex. : panda",
+        "resultats": "Aucun habitant trouvé | 1 habitant trouvé | {n} habitants trouvés",
+        "aucun": "Aucun habitant ne correspond à « {recherche} ». Essayez un autre nom !",
+        "erreur": "Impossible d'afficher les habitants pour le moment. Réessayez dans un instant.",
+        "effacer": "Effacer la recherche",
+        "pagination": "Pages des animaux"
       }
     },
     "enclos": {
@@ -351,7 +386,626 @@
     "alpagas": "Alpagas",
     "capybaras": "Capybaras",
     "phoques": "Phoques",
-    "pelicans": "Pélicans"
+    "pelicans": "Pélicans",
+    "hippopotames": "Hippopotames",
+    "gnous": "Gnous",
+    "phacocheres": "Phacochères",
+    "babouins": "Babouins",
+    "oryx": "Oryx",
+    "servals": "Servals",
+    "calaos": "Calaos",
+    "marabouts": "Marabouts",
+    "springboks": "Springboks",
+    "tortues-sillonnees": "Tortues sillonnées",
+    "leopards": "Léopards",
+    "pantheres-des-neiges": "Panthères des neiges",
+    "caracals": "Caracals",
+    "chimpanzes": "Chimpanzés",
+    "mandrills": "Mandrills",
+    "ours-malais": "Ours malais",
+    "dholes": "Dholes",
+    "fennecs": "Fennecs",
+    "chacals": "Chacals",
+    "pantheres-nebuleuses": "Panthères nébuleuses",
+    "orangs-outans": "Orangs-outans",
+    "dragons-de-komodo": "Dragons de Komodo",
+    "paons": "Paons",
+    "tapirs-malais": "Tapirs malais",
+    "entelles": "Entelles",
+    "loris": "Loris",
+    "pythons": "Pythons",
+    "nasiques": "Nasiques",
+    "gavials": "Gavials",
+    "gaurs": "Gaurs",
+    "jaguars": "Jaguars",
+    "tamanoirs": "Tamanoirs",
+    "paresseux": "Paresseux",
+    "tatous": "Tatous",
+    "toucans": "Toucans",
+    "condors": "Condors des Andes",
+    "vigognes": "Vigognes",
+    "nandous": "Nandous",
+    "tamarins": "Tamarins",
+    "loups-a-criniere": "Loups à crinière",
+    "tortues-marines": "Tortues marines",
+    "requins": "Requins",
+    "raies": "Raies",
+    "meduses": "Méduses",
+    "poissons-clowns": "Poissons-clowns",
+    "loutres-de-mer": "Loutres de mer",
+    "macareux": "Macareux",
+    "morses": "Morses",
+    "hippocampes": "Hippocampes",
+    "pieuvres": "Pieuvres"
+  },
+  "especesFiches": {
+    "suricates": {
+      "texte": "Pendant que la colonie creuse ses galeries, l'une d'elles se dresse toujours sur ses pattes arrière pour surveiller le ciel. Nos mascottes ont un cri différent pour chaque danger.",
+      "origine": "Désert du Kalahari, Afrique australe",
+      "regime": "Insectes, scorpions et petits lézards",
+      "anecdote": "Les suricates sont immunisés contre certains venins de scorpion, et les adultes apprennent aux petits à retirer le dard avant de manger.",
+      "vedette": "Au Domaine, la colonie dispose d'un grand terrier de sable chauffé où creuser à volonté. Venez les voir le matin, quand toute la bande sort se dorer au soleil, le ventre tourné vers les rayons."
+    },
+    "elephants": {
+      "texte": "Menée par la doyenne, la famille se déplace d'un même pas et se salue trompe contre trompe. Leur bain de poussière quotidien est un vrai spectacle.",
+      "origine": "Savanes d'Afrique de l'Est",
+      "regime": "Herbes, feuillages, fruits et écorces",
+      "anecdote": "Un éléphant peut manger jusqu'à 150 kg de végétaux par jour et boire près de 200 litres d'eau.",
+      "vedette": "Leur enclos s'étend autour d'un grand bassin où ils s'aspergent et se baignent dès les beaux jours. En fin de matinée, les soigneurs dispersent les branchages : le moment idéal pour les voir à l'œuvre."
+    },
+    "girafes": {
+      "texte": "Du haut de leurs 5 mètres, elles repèrent tout ce qui bouge dans la savane. Leur langue bleue de 45 cm attrape les feuilles d'acacia les plus hautes.",
+      "origine": "Savanes d'Afrique de l'Est et australe",
+      "regime": "Feuilles d'acacia et bourgeons",
+      "anecdote": "Une girafe ne dort que 30 minutes à 2 heures par jour, souvent par petites siestes debout.",
+      "vedette": "Au Domaine, leurs mangeoires sont installées en hauteur pour respecter leur façon naturelle de se nourrir. Depuis la passerelle, vous les verrez presque les yeux dans les yeux."
+    },
+    "zebres": {
+      "texte": "Aucun zèbre ne porte les mêmes rayures que son voisin : c'est leur empreinte digitale. Les petits reconnaissent leur mère à son motif.",
+      "origine": "Plaines d'Afrique de l'Est et australe",
+      "regime": "Herbes de la savane",
+      "anecdote": "Les rayures perturberaient les mouches piqueuses, qui ont du mal à se poser sur un pelage rayé.",
+      "vedette": "Ils partagent la grande plaine avec les girafes, comme dans la savane. Observez bien le troupeau : chacun a son rang, et les petits ne quittent jamais leur mère d'une semelle."
+    },
+    "rhinoceros": {
+      "texte": "Plus de deux tonnes de douceur qui ne jurent que par leur bain de boue, leur crème solaire naturelle. Ils voient mal, mais n'oublient jamais une odeur.",
+      "origine": "Savanes d'Afrique australe",
+      "regime": "Herbes rases et petits arbustes",
+      "anecdote": "Leur corne est faite de kératine, la même matière que nos ongles et nos cheveux.",
+      "vedette": "Leur enclos compte plusieurs mares de boue entretenues par les soigneurs. Ils adorent les séances de brossage, qui servent aussi à vérifier leur santé en douceur."
+    },
+    "lemuriens": {
+      "texte": "Chaque matin, la troupe s'assoit bras ouverts face au soleil pour se réchauffer. Leur longue queue rayée leur sert de drapeau de ralliement.",
+      "origine": "Forêts sèches de Madagascar",
+      "regime": "Fruits, feuilles et fleurs",
+      "anecdote": "Les lémuriens n'existent à l'état sauvage qu'à Madagascar, nulle part ailleurs sur la planète.",
+      "vedette": "Au Domaine, la troupe vit sur une île boisée entourée d'eau, sans grillage. Ne soyez pas surpris de les voir bondir d'arbre en arbre juste au-dessus du chemin."
+    },
+    "autruches": {
+      "texte": "Le plus grand oiseau du monde ne vole pas, mais file à 70 km/h sur ses deux doigts. Son œil est plus gros que son cerveau.",
+      "origine": "Savanes et zones arides d'Afrique",
+      "regime": "Plantes, graines et petits insectes",
+      "anecdote": "L'œuf d'autruche, le plus gros du monde, pèse autant qu'une vingtaine d'œufs de poule.",
+      "vedette": "Leur grand parcours de sable leur laisse toute la place pour piquer un sprint. Approchez-vous de la clôture : elles sont très curieuses et viendront sûrement vous observer."
+    },
+    "lions": {
+      "texte": "La troupe passe jusqu'à 20 heures par jour à se reposer à l'ombre. Le rugissement du mâle porte à plus de 8 kilomètres, on l'entend parfois depuis l'entrée.",
+      "origine": "Savanes d'Afrique subsaharienne",
+      "regime": "Viande",
+      "anecdote": "Ce sont les lionnes qui chassent le plus souvent, en équipe et avec une vraie stratégie d'encerclement.",
+      "vedette": "La troupe a ses rochers chauffants préférés, d'où elle surveille tout le territoire. Le meilleur moment pour les voir actifs ? En fin de journée, quand la chaleur retombe."
+    },
+    "tigres": {
+      "texte": "Contrairement aux autres félins, nos tigres adorent l'eau et y plongent dès qu'il fait chaud. Leurs rayures continuent jusque sur leur peau.",
+      "origine": "Forêts d'Asie du Sud et du Sud-Est",
+      "regime": "Viande",
+      "anecdote": "Le tigre est le plus grand félin du monde : certains mâles dépassent les 3 mètres de long.",
+      "vedette": "Leur enclos boisé abrite un grand bassin où ils viennent se rafraîchir. Avec un peu de patience à la baie vitrée, vous les verrez peut-être plonger à quelques mètres de vous."
+    },
+    "guepards": {
+      "texte": "De 0 à 100 km/h en trois secondes, mais seulement sur de courtes distances. Les larmes noires sous leurs yeux les protègent de l'éblouissement.",
+      "origine": "Savanes d'Afrique de l'Est et australe",
+      "regime": "Viande",
+      "anecdote": "Contrairement aux autres félins, le guépard ne rugit pas : il miaule, ronronne et pousse de petits gazouillis.",
+      "vedette": "Au Domaine, ils disposent d'une longue piste en herbe pour se dégourdir les pattes. Ne manquez pas leur nourrissage, l'un des moments forts de la journée."
+    },
+    "gorilles": {
+      "texte": "Une famille calme et attentive, guidée par un imposant dos argenté. Chaque soir, ils se fabriquent un nid tout neuf pour la nuit.",
+      "origine": "Forêts tropicales d'Afrique centrale",
+      "regime": "Feuilles, tiges, fruits et pousses",
+      "anecdote": "Les gorilles partagent environ 98 % de leur ADN avec nous.",
+      "vedette": "La famille vit dans un grand espace végétalisé avec cordes, hamacs et abri chauffé. Les soigneurs y cachent fruits et légumes pour les occuper et stimuler leur curiosité."
+    },
+    "hyenes": {
+      "texte": "Bien plus organisées que leur réputation : chez elles, ce sont les femelles qui dirigent le clan. Leur fameux rire sert surtout à se parler.",
+      "origine": "Savanes d'Afrique subsaharienne",
+      "regime": "Viande",
+      "anecdote": "La hyène tachetée a l'une des mâchoires les plus puissantes du règne animal, capable de briser les os.",
+      "vedette": "Leur enclos est pensé pour un clan, avec plusieurs tanières et des points d'observation. Écoutez bien : leurs appels résonnent souvent en début de soirée."
+    },
+    "lycaons": {
+      "texte": "Chaque chien a un pelage tacheté unique, et la meute partage absolument tout, à commencer par les repas. Ils votent même le départ en éternuant.",
+      "origine": "Savanes d'Afrique australe et de l'Est",
+      "regime": "Viande",
+      "anecdote": "Le lycaon est l'un des chasseurs les plus efficaces d'Afrique : près de 8 chasses sur 10 réussissent.",
+      "vedette": "La meute vit sur un vaste terrain vallonné où elle se déplace toujours ensemble. C'est l'une des espèces les plus menacées d'Afrique, et le Domaine participe à sa sauvegarde."
+    },
+    "pandas-geants": {
+      "texte": "Ils passent près de la moitié de leur journée à grignoter du bambou, assis comme dans un fauteuil. Un faux pouce les aide à tenir chaque tige.",
+      "origine": "Forêts de montagne du centre de la Chine",
+      "regime": "Bambou, presque exclusivement",
+      "anecdote": "Un panda géant mange entre 12 et 38 kg de bambou par jour pour couvrir ses besoins.",
+      "vedette": "Au Domaine, leur bambou est livré frais plusieurs fois par semaine. Ils ont chacun leur espace, avec grimpoirs, bassin et coin fraîcheur pour les jours chauds."
+    },
+    "pandas-roux": {
+      "texte": "Plus proches des ratons laveurs que des pandas géants, ils passent leur vie dans les branches. Leur queue touffue leur sert d'écharpe en hiver.",
+      "origine": "Forêts de l'Himalaya",
+      "regime": "Bambou, fruits et baies",
+      "anecdote": "Le panda roux a été baptisé « panda » cinquante ans avant le panda géant.",
+      "vedette": "Levez les yeux en traversant leur enclos : ils aiment se reposer tout en haut des branches. Ils sont plus actifs le matin et en fin d'après-midi."
+    },
+    "loutres": {
+      "texte": "Toujours en mouvement, elles jonglent avec des galets et se tiennent par la main pour dormir dans l'eau. Un vrai concentré d'énergie.",
+      "origine": "Rivières et mangroves d'Asie du Sud-Est",
+      "regime": "Poissons, crabes et coquillages",
+      "anecdote": "Une loutre possède jusqu'à 100 000 poils par centimètre carré, la fourrure la plus dense du monde animal.",
+      "vedette": "Leur rivière à courant doux traverse tout l'enclos, avec une vitre pour les admirer sous l'eau. Les enfants adorent les regarder faire des glissades."
+    },
+    "gibbons": {
+      "texte": "Chaque matin, le couple entonne un duo qui résonne dans tout le temple. Ils se balancent de branche en branche sans jamais toucher le sol.",
+      "origine": "Forêts tropicales d'Asie du Sud-Est",
+      "regime": "Fruits, feuilles et insectes",
+      "anecdote": "Un gibbon peut franchir 10 mètres d'un seul bond en se balançant de branche en branche.",
+      "vedette": "Ils vivent sur une île arborée équipée de longues lianes pour se balancer. Arrivez tôt pour entendre leur chant, qui marque le début de la journée au Temple."
+    },
+    "binturongs": {
+      "texte": "Mi-chat, mi-ours, ils dorment le jour et s'accrochent aux branches avec leur queue. Leur odeur étonnante rappelle le pop-corn chaud.",
+      "origine": "Forêts tropicales d'Asie du Sud-Est",
+      "regime": "Fruits, figues et petits animaux",
+      "anecdote": "Le binturong aide les forêts à pousser : il disperse les graines des figues qu'il mange.",
+      "vedette": "Ils passent la journée à somnoler dans les hauteurs de leur enclos tropical. Approchez-vous doucement : leur parfum de pop-corn trahit souvent leur présence."
+    },
+    "muntjacs": {
+      "texte": "Ces petits cerfs se faufilent dans les sous-bois et aboient comme des chiens pour donner l'alerte. Il faut souvent ouvrir l'œil pour les apercevoir.",
+      "origine": "Forêts d'Asie du Sud et de l'Est",
+      "regime": "Feuilles, fruits et pousses",
+      "anecdote": "Le mâle muntjac porte de petits bois et deux longues canines qui dépassent de sa lèvre.",
+      "vedette": "Leur sous-bois dense leur offre de nombreuses cachettes, comme dans leur forêt d'origine. Un vrai jeu de piste pour les observateurs attentifs !"
+    },
+    "lamas": {
+      "texte": "Curieux et un brin bavards, ils communiquent par de petits fredonnements. Dans les Andes, ils portent les charges depuis des siècles.",
+      "origine": "Hauts plateaux des Andes",
+      "regime": "Herbes et foin",
+      "anecdote": "Pour se défendre, le lama crache, mais il vise surtout ses congénères, rarement les humains.",
+      "vedette": "Leur enclos en pente rappelle les reliefs des Andes, avec vue sur les montagnes de Chartreuse. Ils sont très à l'aise avec nos hivers frais."
+    },
+    "alpagas": {
+      "texte": "Leur laine, l'une des plus douces au monde, les protège du froid des sommets. Plus petits que les lamas, ils vivent toujours en groupe.",
+      "origine": "Hauts plateaux des Andes",
+      "regime": "Herbes et foin",
+      "anecdote": "Les alpagas utilisent un « coin toilettes » commun, ce qui facilite beaucoup le travail des soigneurs.",
+      "vedette": "Ils partagent les hauteurs avec les lamas. Chaque printemps, les soigneurs les tondent pour les soulager avant les chaleurs."
+    },
+    "tapirs": {
+      "texte": "Leur nez en petite trompe leur sert de tuba quand ils se baignent. Les jeunes naissent rayés et tachetés, comme des pastèques.",
+      "origine": "Forêts tropicales d'Amérique du Sud",
+      "regime": "Feuilles, fruits et plantes aquatiques",
+      "anecdote": "Le tapir existe depuis plus de 20 millions d'années, presque sans avoir changé d'apparence.",
+      "vedette": "Leur bassin est assez profond pour de vraies plongées. Les soigneurs leur offrent souvent des fruits flottants, pour leur plus grand plaisir."
+    },
+    "capybaras": {
+      "texte": "Les plus grands rongeurs du monde passent des heures dans l'eau, imperturbables. Les autres animaux viennent volontiers se poser à côté d'eux.",
+      "origine": "Zones humides d'Amérique du Sud",
+      "regime": "Herbes et plantes aquatiques",
+      "anecdote": "Le capybara peut rester sous l'eau jusqu'à 5 minutes pour échapper à un danger.",
+      "vedette": "Ils vivent au bord d'un grand étang qu'ils partagent volontiers avec les oiseaux. Les voir somnoler dans l'eau, les yeux mi-clos, est un vrai moment de détente."
+    },
+    "saimiris": {
+      "texte": "De petits singes vifs et curieux qui se déplacent toujours en bande, en se faisant passer les nouvelles par de petits cris aigus.",
+      "origine": "Forêt amazonienne",
+      "regime": "Fruits, insectes et nectar",
+      "anecdote": "Les saïmiris vivent en groupes qui peuvent compter plusieurs dizaines d'individus.",
+      "vedette": "Leur volière tropicale est un véritable terrain de jeu, avec cordes et branches entrelacées. Il y a toujours quelque chose à voir chez eux."
+    },
+    "flamants": {
+      "texte": "Leur rose éclatant vient des petites crevettes qu'ils filtrent dans l'eau. Ils dorment perchés sur une patte, sans jamais perdre l'équilibre.",
+      "origine": "Lagunes d'Amérique du Sud",
+      "regime": "Petites crevettes et algues",
+      "anecdote": "Les flamants mangent la tête à l'envers, en filtrant l'eau avec leur bec courbé.",
+      "vedette": "La colonie vit sur une lagune peu profonde au cœur du Sentier des Incas. Au printemps, ne manquez pas leurs parades, quand toute la troupe marche au pas."
+    },
+    "aras": {
+      "texte": "Des plumes éclatantes, un bec capable de casser les noix les plus dures et une voix qui porte loin dans la forêt. Les couples restent unis toute leur vie.",
+      "origine": "Forêts tropicales d'Amérique du Sud",
+      "regime": "Graines, noix et fruits",
+      "anecdote": "Certains aras peuvent vivre plus de 60 ans.",
+      "vedette": "Ils occupent une grande volière où ils peuvent voler à leur aise. Ils sont aussi très bavards : tendez l'oreille !"
+    },
+    "otaries": {
+      "texte": "Agiles dans l'eau comme sur les rochers, elles marchent sur leurs nageoires et n'arrêtent pas de se parler. Leurs petites oreilles les distinguent des phoques.",
+      "origine": "Côtes du Pacifique",
+      "regime": "Poissons et calmars",
+      "anecdote": "L'otarie peut replier ses nageoires arrière sous son corps pour marcher, ce que le phoque ne sait pas faire.",
+      "vedette": "Leur grand bassin d'eau de mer est équipé de rochers et d'une plage. Les séances d'entraînement médical avec les soigneurs sont publiques : un moment de complicité à ne pas manquer."
+    },
+    "phoques": {
+      "texte": "Ils se prélassent au soleil entre deux plongées et peuvent retenir leur souffle une demi-heure. Sur terre, ils avancent en ondulant comme des chenilles.",
+      "origine": "Côtes de l'Atlantique Nord",
+      "regime": "Poissons et crustacés",
+      "anecdote": "Les moustaches du phoque sont si sensibles qu'elles détectent le sillage d'un poisson dans l'eau.",
+      "vedette": "Ils partagent la Cité Marine avec les otaries, mais dans un bassin à eux. Regardez-les par la vitre sous-marine : c'est là qu'ils sont les plus gracieux."
+    },
+    "dauphins": {
+      "texte": "Joueurs et très sociables, ils se reconnaissent grâce à un sifflement unique, comme un prénom. Ils ne dorment jamais que d'un demi-cerveau.",
+      "origine": "Mers tempérées et tropicales",
+      "regime": "Poissons et calmars",
+      "anecdote": "Les dauphins se repèrent grâce à l'écholocation : ils « voient » avec les sons.",
+      "vedette": "Leur lagon profond leur permet de nager, sauter et jouer à leur rythme. Les soigneurs leur proposent chaque jour des jeux pour stimuler leur curiosité."
+    },
+    "manchots": {
+      "texte": "Maladroits sur la terre ferme, ils deviennent des fusées une fois sous l'eau. Chaque couple se retrouve au milieu de la colonie grâce à son cri.",
+      "origine": "Côtes d'Afrique australe",
+      "regime": "Poissons et petits crustacés",
+      "anecdote": "Sous l'eau, le manchot du Cap peut nager à près de 20 km/h.",
+      "vedette": "Leur plage de galets surplombe un bassin aux eaux claires. À l'heure du repas, toute la colonie se précipite vers les soigneurs : un spectacle irrésistible."
+    },
+    "pelicans": {
+      "texte": "Leur grand bec à poche peut contenir plus d'eau que leur estomac. Ils pêchent en équipe, en rabattant les poissons d'un même mouvement.",
+      "origine": "Lacs et côtes d'Europe et d'Afrique",
+      "regime": "Poissons",
+      "anecdote": "La poche du pélican peut contenir jusqu'à 11 litres d'eau.",
+      "vedette": "Ils vivent sur un grand plan d'eau où ils pêchent leurs poissons. Observez-les déployer leurs ailes de près de 3 mètres d'envergure !"
+    },
+    "hippopotames": {
+      "texte": "Ils passent la journée immergés et ne sortent brouter qu'à la nuit tombée. Leur bâillement spectaculaire est surtout une façon d'affirmer leur place.",
+      "origine": "Fleuves et lacs d'Afrique subsaharienne",
+      "regime": "Herbes",
+      "anecdote": "Leur peau sécrète un liquide rougeâtre qui agit comme une crème solaire naturelle.",
+      "vedette": "Au Domaine, leur bassin chauffé est équipé d'une vitre pour les observer sous l'eau, où ils marchent plus qu'ils ne nagent."
+    },
+    "gnous": {
+      "texte": "Barbichus et un brin dégingandés, ils vivent en troupeau soudé. Dans la nature, ils parcourent des milliers de kilomètres chaque année.",
+      "origine": "Plaines d'Afrique de l'Est",
+      "regime": "Herbes rases",
+      "anecdote": "Un petit gnou tient debout quelques minutes après sa naissance et court avec le troupeau dans l'heure.",
+      "vedette": "Ils partagent la grande plaine avec les zèbres, leurs compagnons de migration dans la savane."
+    },
+    "phacocheres": {
+      "texte": "Ils broutent à genoux, posés sur des callosités qui protègent leurs pattes avant. Quand ils courent, leur queue se dresse comme une antenne.",
+      "origine": "Savanes d'Afrique subsaharienne",
+      "regime": "Herbes, racines et bulbes",
+      "anecdote": "Les verrues de leur tête sont en fait des bosses de peau qui protègent leurs yeux lors des combats.",
+      "vedette": "Leur enclos sablonneux est truffé de terriers où ils rentrent… à reculons, défenses vers l'extérieur."
+    },
+    "babouins": {
+      "texte": "Une troupe bruyante et très organisée, où chacun connaît sa place. Le toilettage mutuel occupe une bonne partie de leurs journées.",
+      "origine": "Savanes et collines d'Afrique",
+      "regime": "Fruits, graines, racines et insectes",
+      "anecdote": "Les babouins utilisent plus de trente cris différents pour communiquer.",
+      "vedette": "Leur colline rocheuse offre de nombreux perchoirs : levez les yeux, la vigie n'est jamais loin."
+    },
+    "oryx": {
+      "texte": "Leurs longues cornes droites et leur masque noir et blanc les rendent inoubliables. Ils supportent des chaleurs extrêmes sans boire pendant des jours.",
+      "origine": "Déserts d'Afrique australe",
+      "regime": "Herbes sèches et plantes du désert",
+      "anecdote": "L'oryx peut laisser monter sa température corporelle pour économiser l'eau qu'il perdrait en transpirant.",
+      "vedette": "Ils occupent la partie la plus sèche du Chemin de Brousse, entre sable et rochers."
+    },
+    "servals": {
+      "texte": "Avec leurs immenses oreilles, ils entendent un rongeur bouger sous les herbes. Leur bond vertical peut dépasser 3 mètres.",
+      "origine": "Savanes humides d'Afrique",
+      "regime": "Viande (rongeurs et oiseaux)",
+      "anecdote": "Le serval a les plus longues pattes de tous les félins, proportionnellement à sa taille.",
+      "vedette": "Leur enclos aux herbes hautes leur permet de pratiquer leur fameux saut de chasse."
+    },
+    "calaos": {
+      "texte": "Leur bec surmonté d'un casque leur donne une allure préhistorique. Ils se déplacent souvent au sol, à petits pas sautillants.",
+      "origine": "Savanes d'Afrique australe",
+      "regime": "Insectes, petits reptiles et fruits",
+      "anecdote": "Chez certains calaos, la femelle s'emmure dans le nid et le mâle la nourrit par une fente.",
+      "vedette": "Ils vivent en volière, près des suricates, avec qui ils font bon ménage dans la nature."
+    },
+    "marabouts": {
+      "texte": "Grands échassiers au crâne dégarni, ils jouent les nettoyeurs de la savane. Leur allure sévère cache des oiseaux très sociables.",
+      "origine": "Zones humides d'Afrique",
+      "regime": "Poissons, petits animaux et charognes",
+      "anecdote": "Leur envergure peut atteindre 3 mètres, l'une des plus grandes du monde des oiseaux.",
+      "vedette": "Ils déambulent au bord du point d'eau, souvent immobiles comme des statues."
+    },
+    "springboks": {
+      "texte": "Ces petites gazelles bondissent sur place, dos arqué et pattes raides, comme montées sur ressorts. Un vrai spectacle quand le groupe s'emballe.",
+      "origine": "Plaines arides d'Afrique australe",
+      "regime": "Herbes, feuilles et fleurs",
+      "anecdote": "Leurs bonds peuvent atteindre 2 mètres de haut : on appelle ça le « pronking ».",
+      "vedette": "Ils partagent la plaine avec les zèbres et les gnous, et adorent les courses du matin."
+    },
+    "tortues-sillonnees": {
+      "texte": "La plus grande tortue terrestre du continent africain peut dépasser 80 kg. Elle creuse de profonds terriers pour échapper à la chaleur.",
+      "origine": "Sahel, sud du Sahara",
+      "regime": "Herbes et plantes sèches",
+      "anecdote": "Une tortue sillonnée peut vivre plus de 80 ans.",
+      "vedette": "Au Domaine, elles disposent d'un abri chauffé et sortent se promener dès que le soleil tape."
+    },
+    "leopards": {
+      "texte": "Discrets et puissants, ils hissent leurs proies dans les arbres pour les mettre à l'abri. Chaque léopard a des rosettes uniques.",
+      "origine": "Afrique subsaharienne et Asie",
+      "regime": "Viande",
+      "anecdote": "Un léopard peut monter dans un arbre une proie plus lourde que lui.",
+      "vedette": "Levez les yeux dans leur enclos boisé : ils passent beaucoup de temps allongés sur les branches."
+    },
+    "pantheres-des-neiges": {
+      "texte": "Fantômes des montagnes, elles s'enroulent dans leur longue queue épaisse pour se tenir chaud. Elles ne rugissent pas.",
+      "origine": "Montagnes d'Asie centrale",
+      "regime": "Viande",
+      "anecdote": "Leurs larges pattes poilues fonctionnent comme des raquettes à neige.",
+      "vedette": "Leur enclos rocheux en pente leur rappelle les sommets : les hivers de Chartreuse leur conviennent à merveille."
+    },
+    "caracals": {
+      "texte": "Reconnaissables à leurs oreilles ornées de longs pinceaux noirs, ce sont des sauteurs exceptionnels.",
+      "origine": "Afrique et Moyen-Orient",
+      "regime": "Viande (oiseaux et petits mammifères)",
+      "anecdote": "Un caracal peut attraper un oiseau en plein vol d'un bond de 3 mètres.",
+      "vedette": "Leur enclos sec et rocailleux est parsemé de postes d'observation en hauteur."
+    },
+    "chimpanzes": {
+      "texte": "Nos plus proches cousins utilisent des outils, se réconcilient d'un câlin et rient quand ils jouent.",
+      "origine": "Forêts d'Afrique centrale et de l'Ouest",
+      "regime": "Fruits, feuilles, insectes",
+      "anecdote": "Les chimpanzés se servent de brindilles pour « pêcher » les termites dans leur nid.",
+      "vedette": "La communauté vit sur une grande île arborée avec cordes et filets. Les soigneurs y cachent des énigmes à résoudre pour obtenir des friandises."
+    },
+    "mandrills": {
+      "texte": "Le plus coloré des primates arbore un visage rouge et bleu, d'autant plus vif que le mâle est dominant.",
+      "origine": "Forêts tropicales d'Afrique centrale",
+      "regime": "Fruits, graines, insectes",
+      "anecdote": "Les couleurs du mâle pâlissent s'il perd son rang dans le groupe.",
+      "vedette": "Leur groupe occupe une forêt dense où ils fouillent le sol à la recherche de nourriture."
+    },
+    "ours-malais": {
+      "texte": "Le plus petit des ours a une langue de 25 cm pour attraper le miel et les termites. Il porte une tache dorée sur le torse.",
+      "origine": "Forêts tropicales d'Asie du Sud-Est",
+      "regime": "Insectes, miel, fruits",
+      "anecdote": "Chaque ours malais a une tache sur le poitrail différente, comme une signature.",
+      "vedette": "Ils grimpent volontiers aux arbres de leur enclos et y font la sieste dans un hamac."
+    },
+    "dholes": {
+      "texte": "Ces chiens sauvages d'Asie au pelage roux communiquent par des sifflements. La meute partage la nourriture avec les petits en priorité.",
+      "origine": "Forêts d'Asie du Sud et de l'Est",
+      "regime": "Viande",
+      "anecdote": "On les surnomme les « chiens siffleurs » à cause de leurs appels.",
+      "vedette": "Ils vivent en meute sur un terrain boisé et vallonné, toujours en mouvement."
+    },
+    "fennecs": {
+      "texte": "Le plus petit renard du monde a les plus grandes oreilles, proportionnellement. Elles lui servent à entendre et à se rafraîchir.",
+      "origine": "Désert du Sahara",
+      "regime": "Insectes, petits rongeurs, fruits",
+      "anecdote": "Le fennec peut se passer de boire : il trouve l'eau dans sa nourriture.",
+      "vedette": "Leur enclos de sable chaud leur permet de creuser des terriers à plusieurs entrées."
+    },
+    "chacals": {
+      "texte": "Fidèles en couple toute leur vie, ils élèvent leurs petits avec l'aide des aînés de la famille.",
+      "origine": "Afrique de l'Est et australe",
+      "regime": "Petits animaux, fruits, charognes",
+      "anecdote": "Les chacals à chabraque doivent leur nom à la tache sombre de leur dos, comme une selle.",
+      "vedette": "Ils partagent la savane des fauves, à distance prudente des lions."
+    },
+    "pantheres-nebuleuses": {
+      "texte": "Elles ont, proportionnellement, les plus longues canines de tous les félins. Leurs grandes taches ressemblent à des nuages.",
+      "origine": "Forêts d'Asie du Sud-Est",
+      "regime": "Viande",
+      "anecdote": "Elles peuvent descendre d'un arbre la tête la première grâce à des chevilles très souples.",
+      "vedette": "Leur enclos très végétalisé est surtout vertical : elles vivent dans les arbres."
+    },
+    "orangs-outans": {
+      "texte": "Grands rouquins pensifs, ils construisent chaque soir un nid de feuilles. Les petits restent avec leur mère jusqu'à 8 ans.",
+      "origine": "Forêts de Bornéo et Sumatra",
+      "regime": "Fruits, feuilles, écorces",
+      "anecdote": "Leur nom vient du malais et signifie « homme de la forêt ».",
+      "vedette": "Leur grand espace couvert leur offre lianes et plateformes en hauteur, comme la canopée."
+    },
+    "dragons-de-komodo": {
+      "texte": "Le plus grand lézard du monde peut dépasser 2,5 mètres. Il « goûte » l'air avec sa langue fourchue.",
+      "origine": "Îles de Komodo, Indonésie",
+      "regime": "Viande",
+      "anecdote": "Les femelles peuvent pondre des œufs viables sans mâle.",
+      "vedette": "Leur terrarium chauffé reproduit la chaleur de leurs îles : ils adorent se dorer sous les lampes."
+    },
+    "paons": {
+      "texte": "Le mâle déploie une roue de plus de 150 plumes ornées d'ocelles pour séduire. Les paonnes, elles, choisissent.",
+      "origine": "Forêts d'Inde et du Sri Lanka",
+      "regime": "Graines, insectes, petits reptiles",
+      "anecdote": "Les paons perdent leurs longues plumes chaque année et les refont en entier.",
+      "vedette": "Ils se promènent en liberté autour du Temple : ne soyez pas surpris d'en croiser un sur le chemin."
+    },
+    "tapirs-malais": {
+      "texte": "Leur robe noire et blanche les rend invisibles la nuit dans la forêt. Ce sont d'excellents nageurs.",
+      "origine": "Forêts d'Asie du Sud-Est",
+      "regime": "Feuilles, fruits, pousses",
+      "anecdote": "Les jeunes naissent rayés et tachetés, puis prennent leur robe bicolore vers 6 mois.",
+      "vedette": "Ils vivent près d'un bassin ombragé où ils passent une bonne partie de la journée."
+    },
+    "entelles": {
+      "texte": "Ces singes au visage noir encadré de gris sont sacrés en Inde. Ils vivent en troupes très soudées.",
+      "origine": "Inde et Népal",
+      "regime": "Feuilles, fruits, fleurs",
+      "anecdote": "Leur estomac en plusieurs poches leur permet de digérer des feuilles toxiques pour d'autres.",
+      "vedette": "Leur enclos rocheux et arboré évoque les ruines de temples où on les croise en Inde."
+    },
+    "loris": {
+      "texte": "Petits primates nocturnes aux immenses yeux ronds, ils se déplacent avec une lenteur étonnante.",
+      "origine": "Forêts d'Asie du Sud-Est",
+      "regime": "Insectes, sève, fruits",
+      "anecdote": "Le loris lent est l'un des rares primates venimeux : une glande au coude produit son venin.",
+      "vedette": "On les observe dans la maison nocturne du Temple, où l'éclairage est inversé pour les voir actifs."
+    },
+    "pythons": {
+      "texte": "Ces grands serpents non venimeux chassent à l'affût et étouffent leurs proies. Ils peuvent jeûner des mois.",
+      "origine": "Asie du Sud et du Sud-Est",
+      "regime": "Viande (petits mammifères et oiseaux)",
+      "anecdote": "Les pythons détectent la chaleur de leurs proies grâce à des fossettes sur leurs lèvres.",
+      "vedette": "Leur terrarium tropical est tenu à 30 °C, avec un bassin où ils aiment se glisser."
+    },
+    "nasiques": {
+      "texte": "Le mâle porte un nez démesuré qui amplifie ses cris. Ce sont aussi de très bons nageurs aux pieds palmés.",
+      "origine": "Mangroves de Bornéo",
+      "regime": "Feuilles, graines, fruits verts",
+      "anecdote": "Plus le nez du mâle est grand, plus il plaît aux femelles.",
+      "vedette": "Leur enclos borde une rivière : ils n'hésitent pas à plonger depuis les branches."
+    },
+    "gavials": {
+      "texte": "Leur museau très fin, garni d'une centaine de dents, est taillé pour attraper les poissons d'un coup de tête.",
+      "origine": "Rivières d'Inde et du Népal",
+      "regime": "Poissons",
+      "anecdote": "Le mâle porte au bout du museau une bosse appelée « ghara », du nom d'un pot indien.",
+      "vedette": "Ils vivent dans le grand bassin du Temple, et prennent le soleil sur la berge en fin de matinée."
+    },
+    "gaurs": {
+      "texte": "Le plus grand bovin sauvage du monde peut peser plus d'une tonne. Malgré sa carrure, il est plutôt timide.",
+      "origine": "Forêts d'Inde et d'Asie du Sud-Est",
+      "regime": "Herbes, feuilles, pousses",
+      "anecdote": "Leurs pattes semblent porter des chaussettes blanches.",
+      "vedette": "Ils occupent une clairière bordée de bambous à l'entrée du Temple."
+    },
+    "jaguars": {
+      "texte": "Le plus grand félin des Amériques a la morsure la plus puissante de tous. Il nage et chasse volontiers dans l'eau.",
+      "origine": "Forêts d'Amérique centrale et du Sud",
+      "regime": "Viande et poissons",
+      "anecdote": "Les rosettes du jaguar ont souvent un petit point au centre, contrairement à celles du léopard.",
+      "vedette": "Leur enclos de forêt humide est traversé par une rivière où ils viennent pêcher et se rafraîchir."
+    },
+    "tamanoirs": {
+      "texte": "Ce fourmilier géant n'a pas de dents mais une langue de 60 cm, qu'il sort jusqu'à 150 fois par minute.",
+      "origine": "Prairies et forêts d'Amérique du Sud",
+      "regime": "Fourmis et termites",
+      "anecdote": "Un tamanoir peut avaler jusqu'à 35 000 fourmis par jour.",
+      "vedette": "Ils arpentent leur enclos en reniflant chaque recoin : les soigneurs y cachent des termitières garnies."
+    },
+    "paresseux": {
+      "texte": "Champions de la lenteur, ils dorment jusqu'à 15 heures par jour la tête en bas. Des algues poussent parfois dans leur pelage.",
+      "origine": "Forêts tropicales d'Amérique du Sud",
+      "regime": "Feuilles, fleurs, fruits",
+      "anecdote": "Un paresseux ne descend de son arbre qu'environ une fois par semaine, pour faire ses besoins.",
+      "vedette": "Ils vivent dans la serre tropicale, suspendus juste au-dessus des visiteurs : cherchez-les dans les branches."
+    },
+    "tatous": {
+      "texte": "Protégés par une carapace articulée, ce sont des creuseurs infatigables au flair redoutable.",
+      "origine": "Amérique du Sud",
+      "regime": "Insectes, larves, fruits",
+      "anecdote": "Le tatou à trois bandes peut se rouler en boule parfaite pour se protéger.",
+      "vedette": "Leur enclos sablonneux est plein de galeries ; ils sont plus actifs en fin de journée."
+    },
+    "toucans": {
+      "texte": "Leur bec immense et coloré est étonnamment léger. Ils s'en servent pour cueillir les fruits au bout des branches.",
+      "origine": "Forêts tropicales d'Amérique du Sud",
+      "regime": "Fruits, insectes, petits animaux",
+      "anecdote": "Leur bec les aide à réguler leur température, comme un radiateur.",
+      "vedette": "Ils volent librement dans la serre tropicale, entre les aras et les saïmiris."
+    },
+    "condors": {
+      "texte": "Avec plus de 3 mètres d'envergure, ils planent des heures sans un battement d'ailes au-dessus des sommets.",
+      "origine": "Cordillère des Andes",
+      "regime": "Charognes",
+      "anecdote": "Le condor des Andes peut vivre plus de 70 ans.",
+      "vedette": "Leur immense volière en hauteur offre une vue sur la Chartreuse : on les voit souvent ailes déployées au soleil."
+    },
+    "vigognes": {
+      "texte": "Ancêtres sauvages des alpagas, elles portent l'une des laines les plus fines du monde.",
+      "origine": "Hauts plateaux des Andes",
+      "regime": "Herbes",
+      "anecdote": "Au temps des Incas, seule la famille royale pouvait porter des vêtements en laine de vigogne.",
+      "vedette": "Elles partagent les hauteurs du Sentier avec les lamas et les alpagas."
+    },
+    "nandous": {
+      "texte": "Cousins sud-américains de l'autruche, ils ne volent pas mais courent très vite en zigzag.",
+      "origine": "Pampas d'Amérique du Sud",
+      "regime": "Plantes, graines, insectes",
+      "anecdote": "C'est le mâle nandou qui couve les œufs et élève seul les petits.",
+      "vedette": "Ils arpentent la grande prairie du Sentier, souvent en compagnie des capybaras."
+    },
+    "tamarins": {
+      "texte": "Ces tout petits singes à moustache blanche vivent en familles où tout le monde porte les bébés.",
+      "origine": "Forêt amazonienne",
+      "regime": "Fruits, insectes, nectar",
+      "anecdote": "Les tamarins donnent très souvent naissance à des jumeaux.",
+      "vedette": "Leur volière végétalisée est pleine de branches fines où ils filent à toute vitesse."
+    },
+    "loups-a-criniere": {
+      "texte": "Perchés sur de très longues pattes, ils ressemblent à des renards montés sur échasses. Ils vivent en solitaire.",
+      "origine": "Prairies d'Amérique du Sud",
+      "regime": "Fruits, petits animaux",
+      "anecdote": "Plus de la moitié de leur alimentation est faite de fruits, notamment la « pomme du loup ».",
+      "vedette": "Ils parcourent leur prairie aux herbes hautes surtout au crépuscule."
+    },
+    "tortues-marines": {
+      "texte": "Elles parcourent des milliers de kilomètres dans les océans et reviennent pondre sur la plage où elles sont nées.",
+      "origine": "Mers tropicales",
+      "regime": "Méduses, algues, crustacés",
+      "anecdote": "La température du sable décide si les bébés tortues seront mâles ou femelles.",
+      "vedette": "Les nôtres, recueillies après des blessures, vivent dans le grand bassin et participent à des programmes de soins."
+    },
+    "requins": {
+      "texte": "Loin des clichés, ce sont des animaux discrets, essentiels à la santé des océans.",
+      "origine": "Récifs coralliens",
+      "regime": "Poissons",
+      "anecdote": "Un requin renouvelle ses dents toute sa vie : il peut en utiliser des milliers.",
+      "vedette": "Ils glissent dans le grand aquarium, que l'on traverse par un tunnel vitré."
+    },
+    "raies": {
+      "texte": "Elles volent sous l'eau en ondulant leurs grandes nageoires. Certaines se cachent sous le sable, seuls les yeux dépassent.",
+      "origine": "Mers chaudes et tempérées",
+      "regime": "Coquillages, crustacés, petits poissons",
+      "anecdote": "Les raies détectent le champ électrique de leurs proies cachées sous le sable.",
+      "vedette": "Leur bassin tactile peu profond permet de les voir de très près, accompagné d'un soigneur."
+    },
+    "meduses": {
+      "texte": "Sans cerveau ni cœur, elles existent depuis plus de 500 millions d'années. Leur danse hypnotique est un vrai spectacle.",
+      "origine": "Tous les océans",
+      "regime": "Plancton",
+      "anecdote": "Certaines méduses sont capables de rajeunir et de recommencer leur cycle de vie.",
+      "vedette": "Elles évoluent dans des aquariums ronds éclairés en douceur, au cœur de la Cité Marine."
+    },
+    "poissons-clowns": {
+      "texte": "Ils vivent à l'abri des anémones, dont le mucus les protège des piqûres. Chaque anémone abrite une petite famille.",
+      "origine": "Récifs de l'océan Indien et du Pacifique",
+      "regime": "Plancton, algues",
+      "anecdote": "Tous les poissons-clowns naissent mâles ; le plus grand du groupe peut devenir femelle.",
+      "vedette": "Leur récif reconstitué fourmille de couleurs : les enfants s'y arrêtent toujours."
+    },
+    "loutres-de-mer": {
+      "texte": "Elles flottent sur le dos, cassent les coquillages sur leur ventre avec un caillou et dorment main dans la main.",
+      "origine": "Côtes du Pacifique Nord",
+      "regime": "Oursins, crabes, coquillages",
+      "anecdote": "Chaque loutre de mer garde son caillou préféré dans un repli de peau sous son bras.",
+      "vedette": "Leur bassin d'eau froide est équipé de rochers et d'une vitre sous-marine."
+    },
+    "macareux": {
+      "texte": "Avec leur bec multicolore, on les surnomme les « perroquets de mer ». Ils volent et nagent avec la même aisance.",
+      "origine": "Atlantique Nord",
+      "regime": "Petits poissons",
+      "anecdote": "Un macareux peut tenir plus de dix poissons à la fois dans son bec.",
+      "vedette": "Leur falaise reconstituée domine un bassin d'eau froide où ils plongent à la recherche de poissons."
+    },
+    "morses": {
+      "texte": "Leurs longues défenses leur servent à se hisser sur la glace. Leurs moustaches sensibles repèrent les coquillages au fond.",
+      "origine": "Arctique",
+      "regime": "Coquillages, vers, crustacés",
+      "anecdote": "Un morse peut manger plus de 3 000 coquillages en un seul repas.",
+      "vedette": "Ils disposent du bassin le plus froid de la Cité Marine, et adorent les douches d'eau glacée."
+    },
+    "hippocampes": {
+      "texte": "Ces poissons à tête de cheval nagent à la verticale et s'accrochent aux algues avec leur queue.",
+      "origine": "Herbiers des mers tempérées",
+      "regime": "Petits crustacés",
+      "anecdote": "Chez les hippocampes, c'est le mâle qui porte les œufs et donne naissance.",
+      "vedette": "Ils vivent dans de petits aquariums d'herbiers, à hauteur d'enfant."
+    },
+    "pieuvres": {
+      "texte": "Avec trois cœurs et un sang bleu, elles changent de couleur en un instant. Ce sont aussi de vraies championnes d'évasion.",
+      "origine": "Mers tempérées",
+      "regime": "Crabes, coquillages",
+      "anecdote": "Les deux tiers des neurones d'une pieuvre se trouvent dans ses bras.",
+      "vedette": "Leur aquarium est rempli de cachettes et de jeux : les soigneurs lui proposent des bocaux à ouvrir."
+    }
   },
   "footer": {
     "description": "Au cœur de la Chartreuse, nos suricates et toute leur bande vous accueillent dans des enclos pensés pour leur bien-être. Un zoo à vivre en famille, avec des animations chaque jour en accès libre.",
@@ -378,5 +1032,10 @@
     "retour": "Retour à l’accueil",
     "titreAutre": "Petit éboulement dans le terrier",
     "texteAutre": "Un souci technique nous empêche d’afficher cette page. Réessayez dans un instant."
+  },
+  "pagination": {
+    "page": "Page",
+    "precedente": "Précédente",
+    "suivante": "Suivante"
   }
 }

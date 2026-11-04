@@ -18,6 +18,10 @@ export function useZones() {
         habitants: t(`${cle}.habitants`),
         alt: zone.image ? t(`${cle}.alt`) : undefined,
         altHero: zone.hero ? t(`${cle}.altHero`) : undefined,
+        habitantsSection: {
+          titre: t(`${cle}.habitantsSection.titre`),
+          texte: t(`${cle}.habitantsSection.texte`),
+        },
         milieuNaturel: {
           titre: t(`${cle}.milieuNaturel.titre`),
           texte: t(`${cle}.milieuNaturel.texte`),
