@@ -110,7 +110,8 @@
       "texte": "Les guépards à table, les pandas roux au goûter, les rapaces qui frôlent les gradins… Nos soigneurs vous embarquent dans le quotidien de leurs protégés. C'est gratuit, sans réservation : il suffit d'être là au bon moment.",
       "toutes": "Voir toutes les animations",
       "precedent": "Animation précédente",
-      "suivant": "Animation suivante"
+      "suivant": "Animation suivante",
+      "aucune": "Pas d'animation dans cette zone pour le moment : retrouvez tout le programme du parc ci-dessous."
     },
     "zones": {
       "titre": "Les cinq régions du monde à explorer",
@@ -203,6 +204,121 @@
         "titre": "La ferme pédagogique",
         "description": "En accès libre toute la journée, venez rencontrer chèvres, moutons et lapins, et apprendre à prendre soin d'eux.",
         "alt": "Des visiteurs se promènent entre les enclos et les chaumières de la ferme"
+      },
+      "reveil-suricates": {
+        "titre": "Le réveil des suricates",
+        "description": "Premières lueurs, premiers guetteurs : nos soigneurs racontent la vie bien organisée du clan pendant le petit-déjeuner.",
+        "alt": "Une famille de suricates aux aguets sur un tronc"
+      },
+      "gouter-girafes": {
+        "titre": "Le goûter des girafes",
+        "description": "Feuillages à hauteur de cou : découvrez comment nos girafes se servent avec leur langue de 50 cm.",
+        "alt": "Une soigneuse tend la main vers une girafe penchée au-dessus de la palissade"
+      },
+      "bain-elephants": {
+        "titre": "Le bain des éléphants",
+        "description": "Douche, boue et poussière : un moment de soin indispensable pour la peau des éléphants, et un vrai spectacle.",
+        "alt": "Un éléphanteau enroule sa trompe autour de celle d'un éléphant adulte, sur un sol de terre humide"
+      },
+      "soins-rhinoceros": {
+        "titre": "Les soins des rhinocéros",
+        "description": "Brossage, contrôle des pattes et friandises : nos soigneurs vous montrent l'entraînement médical des rhinocéros.",
+        "alt": "Une soigneuse caresse le museau d'un rhinocéros qui mâchouille des feuilles par-dessus la clôture en bois"
+      },
+      "sentinelles-kalahari": {
+        "titre": "Les sentinelles du Kalahari",
+        "description": "Un après-midi spécial pour tout savoir sur le tour de garde des suricates, avec jeux et quiz pour les enfants.",
+        "alt": "Un suricate dressé sur ses pattes arrière monte la garde sur une souche"
+      },
+      "repas-lions": {
+        "titre": "Le repas des lions",
+        "description": "Le roi de la savane passe à table : nos soigneurs expliquent le régime et les habitudes de la troupe.",
+        "alt": "Un lion à la crinière dorée allongé sur un rocher, au soleil"
+      },
+      "rencontre-tigres": {
+        "titre": "Rencontre avec les tigres",
+        "description": "Rayures uniques, nage et grandes siestes : tout ce qu'il faut savoir sur nos tigres, au bord de leur enclos.",
+        "alt": "Deux tigres se frottent la tête, allongés dans l'herbe"
+      },
+      "enrichissement-tigres": {
+        "titre": "Les jeux des tigres",
+        "description": "Cartons parfumés et cachettes : assistez à une séance d'enrichissement qui réveille l'instinct des tigres.",
+        "alt": "Un tigre assis au soleil devant un mur de pierre, le regard tourné au loin"
+      },
+      "coulisses-fauves": {
+        "titre": "Les coulisses des fauves",
+        "description": "Nos soigneurs ouvrent leur carnet de bord : santé, entraînement et vie quotidienne des grands félins.",
+        "alt": "Un lion à la crinière dorée allongé sur un rocher, au soleil"
+      },
+      "bambou-pandas-geants": {
+        "titre": "Le bambou des pandas géants",
+        "description": "Jusqu'à 14 heures de repas par jour : découvrez pourquoi nos pandas géants mangent presque sans s'arrêter.",
+        "alt": "Un panda géant croque une tige de bambou au milieu de la végétation"
+      },
+      "sieste-pandas": {
+        "titre": "La pause des pandas",
+        "description": "Entre deux repas, nos pandas se reposent : les soigneurs répondent à toutes vos questions sur ces géants tranquilles.",
+        "alt": "Un panda géant assis sur un tronc couché, entouré de feuillages"
+      },
+      "enrichissement-pandas-roux": {
+        "titre": "Les acrobaties des pandas roux",
+        "description": "Parcours en hauteur et friandises cachées : les pandas roux montrent leur agilité dans les arbres.",
+        "alt": "Un panda roux grignote du bambou, perché sur un tronc"
+      },
+      "fete-pandas": {
+        "titre": "La fête des pandas",
+        "description": "Gâteau de glace aux fruits et animations pour toute la famille : on célèbre nos pandas géants !",
+        "alt": "Un panda géant assis sur un tronc couché, entouré de feuillages"
+      },
+      "repas-capybaras": {
+        "titre": "Le repas des capybaras",
+        "description": "Herbe, légumes et beaucoup de calme : rencontrez les plus grands rongeurs du monde.",
+        "alt": "Un capybara et son petit assis côte à côte sur l'herbe, au soleil"
+      },
+      "bain-capybaras": {
+        "titre": "Les capybaras au bain",
+        "description": "Une séance spéciale au bord du bassin pour comprendre pourquoi les capybaras adorent l'eau.",
+        "alt": "Un capybara et son petit assis côte à côte sur l'herbe, au soleil"
+      },
+      "envol-aras": {
+        "titre": "Les oiseaux du sentier",
+        "description": "Aras, toucans et autres oiseaux colorés : nos soigneurs présentent les becs les plus étonnants du parc.",
+        "alt": "Un calao au grand bec jaune perché sur une branche, devant une palissade en bois"
+      },
+      "balade-lamas": {
+        "titre": "La balade des lamas",
+        "description": "Nos lamas et alpagas sortent se dégourdir les pattes dans les allées, en compagnie de leurs soigneurs.",
+        "alt": "Un capybara et son petit assis côte à côte sur l'herbe, au soleil"
+      },
+      "nourrissage-jaguars": {
+        "titre": "Le nourrissage des jaguars",
+        "description": "Puissance et discrétion : découvrez le plus grand félin d'Amérique au moment du repas.",
+        "alt": "Un calao au grand bec jaune perché sur une branche, devant une palissade en bois"
+      },
+      "spectacle-otaries": {
+        "titre": "Le bassin des otaries",
+        "description": "Plongeons, sauts et entraînement médical : nos otaries montrent tout ce qu'elles savent faire.",
+        "alt": "Trois otaries bondissent hors de l'eau devant les gradins remplis de spectateurs"
+      },
+      "repas-manchots": {
+        "titre": "Le repas des manchots",
+        "description": "Poissons distribués un par un : nos soigneurs savent exactement qui a mangé quoi dans la colonie.",
+        "alt": "Un groupe de manchots de Humboldt sur une plage de galets, au bord de l'eau"
+      },
+      "parade-manchots": {
+        "titre": "La parade des manchots",
+        "description": "Un rendez-vous exceptionnel : la colonie se promène sur la plage, au plus près des visiteurs.",
+        "alt": "Un groupe de manchots de Humboldt sur une plage de galets, au bord de l'eau"
+      },
+      "bassin-phoques": {
+        "titre": "Le goûter des phoques",
+        "description": "Phoques et otaries, quelle différence ? La réponse en direct au bord du bassin.",
+        "alt": "Trois otaries bondissent hors de l'eau devant les gradins remplis de spectateurs"
+      },
+      "secrets-requins": {
+        "titre": "Les secrets des requins",
+        "description": "Nos soigneurs plongent dans le grand bassin et démontent les idées reçues sur les requins.",
+        "alt": "Un groupe de manchots de Humboldt sur une plage de galets, au bord de l'eau"
       }
     }
   },
@@ -369,6 +485,10 @@
         "erreur": "Impossible d'afficher les habitants pour le moment. Réessayez dans un instant.",
         "effacer": "Effacer la recherche",
         "pagination": "Pages des animaux"
+      },
+      "animations": {
+        "titre": "Les rendez-vous de la zone",
+        "texte": "Nourrissages et rencontres avec les soigneurs, au pied des enclos. C'est gratuit et sans réservation : il suffit d'être là au bon moment."
       }
     },
     "enclos": {

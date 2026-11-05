@@ -2,55 +2,26 @@
 import { motion } from "motion-v";
 import { monterEnCascade } from "~/animations/apparitionBas";
 import { auDefilement } from "~/animations/auDefilement";
-import { ANIMATIONS, type AnimationVitrine } from "~/data/animations";
 
-const { t } = useI18n();
+const props = defineProps<{
+  especes?: string[];
+  titre?: string;
+  texte?: string;
+}>();
+
 const localePath = useLocalePath();
-const { formatHeure, formatDateHeure } = useFormatage();
 const titreId = useId();
-
-function horaire({ heure, dateHeure }: AnimationVitrine) {
-  if (dateHeure) {
-    const { date, dateCourte, heure } = formatDateHeure(dateHeure);
-    return {
-      complet: t("animations.horaire.ponctuel", { date, heure }),
-      court: t("animations.horaire.ponctuel", { date: dateCourte, heure }),
-    };
-  }
-  if (heure) {
-    return {
-      complet: t("animations.horaire.quotidien", { heure: formatHeure(heure) }),
-      court: formatHeure(heure),
-    };
-  }
-  return {
-    complet: t("animations.horaire.libre"),
-    court: t("animations.horaire.libreCourt"),
-  };
-}
-
-const animations = computed(() =>
-  ANIMATIONS.filter(
-    (a) =>
-      a.type === "FIXE" || (a.dateHeure && new Date(a.dateHeure) > new Date()),
-  ).map((a) => ({
-    slug: a.slug,
-    image: a.image,
-    lien: localePath(`/animations/${a.slug}`),
-    titre: t(`animations.liste.${a.slug}.titre`),
-    description: t(`animations.liste.${a.slug}.description`),
-    alt: t(`animations.liste.${a.slug}.alt`),
-    horaire: horaire(a),
-    exceptionnel: a.type === "PONCTUELLE",
-  })),
+const { animations } = useAnimations(
+  (a) => !props.especes || (!!a.enclos && props.especes.includes(a.enclos)),
 );
 </script>
 
 <template>
   <section
-    id="programme"
+    :id="especes ? undefined : 'programme'"
     :aria-labelledby="titreId"
-    class="relative overflow-x-clip px-6 py-20 sm:px-12 lg:py-28"
+    class="relative overflow-x-clip px-6 pb-20 sm:px-12 lg:pb-28"
+    :class="especes ? 'pt-4 lg:pt-6' : 'pt-20 lg:pt-28'"
   >
     <UiEmpreintes
       :pattes="2"
@@ -67,16 +38,17 @@ const animations = computed(() =>
         v-bind="auDefilement(monterEnCascade(0))"
         class="font-titre text-4xl leading-tight text-balance text-acacia sm:text-5xl"
       >
-        {{ $t("accueil.animations.titre") }}
+        {{ titre ?? $t("accueil.animations.titre") }}
       </motion.h2>
       <motion.p
         v-bind="auDefilement(monterEnCascade(1))"
         class="mx-auto mt-5 max-w-3xl leading-relaxed text-pretty sm:text-lg"
       >
-        {{ $t("accueil.animations.texte") }}
+        {{ texte ?? $t("accueil.animations.texte") }}
       </motion.p>
 
       <UiCarrousel
+        v-if="animations.length"
         :elements="animations"
         :cle="(a) => a.slug"
         :libelle-precedent="$t('accueil.animations.precedent')"
@@ -97,6 +69,9 @@ const animations = computed(() =>
           />
         </template>
       </UiCarrousel>
+      <p v-else class="mx-auto mt-10 max-w-2xl text-pretty text-galerie/80">
+        {{ $t("accueil.animations.aucune") }}
+      </p>
 
       <div class="mt-8 flex flex-wrap justify-center gap-4 sm:mt-6">
         <UiButton :to="localePath('/animations')" couleur="acacia">
