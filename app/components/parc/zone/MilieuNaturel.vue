@@ -31,7 +31,7 @@ const points = computed(() => [
 <template>
   <section
     :aria-labelledby="titreId"
-    class="relative overflow-x-clip px-6 py-20 sm:px-12 lg:py-28"
+    class="relative overflow-x-clip px-6 pt-20 pb-8 sm:px-12 lg:pt-28 lg:pb-12"
   >
     <UiEmpreintes
       :pattes="3"

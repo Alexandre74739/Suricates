@@ -92,27 +92,27 @@ const placement = (rang: number) => {
   <section
     id="habitants"
     :aria-labelledby="titreId"
-    class="relative scroll-mt-8 overflow-x-clip px-6 py-20 sm:px-12 lg:py-28"
+    class="relative scroll-mt-8 overflow-x-clip px-6 pt-16 pb-20 sm:px-12 lg:pt-20 lg:pb-28"
   >
     <div class="relative mx-auto max-w-6xl">
-      <div class="mx-auto max-w-4xl text-center">
+      <div class="max-w-3xl">
         <motion.h2
           :id="titreId"
           v-bind="auDefilement(monterEnCascade(0))"
-          class="font-titre text-4xl leading-[1.1] text-balance text-acacia sm:text-5xl lg:text-6xl"
+          class="font-titre text-4xl leading-tight text-balance text-acacia sm:text-5xl"
         >
           {{ titre }}
         </motion.h2>
         <motion.p
           v-bind="auDefilement(monterEnCascade(1))"
-          class="mx-auto mt-6 max-w-3xl leading-relaxed text-pretty sm:text-lg"
+          class="mt-5 max-w-2xl leading-relaxed text-pretty sm:text-lg"
         >
           {{ texte }}
         </motion.p>
 
         <motion.div
           v-bind="auDefilement(monterEnCascade(2))"
-          class="mx-auto mt-10 max-w-lg"
+          class="mt-8 max-w-2xl"
         >
           <UiRechercheBar
             v-model="recherche"
@@ -177,15 +177,12 @@ const placement = (rang: number) => {
       </ul>
       <p
         v-else-if="rechercheActive && !enRecherche && affichage"
-        class="mt-14 text-center text-galerie/80"
+        class="mt-6 text-galerie/80"
         aria-hidden="true"
       >
         {{ $t("parc.zone.habitants.aucun", { recherche: rechercheActive }) }}
       </p>
-      <p
-        v-else-if="!affichage && !enRecherche"
-        class="mt-10 text-center text-galerie/80"
-      >
+      <p v-else-if="!affichage && !enRecherche" class="mt-6 text-galerie/80">
         {{ $t("parc.zone.habitants.erreur") }}
       </p>
 
