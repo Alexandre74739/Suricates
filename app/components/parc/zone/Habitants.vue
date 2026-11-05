@@ -77,6 +77,14 @@ const especes = computed(
     affichage.value?.especes.map((espece) => fiche(props.zone, espece)) ?? [],
 );
 
+const aucunResultat = computed(
+  () =>
+    !!rechercheActive.value &&
+    !enRecherche.value &&
+    !!affichage.value &&
+    !especes.value.length,
+);
+
 // La vedette occupe toute la largeur. Les cartes suivantes sont décalées en quinconce
 // (une colonne sur deux, ou celle du milieu, descend) pour casser l'effet de grille.
 const placement = (rang: number) => {
@@ -92,7 +100,7 @@ const placement = (rang: number) => {
   <section
     id="habitants"
     :aria-labelledby="titreId"
-    class="relative scroll-mt-8 overflow-x-clip px-6 pt-16 pb-20 sm:px-12 lg:pt-20 lg:pb-28"
+    class="relative scroll-mt-8 overflow-x-clip px-6 pt-16 sm:px-12 lg:pt-20"
   >
     <div class="relative mx-auto max-w-6xl">
       <div class="max-w-3xl">
@@ -176,7 +184,7 @@ const placement = (rang: number) => {
         </li>
       </ul>
       <p
-        v-else-if="rechercheActive && !enRecherche && affichage"
+        v-else-if="aucunResultat"
         class="mt-6 text-galerie/80"
         aria-hidden="true"
       >
@@ -192,7 +200,7 @@ const placement = (rang: number) => {
         :pages="affichage.pages"
         :lien="urlPage"
         :libelle="$t('parc.zone.habitants.pagination')"
-        class="mt-20"
+        class="mt-10"
       />
     </div>
   </section>
