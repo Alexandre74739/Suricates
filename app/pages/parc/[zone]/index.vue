@@ -44,7 +44,7 @@ useSeoMeta({
       v-bind="zone.conservation"
       hydrate-on-visible
     />
-    <LazyAccueilAnimations
+    <LazyAnimationsEvents
       :especes="zone.especes.map((e) => e.slug)"
       :titre="$t('parc.zone.animations.titre')"
       :texte="$t('parc.zone.animations.texte')"

@@ -24,7 +24,7 @@ const questions = computed(() =>
     <AccueilBandeauRaccourcis />
     <LazyAccueilAbout hydrate-on-visible />
     <LazyInfosHorairesTarifs id="horaires&tarifs" hydrate-on-visible />
-    <LazyAccueilAnimations hydrate-on-visible />
+    <LazyAnimationsEvents hydrate-on-visible />
     <LazyAccueilZones id="especes" hydrate-on-visible />
     <LazyUiFaq
       hydrate-on-visible
