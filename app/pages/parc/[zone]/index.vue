@@ -40,5 +40,9 @@ useSeoMeta({
       v-bind="zone.habitantsSection"
       hydrate-on-visible
     />
+    <LazyConservationEngagements
+      v-bind="zone.conservation"
+      hydrate-on-visible
+    />
   </main>
 </template>

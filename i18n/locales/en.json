@@ -69,13 +69,13 @@
           "rendezVous": "Special events, like the meerkat show",
           "gestes": "Simple things you can do, even back home"
         },
+        "alt": "A keeper reaching out to a giraffe leaning over the fence",
         "cadre": {
           "titre": "Want to go further?",
           "texte": "WWF protects endangered species and their habitats all over the world. Discover its work and how to support it.",
           "bouton": "Discover WWF",
           "lien": "https://wwf.panda.org"
-        },
-        "alt": "A keeper reaching out to a giraffe leaning over the fence"
+        }
       }
     },
     "faq": {
@@ -243,6 +243,10 @@
           "habitantsSection": {
             "titre": "The animals of the Bush Trail",
             "texte": "Under the acacias of the Bush Trail, every species has its own character, habits and favourite spot. Meerkats on guard, elephants as a family, giraffes on the lookout: meet the animals that bring the savannah to life at Le Domaine des Suricates, in the Chartreuse mountains."
+          },
+          "conservation": {
+            "titre": "Protecting African savanna wildlife",
+            "texte": "At Le Domaine des Suricates, discovering the animals of the Bush Trail also means supporting their conservation. Here is how our wildlife park takes action for giraffes, rhinos and their neighbours."
           }
         },
         "territoire-des-fauves": {
@@ -263,6 +267,10 @@
           "habitantsSection": {
             "titre": "The animals of Big Cat Territory",
             "texte": "In Big Cat Territory, the great predators of Africa and Asia live in large enclosures designed for their well-being. Lazy lions, swimming tigers, well-organised hyenas: each has its own way of owning the territory."
+          },
+          "conservation": {
+            "titre": "Protecting big cats and predators",
+            "texte": "Lions, tigers, cheetahs and wild dogs are threatened in the wild. In the Big Cat Territory, Le Domaine des Suricates acts for their future, at the park and in the field."
           }
         },
         "temple-de-la-jungle": {
@@ -283,6 +291,10 @@
           "habitantsSection": {
             "titre": "The animals of the Jungle Temple",
             "texte": "Among bamboo and overgrown ruins, the Jungle Temple is home to Asian species as discreet as they are surprising. Hungry pandas, singing gibbons, popcorn-scented binturongs: come and meet them."
+          },
+          "conservation": {
+            "titre": "Protecting the animals of Asia's forests",
+            "texte": "Pandas, gibbons and binturongs depend on forests that are disappearing. In the Jungle Temple, Le Domaine des Suricates is committed to their conservation."
           }
         },
         "sentier-des-incas": {
@@ -303,6 +315,10 @@
           "habitantsSection": {
             "titre": "The animals of the Inca Trail",
             "texte": "From the peaks of the Andes to the lagoons of the Amazon, the Inca Trail brings together the animals of South America. Chatty llamas, unflappable capybaras, dazzling macaws: each adds its own touch to the journey."
+          },
+          "conservation": {
+            "titre": "Protecting South American wildlife",
+            "texte": "Tapirs, macaws and monkeys live in forests that shrink every year. Along the Inca Trail, Le Domaine des Suricates is committed to their protection."
           }
         },
         "cite-marine": {
@@ -323,6 +339,10 @@
           "habitantsSection": {
             "titre": "The animals of the Marine City",
             "texte": "Pools, pebble beaches and rocks: the Marine City welcomes animals from the coasts and oceans. Chatty sea lions, torpedo penguins, fishing pelicans: discover what makes each of them unique."
+          },
+          "conservation": {
+            "titre": "Protecting marine animals",
+            "texte": "Dolphins, seals and penguins depend on healthy oceans. In the Marine City, Le Domaine des Suricates is committed to their protection."
           }
         }
       }
@@ -1024,7 +1044,13 @@
   },
   "commun": {
     "nouvelOnglet": "(opens in a new tab)",
-    "retourEnHaut": "Back to top"
+    "retourEnHaut": "Back to top",
+    "wwf": {
+      "titre": "Want to go further?",
+      "texte": "For more than 60 years, WWF has been working to protect endangered species and their natural habitats, from the African savanna to the oceans. Discover its work and how you too can support it.",
+      "bouton": "Discover WWF",
+      "lien": "https://wwf.panda.org"
+    }
   },
   "erreur": {
     "titre": "This burrow leads nowhere",
@@ -1037,5 +1063,25 @@
     "page": "Page",
     "precedente": "Previous",
     "suivante": "Next"
+  },
+  "conservation": {
+    "eep": {
+      "libelle": "European breeding programmes (EEP)",
+      "lien": "https://www.eaza.net/population-management/"
+    },
+    "engagements": [
+      {
+        "titre": "Births for the future",
+        "texte": "Le Domaine des Suricates takes part in the {lien}. Every birth at the park strengthens a reserve population for threatened species."
+      },
+      {
+        "titre": "Support in the field",
+        "texte": "Part of every ticket funds projects in the animals' natural habitats: anti-poaching work, reforestation, rescue centres."
+      },
+      {
+        "titre": "Keepers who share",
+        "texte": "Feeding times, animal talks, signs: throughout your visit, our keepers explain what threatens wildlife and how to protect it."
+      }
+    ]
   }
 }

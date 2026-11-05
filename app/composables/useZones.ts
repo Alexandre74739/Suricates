@@ -29,6 +29,10 @@ export function useZones() {
           climat: t(`${cle}.milieuNaturel.climat`),
           paysage: t(`${cle}.milieuNaturel.paysage`),
         },
+        conservation: {
+          titre: t(`${cle}.conservation.titre`),
+          texte: t(`${cle}.conservation.texte`),
+        },
         especes: zone.especes.map((espece) => ({
           slug: espece,
           nom: t(`especes.${espece}`),

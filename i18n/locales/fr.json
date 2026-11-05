@@ -69,13 +69,13 @@
           "rendezVous": "Des rendez-vous ponctuels, comme le show des suricates",
           "gestes": "Des gestes simples à adopter, même de retour à la maison"
         },
+        "alt": "Une soigneuse tend la main vers une girafe penchée au-dessus de la palissade",
         "cadre": {
           "titre": "Envie d'aller plus loin ?",
           "texte": "Le WWF protège les espèces menacées et leurs milieux partout dans le monde. Découvrez ses actions et comment les soutenir.",
           "bouton": "Découvrir le WWF",
           "lien": "https://www.wwf.fr"
-        },
-        "alt": "Une soigneuse tend la main vers une girafe penchée au-dessus de la palissade"
+        }
       }
     },
     "faq": {
@@ -243,6 +243,10 @@
           "habitantsSection": {
             "titre": "Les animaux du Chemin de Brousse",
             "texte": "Sous les acacias du Chemin de Brousse, chaque espèce a son caractère, ses habitudes et son coin préféré. Suricates en sentinelle, éléphants en famille, girafes en vigie : faites connaissance avec ceux qui font vivre la savane du Domaine des Suricates, en Chartreuse."
+          },
+          "conservation": {
+            "titre": "Protéger la faune de la savane africaine",
+            "texte": "Au Domaine des Suricates, découvrir les animaux du Chemin de Brousse, c'est aussi soutenir leur sauvegarde. Voici comment notre parc animalier s'engage pour les girafes, les rhinocéros et leurs voisins."
           }
         },
         "territoire-des-fauves": {
@@ -263,6 +267,10 @@
           "habitantsSection": {
             "titre": "Les animaux du Territoire des Fauves",
             "texte": "Au Territoire des Fauves, les grands prédateurs d'Afrique et d'Asie vivent dans de vastes enclos pensés pour leur bien-être. Lions paresseux, tigres nageurs, hyènes bien organisées : chacun a sa façon d'occuper son territoire."
+          },
+          "conservation": {
+            "titre": "Protéger les grands fauves",
+            "texte": "Lions, tigres, guépards et lycaons sont menacés dans la nature. Au Territoire des Fauves, le Domaine des Suricates agit pour leur avenir, au parc comme sur le terrain."
           }
         },
         "temple-de-la-jungle": {
@@ -283,6 +291,10 @@
           "habitantsSection": {
             "titre": "Les animaux du Temple de la Jungle",
             "texte": "Entre bambous et ruines envahies par la végétation, le Temple de la Jungle accueille des espèces d'Asie aussi discrètes qu'étonnantes. Pandas gourmands, gibbons chanteurs, binturongs au parfum de pop-corn : partez à leur rencontre."
+          },
+          "conservation": {
+            "titre": "Protéger les animaux des forêts d'Asie",
+            "texte": "Pandas, gibbons et binturongs dépendent de forêts qui disparaissent. Au Temple de la Jungle, le Domaine des Suricates s'engage pour leur sauvegarde."
           }
         },
         "sentier-des-incas": {
@@ -303,6 +315,10 @@
           "habitantsSection": {
             "titre": "Les animaux du Sentier des Incas",
             "texte": "Des sommets des Andes aux lagunes d'Amazonie, le Sentier des Incas réunit les animaux d'Amérique du Sud. Lamas bavards, capybaras imperturbables, aras éclatants : chacun apporte sa touche au voyage."
+          },
+          "conservation": {
+            "titre": "Protéger la faune d'Amérique du Sud",
+            "texte": "Tapirs, aras et singes vivent dans des forêts qui reculent chaque année. Au Sentier des Incas, le Domaine des Suricates s'engage pour leur protection."
           }
         },
         "cite-marine": {
@@ -323,6 +339,10 @@
           "habitantsSection": {
             "titre": "Les animaux de la Cité Marine",
             "texte": "Bassins, plages de galets et rochers : la Cité Marine accueille les animaux des côtes et des océans. Otaries bavardes, manchots torpilles, pélicans pêcheurs : découvrez ce qui rend chacun d'eux unique."
+          },
+          "conservation": {
+            "titre": "Protéger les animaux marins",
+            "texte": "Dauphins, phoques et manchots dépendent d'océans en bonne santé. À la Cité Marine, le Domaine des Suricates s'engage pour leur protection."
           }
         }
       }
@@ -1024,7 +1044,13 @@
   },
   "commun": {
     "nouvelOnglet": "(s'ouvre dans un nouvel onglet)",
-    "retourEnHaut": "Revenir en haut de la page"
+    "retourEnHaut": "Revenir en haut de la page",
+    "wwf": {
+      "titre": "Envie d'aller plus loin ?",
+      "texte": "Depuis plus de 60 ans, le WWF agit pour protéger les espèces menacées et leurs milieux naturels, des savanes africaines aux océans. Découvrez ses actions et comment, vous aussi, vous pouvez les soutenir.",
+      "bouton": "Découvrir le WWF",
+      "lien": "https://www.wwf.fr"
+    }
   },
   "erreur": {
     "titre": "Ce terrier ne mène nulle part",
@@ -1037,5 +1063,25 @@
     "page": "Page",
     "precedente": "Précédente",
     "suivante": "Suivante"
+  },
+  "conservation": {
+    "eep": {
+      "libelle": "programmes européens d'élevage (EEP)",
+      "lien": "https://www.eaza.net/population-management/"
+    },
+    "engagements": [
+      {
+        "titre": "Des naissances pour l'avenir",
+        "texte": "Le Domaine des Suricates participe aux {lien}. Chaque naissance au parc renforce une population de réserve pour les espèces menacées."
+      },
+      {
+        "titre": "Un soutien sur le terrain",
+        "texte": "Une partie de chaque billet finance des projets dans le milieu naturel des animaux : lutte contre le braconnage, reboisement, centres de soins."
+      },
+      {
+        "titre": "Des soigneurs qui transmettent",
+        "texte": "Nourrissages, animations, panneaux : tout au long de la visite, nos soigneurs expliquent ce qui menace la faune sauvage et comment la protéger."
+      }
+    ]
   }
 }
