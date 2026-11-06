@@ -175,8 +175,8 @@ model Animation {
   type         TypeAnimation
   heure        String?
   dateHeure    DateTime?
-  dureeMinutes Int
-  active       Boolean       @default(true)
+  dureeMinutes Int?
+  active      Boolean       @default(true)
   creeLe       DateTime      @default(now())
 
   enclosId  Int?
