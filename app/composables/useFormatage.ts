@@ -13,11 +13,13 @@ export function useFormatage() {
       minimumFractionDigits: centimes % 100 ? 2 : 0,
     }).format(centimes / 100);
 
-  // "09:30" → « 9 h 30 » en français, « 9:30 am » en anglais.
+  // "09:30" → « 9 h 30 » en français (espaces insécables), « 9:30 am » en anglais.
   const formatHeure = (heure: string) => {
     const [h = 0, m = 0] = heure.split(":").map(Number);
     if (locale.value === "fr")
-      return m ? `${h} h ${String(m).padStart(2, "0")}` : `${h} h`;
+      return m
+        ? `${h}\u00a0h\u00a0${String(m).padStart(2, "0")}`
+        : `${h}\u00a0h`;
     return new Intl.DateTimeFormat(langue.value, {
       hour: "numeric",
       minute: m ? "2-digit" : undefined,
