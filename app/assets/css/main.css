@@ -1,5 +1,7 @@
 @import "tailwindcss";
 
+@custom-variant ecran-bas (@media (min-width: 64rem) and (max-height: 50rem));
+
 @theme {
   --color-sable: #f2ebd9;
   --color-sauge: #b7be92;

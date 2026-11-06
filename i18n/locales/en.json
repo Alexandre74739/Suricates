@@ -485,14 +485,41 @@
         "erreur": "We can't show the residents right now. Please try again in a moment.",
         "effacer": "Clear search",
         "pagination": "Animal pages"
-      },
-      "animations": {
-        "titre": "What's on in this area",
-        "texte": "Feedings and keeper talks right by the enclosures. Free, no booking needed: just be there at the right time."
       }
     },
     "enclos": {
-      "texte": "Their full profile is coming very soon! In the meantime, come and see them during your visit."
+      "auDomaine": "at Le Domaine des Suricates",
+      "heroTexte": "Watch them up close along your walk: discover their daily life at the Domaine, their natural habitat and everything that makes them who they are. Our keepers look after their well-being every day, in enclosures designed for them. An encounter to enjoy as a family, at your own pace.",
+      "ouEtQuand": "Come and meet them",
+      "seo": {
+        "titre": "{nom} at Le Domaine des Suricates, wildlife park in Chartreuse",
+        "description": "Come and see our {effectif} {nom} in {zone}, at the heart of our wildlife park in Chartreuse. Origin, diet, feeding times: everything to know before your visit."
+      },
+      "vie": "Their life at the park",
+      "rendezVous": {
+        "titre": "Don't miss",
+        "bouton": "Discover the activity",
+        "sansTitre": "At your own pace",
+        "sans": "No show for now: watch them quietly, at any time of day."
+      },
+      "horaire": {
+        "quotidien": "every day at {heure}",
+        "ponctuel": "on {date} at {heure}"
+      },
+      "milieu": {
+        "titre": "The natural habitat of {nom}"
+      },
+      "voisins": {
+        "titre": "Their neighbours in {zone}",
+        "texte": "Keep exploring: these species live just next door."
+      },
+      "identite": {
+        "titre": "Everything to know about {nom}",
+        "carte": "ID card",
+        "ouLesVoir": "Where to see them",
+        "voirZone": "See the zone",
+        "texte": "Where do they come from, what do they eat, how many live at the Domaine? Their ID card gathers everything worth knowing before your visit. And to shine on your walk, a surprising fun fact awaits right next to it: enough to amaze young and old alike in front of the enclosure."
+      }
     }
   },
   "especes": {
@@ -1163,6 +1190,7 @@
     "credits": "Designed and developed by Alexandre-Philippe Perez at {studio}"
   },
   "commun": {
+    "filAriane": "Breadcrumb",
     "nouvelOnglet": "(opens in a new tab)",
     "retourEnHaut": "Back to top",
     "wwf": {

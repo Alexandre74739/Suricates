@@ -485,14 +485,41 @@
         "erreur": "Impossible d'afficher les habitants pour le moment. Réessayez dans un instant.",
         "effacer": "Effacer la recherche",
         "pagination": "Pages des animaux"
-      },
-      "animations": {
-        "titre": "Les rendez-vous de la zone",
-        "texte": "Nourrissages et rencontres avec les soigneurs, au pied des enclos. C'est gratuit et sans réservation : il suffit d'être là au bon moment."
       }
     },
     "enclos": {
-      "texte": "Leur fiche complète arrive très bientôt ! En attendant, venez les observer au fil de votre visite."
+      "auDomaine": "au Domaine des Suricates",
+      "heroTexte": "Observez-les de près au fil de votre balade : découvrez leur quotidien au Domaine, leur milieu naturel et tout ce qui fait leur caractère. Nos soigneurs veillent chaque jour sur leur bien-être, dans des enclos pensés pour eux. Une rencontre à vivre en famille, au rythme de chacun.",
+      "ouEtQuand": "Venir les rencontrer",
+      "seo": {
+        "titre": "{nom} au Domaine des Suricates, parc animalier en Chartreuse",
+        "description": "Venez observer nos {effectif} {nom} dans {zone}, au cœur de notre parc animalier en Chartreuse. Origine, régime, nourrissage : tout savoir avant votre visite."
+      },
+      "vie": "Leur vie au Domaine",
+      "rendezVous": {
+        "titre": "À ne pas manquer",
+        "bouton": "Découvrir l'animation",
+        "sansTitre": "À votre rythme",
+        "sans": "Pas d'animation pour le moment : observez-les tranquillement, à n'importe quelle heure de la journée."
+      },
+      "horaire": {
+        "quotidien": "tous les jours à {heure}",
+        "ponctuel": "le {date} à {heure}"
+      },
+      "milieu": {
+        "titre": "Le milieu naturel des {nom}"
+      },
+      "voisins": {
+        "titre": "Leurs voisins dans {zone}",
+        "texte": "Poursuivez la balade : ces espèces vivent juste à côté."
+      },
+      "identite": {
+        "titre": "L'essentiel à savoir sur les {nom}",
+        "carte": "Carte d'identité",
+        "ouLesVoir": "Où les voir",
+        "voirZone": "Voir la zone",
+        "texte": "D'où viennent-ils, que mangent-ils, combien vivent au Domaine ? Leur carte d'identité rassemble l'essentiel à connaître avant votre visite. Et pour briller pendant la balade, une anecdote surprenante vous attend juste à côté : de quoi épater petits et grands devant l'enclos."
+      }
     }
   },
   "especes": {
@@ -1163,6 +1190,7 @@
     "credits": "Conçu et développé par Alexandre-Philippe Perez chez {studio}"
   },
   "commun": {
+    "filAriane": "Fil d'Ariane",
     "nouvelOnglet": "(s'ouvre dans un nouvel onglet)",
     "retourEnHaut": "Revenir en haut de la page",
     "wwf": {
