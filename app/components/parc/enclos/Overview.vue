@@ -30,8 +30,20 @@ const zoneName = computed(
 
 <template>
   <div
-    class="space-y-24 overflow-x-clip pt-16 pb-24 lg:space-y-32 lg:pt-20 lg:pb-32"
+    class="relative isolate space-y-24 overflow-x-clip pt-16 pb-24 lg:space-y-32 lg:pt-20 lg:pb-32"
   >
+    <UiEmpreintes
+      :pattes="3"
+      class="absolute top-[4%] -right-20 -z-10 hidden w-56 rotate-[130deg] lg:block xl:-right-12 xl:w-72 2xl:right-[2%] 2xl:w-88"
+    />
+    <UiEmpreintes
+      :pattes="2"
+      class="absolute top-[40%] -left-16 -z-10 hidden w-48 rotate-[35deg] lg:block xl:-left-8 xl:w-60 2xl:left-[3%] 2xl:w-72"
+    />
+    <UiEmpreintes
+      :pattes="3"
+      class="absolute top-[76%] -right-20 -z-10 hidden w-56 rotate-[-140deg] lg:block xl:-right-12 xl:w-72 2xl:right-[2%] 2xl:w-88"
+    />
     <ParcEnclosPart
       :title="$t('parc.enclos.vie')"
       :text="species.presentation"
