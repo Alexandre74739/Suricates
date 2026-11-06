@@ -8,12 +8,29 @@ export type AllurePhoto = {
   vide: string;
 };
 
-defineProps<{
-  lien: string;
-  image: string | null;
-  sizes: string;
-  allure: AllurePhoto;
-}>();
+const props = withDefaults(
+  defineProps<{
+    lien?: string;
+    image: string | null;
+    sizes: string;
+    allure: AllurePhoto;
+    alt?: string;
+    prioritaire?: boolean;
+  }>(),
+  { alt: "", prioritaire: false },
+);
+
+const NuxtLink = resolveComponent("NuxtLink");
+const lienPhoto = computed(() =>
+  props.lien
+    ? {
+        to: props.lien,
+        tabindex: -1,
+        "aria-hidden": "true",
+        draggable: "false",
+      }
+    : {},
+);
 </script>
 
 <template>
@@ -23,22 +40,25 @@ defineProps<{
       :class="allure.ombre"
       aria-hidden="true"
     />
-    <NuxtLink
-      :to="lien"
-      tabindex="-1"
-      aria-hidden="true"
-      draggable="false"
+    <component
+      :is="lien ? NuxtLink : 'div'"
+      v-bind="lienPhoto"
       class="masque-pinceau relative block overflow-hidden bg-sauge"
       :class="[allure.format, allure.inclinaison]"
     >
       <UiPhoto
         v-if="image"
         :src="image"
-        alt=""
+        :alt="lien ? '' : alt"
         :sizes="sizes"
-        decoding="async"
+        :prioritaire="prioritaire"
+        :decoding="prioritaire ? undefined : 'async'"
         draggable="false"
-        class="size-full object-cover transition duration-700 group-hover/photo:scale-105 motion-reduce:transition-none motion-reduce:group-hover/photo:scale-100"
+        class="size-full object-cover"
+        :class="{
+          'transition duration-700 group-hover/photo:scale-105 motion-reduce:transition-none motion-reduce:group-hover/photo:scale-100':
+            lien,
+        }"
       />
       <div
         v-else
@@ -48,6 +68,6 @@ defineProps<{
         <div class="motif-feuilles absolute inset-0 bg-white/20" />
         <PawPrint class="relative size-16 text-sable/90" />
       </div>
-    </NuxtLink>
+    </component>
   </div>
 </template>
