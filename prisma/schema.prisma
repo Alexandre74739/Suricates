@@ -1,0 +1,233 @@
+generator client {
+  provider = "prisma-client"
+  output   = "../server/generated/prisma"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+enum Role {
+  CLIENT
+  AGENT
+  ADJOINT
+  ADMIN
+}
+
+enum Pole {
+  ACCUEIL
+  SOINS
+  ANIMATIONS
+}
+
+enum CodeTarif {
+  PLEIN
+  REDUIT
+}
+
+enum Canal {
+  EN_LIGNE
+  GUICHET
+}
+
+enum StatutCommande {
+  EN_ATTENTE
+  PAYEE
+  EXPIREE
+}
+
+enum EtatEnclos {
+  OUVERT
+  FERME
+  TRAVAUX
+}
+
+enum TypeAnimation {
+  FIXE
+  PONCTUELLE
+}
+
+enum TypeTache {
+  SOIN
+  NOURRISSAGE
+  NETTOYAGE
+  ACCUEIL
+  ANIMATION
+}
+
+enum StatutTache {
+  A_FAIRE
+  EN_COURS
+  TERMINEE
+}
+
+enum EtatPoste {
+  DISPONIBLE
+  OCCUPE
+  PAUSE
+}
+
+model Utilisateur {
+  id        Int      @id @default(autoincrement())
+  authId    String   @unique
+  email     String   @unique
+  nom       String
+  prenom    String
+  role      Role     @default(CLIENT)
+  pole      Pole?
+  actif     Boolean  @default(true)
+  creeLe    DateTime @default(now())
+  modifieLe DateTime @updatedAt
+
+  commandes        Commande[]         @relation("CommandeClient")
+  ventes           Commande[]         @relation("CommandeVendeur")
+  entreesValidees  Commande[]         @relation("CommandeEntree")
+  animationsCreees Animation[]
+  tachesAssignees  Tache[]            @relation("TacheAssignee")
+  tachesCreees     Tache[]            @relation("TacheCreateur")
+  affectations     AffectationPoste[]
+  accesJournalises JournalAcces[]     @relation("JournalAuteur")
+  accesConsultes   JournalAcces[]     @relation("JournalCible")
+}
+
+model Tarif {
+  id           Int       @id @default(autoincrement())
+  code         CodeTarif @unique
+  prixCentimes Int
+  modifieLe    DateTime  @updatedAt
+}
+
+model Parametre {
+  id               Int      @id @default(1)
+  jaugeJournaliere Int
+  modifieLe        DateTime @updatedAt
+}
+
+model Commande {
+  id                 Int            @id @default(autoincrement())
+  numero             String         @unique
+  canal              Canal
+  dateVisite         DateTime       @db.Date
+  nbPlein            Int            @default(0)
+  nbReduit           Int            @default(0)
+  nbGratuit          Int            @default(0)
+  prixPleinCentimes  Int
+  prixReduitCentimes Int
+  totalCentimes      Int
+  statut             StatutCommande @default(EN_ATTENTE)
+  stripeSessionId    String?        @unique
+  mailEnvoyeLe       DateTime?
+  entreeValideeLe    DateTime?
+  creeLe             DateTime       @default(now())
+
+  utilisateurId      Int?
+  utilisateur        Utilisateur? @relation("CommandeClient", fields: [utilisateurId], references: [id], onDelete: SetNull)
+  venduParId         Int?
+  venduPar           Utilisateur? @relation("CommandeVendeur", fields: [venduParId], references: [id], onDelete: SetNull)
+  entreeValideeParId Int?
+  entreeValideePar   Utilisateur? @relation("CommandeEntree", fields: [entreeValideeParId], references: [id], onDelete: SetNull)
+
+  @@index([dateVisite, statut])
+  @@index([utilisateurId])
+}
+
+model Zone {
+  id      Int      @id @default(autoincrement())
+  slug    String   @unique
+  nom     String
+  couleur String
+  image   String?
+  ordre   Int      @default(0)
+  enclos  Enclos[]
+}
+
+model Espece {
+  id     Int      @id @default(autoincrement())
+  slug   String   @unique
+  nom    String
+  image  String?
+  enclos Enclos[]
+}
+
+model Enclos {
+  id       Int        @id @default(autoincrement())
+  slug     String     @unique
+  effectif Int        @default(0)
+  etat     EtatEnclos @default(OUVERT)
+
+  zoneId   Int
+  zone     Zone   @relation(fields: [zoneId], references: [id], onDelete: Restrict)
+  especeId Int
+  espece   Espece @relation(fields: [especeId], references: [id], onDelete: Restrict)
+
+  animations Animation[]
+  taches     Tache[]
+
+  @@index([zoneId])
+}
+
+model Animation {
+  id           Int           @id @default(autoincrement())
+  slug         String        @unique
+  titre        String
+  description  String
+  image        String?
+  type         TypeAnimation
+  heure        String?
+  dateHeure    DateTime?
+  dureeMinutes Int
+  active       Boolean       @default(true)
+  creeLe       DateTime      @default(now())
+
+  enclosId  Int?
+  enclos    Enclos?      @relation(fields: [enclosId], references: [id], onDelete: SetNull)
+  creeParId Int?
+  creePar   Utilisateur? @relation(fields: [creeParId], references: [id], onDelete: SetNull)
+
+  @@index([type, active])
+}
+
+model Tache {
+  id          Int         @id @default(autoincrement())
+  type        TypeTache
+  datePrevue  DateTime
+  statut      StatutTache @default(A_FAIRE)
+  compteRendu String?
+  creeLe      DateTime    @default(now())
+
+  enclosId   Int?
+  enclos     Enclos?      @relation(fields: [enclosId], references: [id], onDelete: SetNull)
+  assigneeId Int?
+  assignee   Utilisateur? @relation("TacheAssignee", fields: [assigneeId], references: [id], onDelete: SetNull)
+  creeParId  Int?
+  creePar    Utilisateur? @relation("TacheCreateur", fields: [creeParId], references: [id], onDelete: SetNull)
+
+  @@index([assigneeId, datePrevue])
+}
+
+model AffectationPoste {
+  id    Int       @id @default(autoincrement())
+  date  DateTime  @db.Date
+  pole  Pole
+  poste String
+  etat  EtatPoste @default(DISPONIBLE)
+
+  employeId Int
+  employe   Utilisateur @relation(fields: [employeId], references: [id], onDelete: Cascade)
+
+  @@unique([date, employeId])
+}
+
+model JournalAcces {
+  id        Int      @id @default(autoincrement())
+  action    String
+  ressource String
+  creeLe    DateTime @default(now())
+
+  auteurId Int?
+  auteur   Utilisateur? @relation("JournalAuteur", fields: [auteurId], references: [id], onDelete: SetNull)
+  cibleId  Int?
+  cible    Utilisateur? @relation("JournalCible", fields: [cibleId], references: [id], onDelete: SetNull)
+
+  @@index([cibleId])
+}
