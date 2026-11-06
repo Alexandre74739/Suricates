@@ -12,7 +12,7 @@ withDefaults(
       icone?: Component;
       telecharger?: boolean;
     }[];
-    teinte?: "clair" | "blanc";
+    teinte?: "clair" | "blanc" | "sauge";
   }>(),
   { teinte: "clair" },
 );
@@ -36,6 +36,16 @@ const TEINTES = {
     liste: "mt-5 space-y-5",
     point: "",
     blob: "fill-terracotta",
+    icone: "text-white",
+    texte: "text-galerie/75",
+  },
+  sauge: {
+    fond: "bg-white text-galerie sm:p-10",
+    ombre: "bg-sauge",
+    titre: "font-titre text-3xl text-acacia",
+    liste: "mt-6 space-y-6",
+    point: "",
+    blob: "fill-acacia",
     icone: "text-white",
     texte: "text-galerie/75",
   },
