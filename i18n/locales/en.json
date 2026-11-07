@@ -344,6 +344,10 @@
         "erreur": "We can't show the residents right now. Please try again in a moment.",
         "effacer": "Clear search",
         "pagination": "Animal pages"
+      },
+      "animations": {
+        "titre": "What's on in this area",
+        "texte": "Feedings, care sessions and little shows: our keepers tell you all about their animals. It's free, no booking needed, just be there on time."
       }
     },
     "enclos": {

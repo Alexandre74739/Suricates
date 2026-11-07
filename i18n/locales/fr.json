@@ -344,6 +344,10 @@
         "erreur": "Impossible d'afficher les habitants pour le moment. Réessayez dans un instant.",
         "effacer": "Effacer la recherche",
         "pagination": "Pages des animaux"
+      },
+      "animations": {
+        "titre": "Les rendez-vous de la zone",
+        "texte": "Nourrissages, soins et petits shows : nos soigneurs vous racontent leurs protégés. C'est gratuit et sans réservation, il suffit d'être là à l'heure."
       }
     },
     "enclos": {
