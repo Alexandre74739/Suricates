@@ -25,3 +25,6 @@ logs
 
 # Prisma
 server/generated
+
+.vercel
+.env*.local
