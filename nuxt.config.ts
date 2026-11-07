@@ -56,7 +56,10 @@ export default defineNuxtConfig({
     compressPublicAssets: true
   },
   image: {
-    screens: { xs: 320, '3xl': 1920 }
+    screens: { xs: 320, '3xl': 1920 },
+    // Photos modifiables par le personnel, stockées dans Vercel Blob.
+    // Le jeton vercel_blob_rw_<id>_<secret> contient l'identifiant du store.
+    domains: [`${process.env.BLOB_READ_WRITE_TOKEN?.split('_')[3]?.toLowerCase()}.public.blob.vercel-storage.com`]
   },
   hooks: {
     // Nuxt précharge par défaut toutes les images importées, même hors écran :
