@@ -3,7 +3,7 @@ definePageMeta({ surHero: true });
 
 const route = useRoute();
 const localePath = useLocalePath();
-const { zones } = useZones();
+const { zones } = await useZones();
 
 const zone = computed(() =>
   zones.value.find((z) => z.slug === route.params.zone),

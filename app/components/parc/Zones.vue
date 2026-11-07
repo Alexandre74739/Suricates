@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const { zones } = useZones();
+const { zones } = await useZones();
 </script>
 
 <template>

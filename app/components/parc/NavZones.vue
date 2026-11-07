@@ -3,7 +3,7 @@ import { motion } from "motion-v";
 import { monterEnCascade } from "~/animations/apparitionBas";
 import { auDefilement } from "~/animations/auDefilement";
 
-const { zones } = useZones();
+const { zones } = await useZones();
 const { allerA } = useDefilement();
 const titreId = useId();
 </script>

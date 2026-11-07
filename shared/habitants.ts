@@ -4,6 +4,7 @@ export const RECHERCHE_MAX = 40;
 
 export type EspeceHabitant = {
   slug: string;
+  nom: string;
   image: string | null;
   effectif: number;
 };

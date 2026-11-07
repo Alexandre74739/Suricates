@@ -1,13 +1,11 @@
 <script setup lang="ts">
-import { ESPECES } from "~/data/especes";
-
 definePageMeta({ surHero: true });
 
 const route = useRoute();
 const localePath = useLocalePath();
 const { t } = useI18n();
 const { allerA } = useDefilement();
-const { zones } = useZones();
+const { zones } = await useZones();
 const { fiche } = useFichesEspeces();
 const origin = useRequestURL().origin;
 
@@ -15,13 +13,10 @@ const zone = computed(() =>
   zones.value.find((z) => z.slug === route.params.zone),
 );
 const species = computed(() => {
-  const slug = String(route.params.enclos);
-  if (!zone.value?.especes.some((e) => e.slug === slug)) return undefined;
-  return fiche(zone.value.slug, {
-    slug,
-    image: ESPECES[slug]?.image ?? null,
-    effectif: ESPECES[slug]?.effectif ?? 0,
-  });
+  const espece = zone.value?.especes.find(
+    (e) => e.slug === route.params.enclos,
+  );
+  return espece && fiche(zone.value!.slug, espece);
 });
 
 if (!species.value) {
@@ -53,7 +48,9 @@ useSeoMeta({
   ogTitle: seoTitle,
   ogDescription: seoDescription,
   ogImage: () =>
-    species.value?.image ? `${origin}${species.value.image}` : undefined,
+    species.value?.image
+      ? new URL(species.value.image, origin).href
+      : undefined,
 });
 </script>
 

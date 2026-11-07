@@ -11,7 +11,6 @@ export function useFichesEspeces() {
     const cle = `especesFiches.${espece.slug}`;
     return {
       ...espece,
-      nom: t(`especes.${espece.slug}`),
       texte: t(`${cle}.texte`),
       presentation: t(`${cle}.vedette`),
       origine: t(`${cle}.origine`),

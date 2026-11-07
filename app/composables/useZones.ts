@@ -1,23 +1,77 @@
-import { FONDS_ZONE, ZONES } from "~/data/zones";
+import type { CouleurZone, ZoneVitrine } from "#shared/zones";
 
-export function useZones() {
-  const { t } = useI18n();
+export const FONDS_ZONE: Record<CouleurZone, string> = {
+  terracotta: "bg-terracotta",
+  galerie: "bg-galerie",
+  acacia: "bg-acacia",
+  sauge: "bg-sauge",
+  ocre: "bg-ocre",
+};
+
+const PHOTOS_ZONES: Record<
+  string,
+  { image: string; hero?: { image: string; position?: string } }
+> = {
+  "chemin-de-brousse": {
+    image: "/images/parc/girafes-zebres.webp",
+    hero: {
+      image: "/images/parc/elephants.webp",
+      position: "object-[55%_center]",
+    },
+  },
+  "territoire-des-fauves": {
+    image: "/images/parc/lion.webp",
+    hero: {
+      image: "/images/parc/tigre-rocher.webp",
+      position: "object-[58%_center]",
+    },
+  },
+  "temple-de-la-jungle": {
+    image: "/images/parc/panda-geant.webp",
+    hero: {
+      image: "/images/parc/panda-tronc.webp",
+      position: "object-[65%_center]",
+    },
+  },
+  "sentier-des-incas": {
+    image: "/images/parc/calao.webp",
+    hero: {
+      image: "/images/parc/capybaras.webp",
+      position: "object-[70%_center]",
+    },
+  },
+  "cite-marine": {
+    image: "/images/parc/otaries.webp",
+    hero: { image: "/images/parc/manchots.webp" },
+  },
+};
+
+export async function useZones() {
+  const { t, locale } = useI18n();
   const localePath = useLocalePath();
 
+  const { data } = await useFetch<ZoneVitrine[]>("/api/zones", {
+    key: computed(() => `zones-${locale.value}`),
+    query: { langue: locale },
+    default: () => [],
+  });
+
   const zones = computed(() =>
-    ZONES.map((zone) => {
+    data.value.map((zone) => {
       const cle = `parc.zones.liste.${zone.slug}`;
+      const photos = PHOTOS_ZONES[zone.slug];
       return {
         ...zone,
+        image: photos?.image,
+        hero: photos?.hero,
+        alt: photos ? t(`${cle}.alt`) : undefined,
+        altHero: photos?.hero ? t(`${cle}.altHero`) : undefined,
         fond: FONDS_ZONE[zone.couleur],
         lien: localePath({ name: "parc-zone", params: { zone: zone.slug } }),
-        nom: t(`${cle}.nom`),
         bouton: t(`${cle}.bouton`),
         accroche: t(`${cle}.accroche`),
         milieu: t(`${cle}.milieu`),
         habitants: t(`${cle}.habitants`),
-        alt: zone.image ? t(`${cle}.alt`) : undefined,
-        altHero: zone.hero ? t(`${cle}.altHero`) : undefined,
         habitantsSection: {
           titre: t(`${cle}.habitantsSection.titre`),
           texte: t(`${cle}.habitantsSection.texte`),
@@ -34,11 +88,10 @@ export function useZones() {
           texte: t(`${cle}.conservation.texte`),
         },
         especes: zone.especes.map((espece) => ({
-          slug: espece,
-          nom: t(`especes.${espece}`),
+          ...espece,
           lien: localePath({
             name: "parc-zone-enclos",
-            params: { zone: zone.slug, enclos: espece },
+            params: { zone: zone.slug, enclos: espece.slug },
           }),
         })),
       };

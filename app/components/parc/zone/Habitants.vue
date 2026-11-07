@@ -12,6 +12,7 @@ const props = defineProps<{
 
 const route = useRoute();
 const router = useRouter();
+const { locale } = useI18n();
 const titreId = useId();
 const liste = useTemplateRef<HTMLUListElement>("liste");
 
@@ -28,8 +29,10 @@ const urlPage = (page: number) =>
 const { data, error } = await useFetch<PageHabitants>(
   () => `/api/zones/${props.zone}/especes`,
   {
-    key: computed(() => `habitants-${props.zone}-${pageUrl.value}`),
-    query: { page: pageUrl },
+    key: computed(
+      () => `habitants-${props.zone}-${locale.value}-${pageUrl.value}`,
+    ),
+    query: { page: pageUrl, langue: locale },
     getCachedData: (cle, nuxtApp, contexte) =>
       contexte.cause === "refresh:manual"
         ? undefined
@@ -48,8 +51,6 @@ useSeoEspeces({
   urlPage,
 });
 
-// Liste affichée : la page de l'URL, ou les résultats d'une recherche. Pendant un changement
-// de page, l'ancienne liste reste à l'écran jusqu'à l'arrivée de la nouvelle.
 const affichage = ref<PageHabitants | null>(
   data.value ? { ...data.value } : null,
 );
@@ -85,8 +86,6 @@ const aucunResultat = computed(
     !especes.value.length,
 );
 
-// La vedette occupe toute la largeur. Les cartes suivantes sont décalées en quinconce
-// (une colonne sur deux, ou celle du milieu, descend) pour casser l'effet de grille.
 const placement = (rang: number) => {
   if (rang === 0) return "sm:col-span-2 lg:col-span-3 mb-6 lg:mb-10";
   return [

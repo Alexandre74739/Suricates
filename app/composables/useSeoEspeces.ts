@@ -38,10 +38,12 @@ export function useSeoEspeces(options: {
               "@type": "ListItem",
               position:
                 bornesPage(options.page.value?.page ?? 1).debut + rang + 1,
-              name: t(`especes.${espece.slug}`),
+              name: espece.nom,
               description: t(`especesFiches.${espece.slug}.texte`),
               url: `${origine}${lienEnclos(options.zone(), espece.slug)}`,
-              ...(espece.image ? { image: `${origine}${espece.image}` } : {}),
+              ...(espece.image
+                ? { image: new URL(espece.image, origine).href }
+                : {}),
             }),
           ),
         }),
