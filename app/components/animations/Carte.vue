@@ -1,10 +1,10 @@
 <script setup lang="ts">
-import { ArrowRight, CalendarDays, Clock } from "lucide-vue-next";
+import { ArrowRight, CalendarDays, Clock, PawPrint } from "lucide-vue-next";
 
 withDefaults(
   defineProps<{
     lien: string;
-    image: string;
+    image: string | null;
     alt: string;
     titre: string;
     description: string;
@@ -24,6 +24,7 @@ withDefaults(
   >
     <div class="relative aspect-4/3 overflow-hidden bg-sauge/40">
       <UiPhoto
+        v-if="image"
         :src="image"
         :alt="alt"
         sizes="(min-width: 1024px) 400px, 50vw"
@@ -32,6 +33,13 @@ withDefaults(
         draggable="false"
         class="size-full object-cover transition duration-500 group-hover:scale-105"
       />
+      <div
+        v-else
+        class="relative flex size-full items-center justify-center bg-acacia"
+      >
+        <div class="motif-feuilles absolute inset-0 bg-white/20" />
+        <PawPrint class="relative size-16 text-sable/90" aria-hidden="true" />
+      </div>
       <p
         class="absolute top-2 left-2 flex max-w-[calc(100%-1rem)] items-center gap-1 rounded-full px-2.5 py-1 text-xs leading-tight font-semibold whitespace-nowrap shadow-md shadow-galerie/15 sm:top-3 sm:left-3 sm:gap-1.5 sm:px-3 sm:py-1.5 sm:text-sm"
         :class="
