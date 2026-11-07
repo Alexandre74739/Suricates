@@ -1,27 +1,22 @@
 <script setup lang="ts">
 import { Clock } from "lucide-vue-next";
 
-import { ANIMATIONS } from "~/data/animations";
-
 const props = defineProps<{ speciesSlug: string }>();
 
 const { t } = useI18n();
-const localePath = useLocalePath();
 const { formatHeure, formatDateHeure } = useFormatage();
+const { animations } = await useAnimations(() => [props.speciesSlug]);
 
 const animation = computed(() => {
-  const candidates = ANIMATIONS.filter(
-    (a) =>
-      a.enclos === props.speciesSlug &&
-      ((a.type === "FIXE" && a.heure) ||
-        (a.dateHeure && new Date(a.dateHeure) > new Date())),
+  const candidates = animations.value.filter(
+    (a) => (a.type === "FIXE" && a.heure) || a.dateHeure,
   );
   const found = candidates.find((a) => a.type === "FIXE") ?? candidates[0];
   if (!found) return undefined;
   return {
-    title: t(`animations.liste.${found.slug}.titre`),
-    link: localePath(`/animations/${found.slug}`),
-    description: t(`animations.liste.${found.slug}.description`),
+    title: found.titre,
+    link: found.lien,
+    description: found.description,
     schedule: found.heure
       ? t("parc.enclos.horaire.quotidien", { heure: formatHeure(found.heure) })
       : t("parc.enclos.horaire.ponctuel", formatDateHeure(found.dateHeure!)),

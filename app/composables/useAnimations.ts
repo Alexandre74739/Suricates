@@ -1,13 +1,18 @@
-import { ANIMATIONS, type AnimationVitrine } from "~/data/animations";
+import type { AnimationVitrine } from "#shared/animations";
 
 // Animations à venir mises en forme pour les cartes : toutes les fixes, et les ponctuelles
-// pas encore passées. `filtre` restreint la liste (ex. aux enclos d'une zone).
-export function useAnimations(
-  filtre: (animation: AnimationVitrine) => boolean = () => true,
-) {
-  const { t } = useI18n();
+// pas encore passées. `especes` restreint la liste aux enclos de ces espèces (ex. d'une zone).
+export async function useAnimations(especes?: MaybeRefOrGetter<string[] | undefined>) {
+  const { t, locale } = useI18n();
   const localePath = useLocalePath();
   const { formatHeure, formatDateHeure } = useFormatage();
+
+  const filtre = computed(() => toValue(especes)?.join(",") ?? "");
+  const { data } = await useFetch<AnimationVitrine[]>("/api/animations", {
+    key: computed(() => `animations-${locale.value}-${filtre.value}`),
+    query: { langue: locale, especes: filtre },
+    default: () => [],
+  });
 
   function horaire({ heure, dateHeure }: AnimationVitrine) {
     if (dateHeure) {
@@ -32,18 +37,9 @@ export function useAnimations(
   }
 
   const animations = computed(() =>
-    ANIMATIONS.filter(
-      (a) =>
-        (a.type === "FIXE" ||
-          (a.dateHeure && new Date(a.dateHeure) > new Date())) &&
-        filtre(a),
-    ).map((a) => ({
-      slug: a.slug,
-      image: a.image,
+    data.value.map((a) => ({
+      ...a,
       lien: localePath(`/animations/${a.slug}`),
-      titre: t(`animations.liste.${a.slug}.titre`),
-      description: t(`animations.liste.${a.slug}.description`),
-      alt: t(`animations.liste.${a.slug}.alt`),
       horaire: horaire(a),
       exceptionnel: a.type === "PONCTUELLE",
     })),

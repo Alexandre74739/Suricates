@@ -11,9 +11,7 @@ const props = defineProps<{
 
 const localePath = useLocalePath();
 const titreId = useId();
-const { animations } = useAnimations(
-  (a) => !props.especes || (!!a.enclos && props.especes.includes(a.enclos)),
-);
+const { animations } = await useAnimations(() => props.especes);
 </script>
 
 <template>
