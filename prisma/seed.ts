@@ -1,14 +1,37 @@
+import { existsSync, readFileSync } from "node:fs";
+import { BlobNotFoundError, head, put } from "@vercel/blob";
 import { PrismaPg } from "@prisma/adapter-pg";
 import { PrismaClient, type Pole, type Role } from "../server/generated/prisma/client";
 import { ZONES } from "../app/data/zones";
 import { ESPECES } from "../app/data/especes";
-import { ANIMATIONS } from "../app/data/animations";
+import { ANIMATIONS } from "./donnees/animations";
 import { TARIFS_CENTIMES } from "../shared/parc";
 import fr from "../i18n/locales/fr.json";
+import en from "../i18n/locales/en.json";
 
 const prisma = new PrismaClient({
   adapter: new PrismaPg({ connectionString: process.env.DATABASE_URL }),
 });
+
+// Une photo déjà dans Blob est réutilisée : le fichier source peut avoir quitté le dépôt.
+async function photo(source: string | undefined, chemin: string) {
+  if (!source) return null;
+  if (source.startsWith("https://")) return source;
+  try {
+    return (await head(chemin)).url;
+  } catch (erreur) {
+    if (!(erreur instanceof BlobNotFoundError)) throw erreur;
+  }
+  if (!existsSync(source)) {
+    console.warn(`Photo introuvable, ignorée : ${source}`);
+    return null;
+  }
+  const { url } = await put(chemin, readFileSync(source), {
+    access: "public",
+    contentType: "image/webp",
+  });
+  return url;
+}
 
 const JAUGE_JOURNALIERE = 2500;
 
@@ -65,10 +88,12 @@ async function main() {
 
   const enclosParEspece = new Map<string, number>();
   for (const [ordre, zone] of ZONES.entries()) {
+    const cle = zone.slug as keyof typeof fr.parc.zones.liste;
     const donnees = {
-      nom: fr.parc.zones.liste[zone.slug as keyof typeof fr.parc.zones.liste].nom,
+      nom: fr.parc.zones.liste[cle].nom,
+      nomEn: en.parc.zones.liste[cle].nom,
       couleur: zone.couleur,
-      image: zone.image ?? null,
+      image: await photo(zone.image && `public${zone.image}`, `zones/${zone.slug}.webp`),
       ordre,
     };
     const { id: zoneId } = await prisma.zone.upsert({
@@ -80,7 +105,11 @@ async function main() {
     for (const slug of zone.especes) {
       const espece = {
         nom: fr.especes[slug as keyof typeof fr.especes],
-        image: ESPECES[slug]?.image ?? null,
+        nomEn: en.especes[slug as keyof typeof en.especes],
+        image: await photo(
+          ESPECES[slug]?.image?.replace(/^\//, "public/"),
+          `especes/${slug}.webp`,
+        ),
       };
       const { id: especeId } = await prisma.espece.upsert({
         where: { slug },
@@ -99,11 +128,14 @@ async function main() {
 
   const creeParId = equipe.get("adjoint-animations");
   for (const animation of ANIMATIONS) {
-    const textes = fr.animations.liste[animation.slug as keyof typeof fr.animations.liste];
     const donnees = {
-      titre: textes.titre,
-      description: textes.description,
-      image: animation.image,
+      titre: animation.titre,
+      titreEn: animation.titreEn,
+      description: animation.description,
+      descriptionEn: animation.descriptionEn,
+      image: await photo(animation.photo, `animations/${animation.slug}.webp`),
+      alt: animation.alt ?? null,
+      altEn: animation.altEn ?? null,
       type: animation.type,
       heure: animation.heure ?? null,
       dateHeure: animation.dateHeure ? new Date(animation.dateHeure) : null,
