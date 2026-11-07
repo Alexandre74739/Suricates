@@ -135,6 +135,7 @@ model Zone {
   id      Int      @id @default(autoincrement())
   slug    String   @unique
   nom     String
+  nomEn   String?
   couleur String
   image   String?
   ordre   Int      @default(0)
@@ -145,6 +146,7 @@ model Espece {
   id     Int      @id @default(autoincrement())
   slug   String   @unique
   nom    String
+  nomEn  String?
   image  String?
   enclos Enclos[]
 }
@@ -167,17 +169,21 @@ model Enclos {
 }
 
 model Animation {
-  id           Int           @id @default(autoincrement())
-  slug         String        @unique
-  titre        String
-  description  String
-  image        String?
-  type         TypeAnimation
-  heure        String?
-  dateHeure    DateTime?
-  dureeMinutes Int?
-  active      Boolean       @default(true)
-  creeLe       DateTime      @default(now())
+  id            Int           @id @default(autoincrement())
+  slug          String        @unique
+  titre         String
+  titreEn       String?
+  description   String
+  descriptionEn String?
+  image         String?
+  alt           String?
+  altEn         String?
+  type          TypeAnimation
+  heure         String?
+  dateHeure     DateTime?
+  dureeMinutes  Int?
+  active        Boolean       @default(true)
+  creeLe        DateTime      @default(now())
 
   enclosId  Int?
   enclos    Enclos?      @relation(fields: [enclosId], references: [id], onDelete: SetNull)
