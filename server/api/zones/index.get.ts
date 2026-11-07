@@ -8,7 +8,7 @@ export default defineEventHandler(async (event): Promise<ZoneVitrine[]> => {
     orderBy: { ordre: "asc" },
     include: {
       enclos: {
-        orderBy: { id: "asc" },
+        orderBy: [{ ordre: "asc" }, { id: "asc" }],
         select: {
           effectif: true,
           espece: { select: { slug: true, nom: true, nomEn: true, image: true } },

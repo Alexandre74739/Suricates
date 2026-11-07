@@ -34,7 +34,7 @@ const PHOTOS_ZONES: Record<
     },
   },
   "sentier-des-incas": {
-    image: "/images/parc/calao.webp",
+    image: "/images/parc/aras.webp",
     hero: {
       image: "/images/parc/capybaras.webp",
       position: "object-[70%_center]",

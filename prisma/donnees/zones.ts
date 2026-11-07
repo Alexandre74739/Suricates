@@ -1,6 +1,12 @@
 // `photo` : fichier du dépôt téléversé dans Vercel Blob au premier seed, ou URL déjà dans Blob.
 // Une espèce n'a pas de photo tant qu'aucune photo inédite sur le site ne lui est attribuée.
-export type EspeceInitiale = { slug: string; nom: string; nomEn: string; effectif: number; photo?: string };
+export type EspeceInitiale = {
+  slug: string;
+  nom: string;
+  nomEn: string;
+  effectif: number;
+  photo?: string;
+};
 
 export type ZoneInitiale = {
   slug: string;
@@ -73,7 +79,13 @@ export const ZONES: ZoneInitiale[] = [
         effectif: 3,
         photo: "https://rolcm5wg5ejsntsu.public.blob.vercel-storage.com/enclos/hippopotames.webp",
       },
-      { slug: "gnous", nom: "Gnous", nomEn: "Wildebeest", effectif: 10 },
+      {
+        slug: "gnous",
+        nom: "Gnous",
+        nomEn: "Wildebeest",
+        effectif: 10,
+        photo: "https://rolcm5wg5ejsntsu.public.blob.vercel-storage.com/enclos/gnous.webp",
+      },
       {
         slug: "phacocheres",
         nom: "Phacochères",
@@ -88,13 +100,12 @@ export const ZONES: ZoneInitiale[] = [
         effectif: 18,
         photo: "https://rolcm5wg5ejsntsu.public.blob.vercel-storage.com/enclos/babouins.webp",
       },
-      { slug: "oryx", nom: "Oryx", nomEn: "Oryx", effectif: 6 },
       {
-        slug: "servals",
-        nom: "Servals",
-        nomEn: "Servals",
-        effectif: 2,
-        photo: "https://rolcm5wg5ejsntsu.public.blob.vercel-storage.com/enclos/servals.webp",
+        slug: "oryx",
+        nom: "Oryx",
+        nomEn: "Oryx",
+        effectif: 6,
+        photo: "https://rolcm5wg5ejsntsu.public.blob.vercel-storage.com/enclos/oryx.webp",
       },
       {
         slug: "calaos",
@@ -103,7 +114,13 @@ export const ZONES: ZoneInitiale[] = [
         effectif: 3,
         photo: "https://rolcm5wg5ejsntsu.public.blob.vercel-storage.com/enclos/calaos.webp",
       },
-      { slug: "marabouts", nom: "Marabouts", nomEn: "Marabou storks", effectif: 4 },
+      {
+        slug: "marabouts",
+        nom: "Marabouts",
+        nomEn: "Marabou storks",
+        effectif: 4,
+        photo: "https://rolcm5wg5ejsntsu.public.blob.vercel-storage.com/enclos/marabouts.webp",
+      },
       {
         slug: "springboks",
         nom: "Springboks",
@@ -118,6 +135,27 @@ export const ZONES: ZoneInitiale[] = [
         effectif: 3,
         photo: "https://rolcm5wg5ejsntsu.public.blob.vercel-storage.com/enclos/tortues-sillonnees.webp",
       },
+      {
+        slug: "hyenes",
+        nom: "Hyènes",
+        nomEn: "Hyenas",
+        effectif: 5,
+        photo: "https://rolcm5wg5ejsntsu.public.blob.vercel-storage.com/enclos/hyenes.webp",
+      },
+      {
+        slug: "lycaons",
+        nom: "Lycaons",
+        nomEn: "African wild dogs",
+        effectif: 9,
+        photo: "https://rolcm5wg5ejsntsu.public.blob.vercel-storage.com/enclos/lycaons.webp",
+      },
+      {
+        slug: "fennecs",
+        nom: "Fennecs",
+        nomEn: "Fennec foxes",
+        effectif: 4,
+        photo: "https://rolcm5wg5ejsntsu.public.blob.vercel-storage.com/enclos/fennecs.webp",
+      },
     ],
   },
   {
@@ -126,22 +164,64 @@ export const ZONES: ZoneInitiale[] = [
     nomEn: "Big Cat Territory",
     couleur: "ocre",
     especes: [
-      { slug: "lions", nom: "Lions", nomEn: "Lions", effectif: 5 },
-      { slug: "tigres", nom: "Tigres", nomEn: "Tigers", effectif: 3 },
-      { slug: "guepards", nom: "Guépards", nomEn: "Cheetahs", effectif: 4 },
-      { slug: "gorilles", nom: "Gorilles", nomEn: "Gorillas", effectif: 6 },
-      { slug: "hyenes", nom: "Hyènes", nomEn: "Hyenas", effectif: 5 },
-      { slug: "lycaons", nom: "Lycaons", nomEn: "African wild dogs", effectif: 9 },
-      { slug: "leopards", nom: "Léopards", nomEn: "Leopards", effectif: 2 },
-      { slug: "pantheres-des-neiges", nom: "Panthères des neiges", nomEn: "Snow leopards", effectif: 2 },
-      { slug: "caracals", nom: "Caracals", nomEn: "Caracals", effectif: 2 },
-      { slug: "chimpanzes", nom: "Chimpanzés", nomEn: "Chimpanzees", effectif: 9 },
-      { slug: "mandrills", nom: "Mandrills", nomEn: "Mandrills", effectif: 7 },
-      { slug: "ours-malais", nom: "Ours malais", nomEn: "Sun bears", effectif: 2 },
-      { slug: "dholes", nom: "Dholes", nomEn: "Dholes", effectif: 6 },
-      { slug: "fennecs", nom: "Fennecs", nomEn: "Fennec foxes", effectif: 4 },
-      { slug: "chacals", nom: "Chacals", nomEn: "Jackals", effectif: 4 },
-      { slug: "pantheres-nebuleuses", nom: "Panthères nébuleuses", nomEn: "Clouded leopards", effectif: 2 },
+      {
+        slug: "lions",
+        nom: "Lions",
+        nomEn: "Lions",
+        effectif: 5,
+        photo: "https://rolcm5wg5ejsntsu.public.blob.vercel-storage.com/enclos/lions.webp",
+      },
+      {
+        slug: "tigres",
+        nom: "Tigres",
+        nomEn: "Tigers",
+        effectif: 3,
+        photo: "https://rolcm5wg5ejsntsu.public.blob.vercel-storage.com/enclos/tigres.webp",
+      },
+      {
+        slug: "guepards",
+        nom: "Guépards",
+        nomEn: "Cheetahs",
+        effectif: 4,
+        photo: "https://rolcm5wg5ejsntsu.public.blob.vercel-storage.com/enclos/guepards.webp",
+      },
+      {
+        slug: "leopards",
+        nom: "Léopards",
+        nomEn: "Leopards",
+        effectif: 2,
+        photo: "https://rolcm5wg5ejsntsu.public.blob.vercel-storage.com/enclos/leopards.webp",
+      },
+      {
+        slug: "pantheres-des-neiges",
+        nom: "Panthères des neiges",
+        nomEn: "Snow leopards",
+        effectif: 2,
+        photo: "https://rolcm5wg5ejsntsu.public.blob.vercel-storage.com/enclos/pantheres-des-neiges.webp",
+      },
+      {
+        slug: "caracals",
+        nom: "Caracals",
+        nomEn: "Caracals",
+        effectif: 2,
+        photo: "https://rolcm5wg5ejsntsu.public.blob.vercel-storage.com/enclos/caracals.webp",
+      },
+      {
+        slug: "pantheres-nebuleuses",
+        nom: "Panthères nébuleuses",
+        nomEn: "Clouded leopards",
+        effectif: 2,
+        photo: "https://rolcm5wg5ejsntsu.public.blob.vercel-storage.com/enclos/pantheres-nebuleuses.webp",
+      },
+      {
+        slug: "servals",
+        nom: "Servals",
+        nomEn: "Servals",
+        effectif: 2,
+        photo: "https://rolcm5wg5ejsntsu.public.blob.vercel-storage.com/enclos/servals.webp",
+      },
+      { slug: "lynx", nom: "Lynx", nomEn: "Lynxes", effectif: 2 },
+      { slug: "pumas", nom: "Pumas", nomEn: "Pumas", effectif: 2 },
     ],
   },
   {
@@ -166,6 +246,34 @@ export const ZONES: ZoneInitiale[] = [
       { slug: "nasiques", nom: "Nasiques", nomEn: "Proboscis monkeys", effectif: 5 },
       { slug: "gavials", nom: "Gavials", nomEn: "Gharials", effectif: 3 },
       { slug: "gaurs", nom: "Gaurs", nomEn: "Gaurs", effectif: 4 },
+      {
+        slug: "gorilles",
+        nom: "Gorilles",
+        nomEn: "Gorillas",
+        effectif: 6,
+        photo: "https://rolcm5wg5ejsntsu.public.blob.vercel-storage.com/enclos/gorilles.webp",
+      },
+      {
+        slug: "chimpanzes",
+        nom: "Chimpanzés",
+        nomEn: "Chimpanzees",
+        effectif: 9,
+        photo: "https://rolcm5wg5ejsntsu.public.blob.vercel-storage.com/enclos/chimpanzes.webp",
+      },
+      {
+        slug: "mandrills",
+        nom: "Mandrills",
+        nomEn: "Mandrills",
+        effectif: 7,
+        photo: "https://rolcm5wg5ejsntsu.public.blob.vercel-storage.com/enclos/mandrills.webp",
+      },
+      {
+        slug: "ours-malais",
+        nom: "Ours malais",
+        nomEn: "Sun bears",
+        effectif: 2,
+        photo: "https://rolcm5wg5ejsntsu.public.blob.vercel-storage.com/enclos/ours-malais.webp",
+      },
     ],
   },
   {

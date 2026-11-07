@@ -1,0 +1,3 @@
+-- AlterTable
+ALTER TABLE "Enclos" ADD COLUMN     "ordre" INTEGER NOT NULL DEFAULT 0;
+

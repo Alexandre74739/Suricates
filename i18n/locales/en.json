@@ -229,45 +229,45 @@
           }
         },
         "territoire-des-fauves": {
-          "accroche": "Here, the predators rule. From the lookout towers, spot the tiger patrolling the tall grass, the cheetah ready to pounce or the pack of African wild dogs taking a nap.",
+          "accroche": "Here, the big cats rule. From the lookout towers, watch the tiger patrolling the tall grass, the cheetah ready to pounce or the leopard napping on its branch.",
           "milieu": "Tall grass, sun-warmed rocks and wooden lookout towers: watch the big cats without them noticing you.",
-          "habitants": "Lions, tigers and cheetahs share the territory with hyenas, African wild dogs and a family of gorillas.",
+          "habitants": "Lions, tigers and cheetahs share the territory with leopards, lynxes and elusive snow leopards.",
           "bouton": "Discover Big Cat Territory",
           "alt": "A lion with a golden mane lying on a rock in the sun",
           "altHero": "A tiger sitting in the sun in front of a stone wall, gazing into the distance",
           "milieuNaturel": {
             "titre": "On the trail of the great predators",
-            "texte": "From the savannahs of Africa to the forests of Asia, every predator has its own technique: the cheetah sprints, the tiger happily swims and African wild dogs hunt in packs. In the shade, the gorillas spend their days nibbling leaves and fruit.",
-            "region": "African savannahs, Central African forests and the jungles of South Asia.",
-            "climat": "Tropical, with a distinct dry season and rainy season.",
+            "texte": "From the savannahs of Africa to the forests of Asia, every cat has its own technique: the cheetah sprints, the tiger happily swims and the leopard hauls its prey up into the trees. Further north, the lynx and the snow leopard hunt among rocks and cold forests.",
+            "region": "African savannahs, Asian jungles, Central Asian mountains and the forests of Europe and the Americas.",
+            "climat": "From hot, humid tropics to cold, dry mountains.",
             "paysage": "Tall grass, rocky outcrops and the edge of dense forest."
           },
           "habitantsSection": {
             "titre": "The animals of Big Cat Territory",
-            "texte": "In Big Cat Territory, the great predators of Africa and Asia live in large enclosures designed for their well-being. Lazy lions, swimming tigers, well-organised hyenas: each has its own way of owning the territory."
+            "texte": "In Big Cat Territory, big cats from all over the world live in large enclosures designed for their well-being. Lazy lions, swimming tigers, sprinting cheetahs: each has its own way of owning the territory."
           },
           "conservation": {
             "titre": "Protecting big cats and predators",
-            "texte": "Lions, tigers, cheetahs and wild dogs are threatened in the wild. In the Big Cat Territory, Le Domaine des Suricates acts for their future, at the park and in the field."
+            "texte": "Lions, tigers, cheetahs and snow leopards are threatened in the wild. In the Big Cat Territory, Le Domaine des Suricates acts for their future, at the park and in the field."
           }
         },
         "temple-de-la-jungle": {
           "accroche": "Step into a bamboo forest where time slows down. The giant panda munches away, gibbons sing in the trees and otters play in the streams.",
-          "milieu": "Bamboo, streams and red gateways: a cool, quiet Asian forest, perfect on hot days.",
-          "habitants": "Giant and red pandas, singing gibbons, binturongs, otters and muntjacs share the forest.",
+          "milieu": "Bamboo, streams and red gateways: a cool, quiet tropical forest, perfect on hot days.",
+          "habitants": "Giant and red pandas, gorillas, chimpanzees, singing gibbons and sun bears share the forest.",
           "bouton": "Discover the Jungle Temple",
           "alt": "A giant panda munching a bamboo stalk among the greenery",
           "altHero": "A giant panda sitting on a fallen log, surrounded by leaves",
           "milieuNaturel": {
-            "titre": "In the misty forests of Asia",
-            "texte": "In the misty mountains of China, the giant panda spends up to 12 hours a day eating bamboo. Further south, the jungle belongs to the climbers: gibbons, red pandas and binturongs spend almost their whole lives in the trees.",
-            "region": "The mountains of central China, the Himalayas and Southeast Asia.",
+            "titre": "In the tropical forests of Asia and Africa",
+            "texte": "In the misty mountains of China, the giant panda spends up to 12 hours a day eating bamboo. Further south, the jungle belongs to the climbers: gibbons, red pandas and binturongs spend almost their whole lives in the trees. In Central Africa, gorillas, chimpanzees and mandrills roam the undergrowth.",
+            "region": "The mountains of central China, Southeast Asia and the forests of Central Africa.",
             "climat": "Cool and damp in the mountains, hot and rainy in the valleys.",
             "paysage": "Bamboo forests, mountain streams and a thick canopy."
           },
           "habitantsSection": {
             "titre": "The animals of the Jungle Temple",
-            "texte": "Among bamboo and overgrown ruins, the Jungle Temple is home to Asian species as discreet as they are surprising. Hungry pandas, singing gibbons, popcorn-scented binturongs: come and meet them."
+            "texte": "Among bamboo and overgrown ruins, the Jungle Temple is home to species from the forests of Asia and Africa, as discreet as they are surprising. Hungry pandas, calm gorillas, popcorn-scented binturongs: come and meet them."
           },
           "conservation": {
             "titre": "Protecting the animals of Asia's forests",
@@ -279,7 +279,7 @@
           "milieu": "Walk through the Inca gate and follow a path between lagoons and rainforest, just like in the Amazon.",
           "habitants": "Llamas and alpacas up high, tapirs, capybaras and squirrel monkeys in the forest, flamingos on the lagoons.",
           "bouton": "Discover the Inca Trail",
-          "alt": "A hornbill with a large yellow beak perched on a branch in front of a wooden fence",
+          "alt": "A red and green macaw perched on a branch in front of its aviary mesh",
           "altHero": "A capybara and its young sitting side by side on the grass in the sun",
           "milieuNaturel": {
             "titre": "From the Andes to the Amazon",
@@ -715,26 +715,12 @@
       "anecdote": "Every sun bear's chest patch is different, like a signature.",
       "vedette": "They happily climb the trees in their enclosure and nap in a hammock."
     },
-    "dholes": {
-      "texte": "These red-coated wild dogs of Asia communicate by whistling. The pack lets the young eat first.",
-      "origine": "Forests of South and East Asia",
-      "regime": "Meat",
-      "anecdote": "They're nicknamed 'whistling dogs' because of their calls.",
-      "vedette": "They live as a pack on wooded, hilly ground, always on the move."
-    },
     "fennecs": {
       "texte": "The world's smallest fox has the largest ears for its size. They help it hear and keep cool.",
       "origine": "Sahara Desert",
       "regime": "Insects, small rodents, fruit",
       "anecdote": "Fennec foxes can go without drinking: they get water from their food.",
       "vedette": "Their warm sandy enclosure lets them dig burrows with several entrances."
-    },
-    "chacals": {
-      "texte": "Loyal to their partner for life, they raise their pups with help from older siblings.",
-      "origine": "East and southern Africa",
-      "regime": "Small animals, fruit, carrion",
-      "anecdote": "Black-backed jackals are named after the dark saddle on their back.",
-      "vedette": "They share the big cats' savannah, at a safe distance from the lions."
     },
     "pantheres-nebuleuses": {
       "texte": "They have the longest canines of any cat relative to their size. Their large spots look like clouds.",
@@ -952,6 +938,20 @@
       "regime": "Crabs, shellfish",
       "anecdote": "Two thirds of an octopus's neurons are in its arms.",
       "vedette": "Their tank is full of hiding places and toys: keepers give them jars to open."
+    },
+    "lynx": {
+      "texte": "With tufts on the tips of their ears and big snowshoe paws, lynxes move silently, even through snow.",
+      "origine": "Forests of Europe and Asia",
+      "regime": "Meat (roe deer, hares and small mammals)",
+      "anecdote": "The Eurasian lynx also lives in the French Alps, not far from the Chartreuse.",
+      "vedette": "Their undergrowth of pines and rocks lets them keep watch out of sight."
+    },
+    "pumas": {
+      "texte": "Pumas don't roar: they whistle, hiss and purr. They can leap more than 5 metres high in a single bound.",
+      "origine": "Mountains and forests of the Americas",
+      "regime": "Meat (deer and small mammals)",
+      "anecdote": "The puma holds the record for the mammal with the most names: cougar, mountain lion, panther…",
+      "vedette": "Their sloping, rock-strewn enclosure gives them great lookout points."
     }
   },
   "footer": {

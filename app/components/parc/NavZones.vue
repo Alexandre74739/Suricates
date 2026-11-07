@@ -59,7 +59,7 @@ const titreId = useId();
                     alt=""
                     :largeurs="[320, 640]"
                     sizes="(min-width: 1024px) 240px, (min-width: 640px) 30vw, 45vw"
-                    class="size-full object-cover"
+                    class="size-full object-cover object-top"
                   />
                 </div>
                 <p

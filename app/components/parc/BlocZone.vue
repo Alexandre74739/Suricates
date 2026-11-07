@@ -51,7 +51,7 @@ const visibles = computed(() => props.especes.slice(0, ESPECES_PC));
           :src="image"
           :alt="alt ?? ''"
           sizes="(min-width: 1024px) 460px, calc(100vw - 3rem)"
-          class="size-full object-cover"
+          class="size-full object-cover object-top"
         />
         <div
           v-else

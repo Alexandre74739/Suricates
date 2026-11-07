@@ -229,45 +229,45 @@
           }
         },
         "territoire-des-fauves": {
-          "accroche": "Ici, ce sont les prédateurs qui font la loi. Du haut des miradors, guettez le tigre qui patrouille dans les hautes herbes, le guépard prêt à bondir ou la meute de lycaons en pleine sieste.",
-          "milieu": "Hautes herbes, rochers chauffés au soleil et miradors en bois : de quoi observer les fauves sans qu'ils ne vous remarquent.",
-          "habitants": "Lions, tigres et guépards partagent le territoire avec les hyènes, les lycaons et une famille de gorilles.",
+          "accroche": "Ici, ce sont les grands félins qui font la loi. Du haut des miradors, guettez le tigre qui patrouille dans les hautes herbes, le guépard prêt à bondir ou le léopard en pleine sieste sur sa branche.",
+          "milieu": "Hautes herbes, rochers chauffés au soleil et miradors en bois : de quoi observer les grands félins sans qu'ils ne vous remarquent.",
+          "habitants": "Lions, tigres et guépards partagent le territoire avec les léopards, les lynx et les discrètes panthères des neiges.",
           "bouton": "Découvrir le Territoire des Fauves",
           "alt": "Un lion à la crinière dorée allongé sur un rocher, au soleil",
           "altHero": "Un tigre assis au soleil devant un mur de pierre, le regard tourné au loin",
           "milieuNaturel": {
             "titre": "Sur la piste des grands prédateurs",
-            "texte": "Des savanes d'Afrique aux forêts d'Asie, chaque prédateur a sa technique : le guépard sprinte, le tigre n'hésite pas à nager et les lycaons chassent en meute. À l'ombre, les gorilles passent leurs journées à grignoter feuilles et fruits.",
-            "region": "Savanes d'Afrique, forêts d'Afrique centrale et jungles d'Asie du Sud.",
-            "climat": "Tropical, avec une saison sèche et une saison des pluies bien marquées.",
+            "texte": "Des savanes d'Afrique aux forêts d'Asie, chaque félin a sa technique : le guépard sprinte, le tigre n'hésite pas à nager et le léopard hisse ses proies dans les arbres. Plus au nord, le lynx et la panthère des neiges chassent entre rochers et forêts froides.",
+            "region": "Savanes d'Afrique, jungles d'Asie, montagnes d'Asie centrale et forêts d'Europe et d'Amérique.",
+            "climat": "Du tropical chaud et humide au montagnard froid et sec.",
             "paysage": "Hautes herbes, amas de rochers et lisières de forêt dense."
           },
           "habitantsSection": {
             "titre": "Les animaux du Territoire des Fauves",
-            "texte": "Au Territoire des Fauves, les grands prédateurs d'Afrique et d'Asie vivent dans de vastes enclos pensés pour leur bien-être. Lions paresseux, tigres nageurs, hyènes bien organisées : chacun a sa façon d'occuper son territoire."
+            "texte": "Au Territoire des Fauves, les grands félins du monde entier vivent dans de vastes enclos pensés pour leur bien-être. Lions paresseux, tigres nageurs, guépards sprinteurs : chacun a sa façon d'occuper son territoire."
           },
           "conservation": {
             "titre": "Protéger les grands fauves",
-            "texte": "Lions, tigres, guépards et lycaons sont menacés dans la nature. Au Territoire des Fauves, le Domaine des Suricates agit pour leur avenir, au parc comme sur le terrain."
+            "texte": "Lions, tigres, guépards et panthères des neiges sont menacés dans la nature. Au Territoire des Fauves, le Domaine des Suricates agit pour leur avenir, au parc comme sur le terrain."
           }
         },
         "temple-de-la-jungle": {
           "accroche": "Entrez dans une forêt de bambous où le temps ralentit. Le panda géant y grignote tranquillement, les gibbons chantent dans les arbres et les loutres jouent dans les ruisseaux.",
-          "milieu": "Bambous, ruisseaux et portiques rouges : une forêt d'Asie fraîche et calme, idéale les jours de grosse chaleur.",
-          "habitants": "Pandas géants et pandas roux, gibbons chanteurs, binturongs, loutres et muntjacs se partagent la forêt.",
+          "milieu": "Bambous, ruisseaux et portiques rouges : une forêt tropicale fraîche et calme, idéale les jours de grosse chaleur.",
+          "habitants": "Pandas géants et pandas roux, gorilles, chimpanzés, gibbons chanteurs et ours malais se partagent la forêt.",
           "bouton": "Découvrir le Temple de la Jungle",
           "alt": "Un panda géant croque une tige de bambou au milieu de la végétation",
           "altHero": "Un panda géant assis sur un tronc couché, entouré de feuillages",
           "milieuNaturel": {
-            "titre": "Dans les forêts brumeuses d'Asie",
-            "texte": "Dans les montagnes brumeuses de Chine, le panda géant passe jusqu'à 12 heures par jour à manger du bambou. Plus au sud, la jungle appartient aux grimpeurs : gibbons, pandas roux et binturongs vivent presque toute leur vie dans les arbres.",
-            "region": "Montagnes du centre de la Chine, Himalaya et Asie du Sud-Est.",
+            "titre": "Dans les forêts tropicales d'Asie et d'Afrique",
+            "texte": "Dans les montagnes brumeuses de Chine, le panda géant passe jusqu'à 12 heures par jour à manger du bambou. Plus au sud, la jungle appartient aux grimpeurs : gibbons, pandas roux et binturongs vivent presque toute leur vie dans les arbres. En Afrique centrale, gorilles, chimpanzés et mandrills arpentent le sous-bois.",
+            "region": "Montagnes du centre de la Chine, Asie du Sud-Est et forêts d'Afrique centrale.",
             "climat": "Frais et humide en altitude, chaud et pluvieux dans les vallées.",
             "paysage": "Forêts de bambous, ruisseaux de montagne et canopée épaisse."
           },
           "habitantsSection": {
             "titre": "Les animaux du Temple de la Jungle",
-            "texte": "Entre bambous et ruines envahies par la végétation, le Temple de la Jungle accueille des espèces d'Asie aussi discrètes qu'étonnantes. Pandas gourmands, gibbons chanteurs, binturongs au parfum de pop-corn : partez à leur rencontre."
+            "texte": "Entre bambous et ruines envahies par la végétation, le Temple de la Jungle accueille des espèces des forêts d'Asie et d'Afrique aussi discrètes qu'étonnantes. Pandas gourmands, gorilles placides, binturongs au parfum de pop-corn : partez à leur rencontre."
           },
           "conservation": {
             "titre": "Protéger les animaux des forêts d'Asie",
@@ -279,7 +279,7 @@
           "milieu": "On passe sous la porte inca pour suivre un chemin entre lagunes et forêt humide, comme en Amazonie.",
           "habitants": "Lamas et alpagas sur les hauteurs, tapirs, capybaras et saïmiris dans la forêt, flamants roses sur les lagunes.",
           "bouton": "Découvrir le Sentier des Incas",
-          "alt": "Un calao au grand bec jaune perché sur une branche, devant une palissade en bois",
+          "alt": "Un ara rouge et vert perché sur une branche, devant le grillage de sa volière",
           "altHero": "Un capybara et son petit assis côte à côte sur l'herbe, au soleil",
           "milieuNaturel": {
             "titre": "Des Andes à l'Amazonie",
@@ -715,26 +715,12 @@
       "anecdote": "Chaque ours malais a une tache sur le poitrail différente, comme une signature.",
       "vedette": "Ils grimpent volontiers aux arbres de leur enclos et y font la sieste dans un hamac."
     },
-    "dholes": {
-      "texte": "Ces chiens sauvages d'Asie au pelage roux communiquent par des sifflements. La meute partage la nourriture avec les petits en priorité.",
-      "origine": "Forêts d'Asie du Sud et de l'Est",
-      "regime": "Viande",
-      "anecdote": "On les surnomme les « chiens siffleurs » à cause de leurs appels.",
-      "vedette": "Ils vivent en meute sur un terrain boisé et vallonné, toujours en mouvement."
-    },
     "fennecs": {
       "texte": "Le plus petit renard du monde a les plus grandes oreilles, proportionnellement. Elles lui servent à entendre et à se rafraîchir.",
       "origine": "Désert du Sahara",
       "regime": "Insectes, petits rongeurs, fruits",
       "anecdote": "Le fennec peut se passer de boire : il trouve l'eau dans sa nourriture.",
       "vedette": "Leur enclos de sable chaud leur permet de creuser des terriers à plusieurs entrées."
-    },
-    "chacals": {
-      "texte": "Fidèles en couple toute leur vie, ils élèvent leurs petits avec l'aide des aînés de la famille.",
-      "origine": "Afrique de l'Est et australe",
-      "regime": "Petits animaux, fruits, charognes",
-      "anecdote": "Les chacals à chabraque doivent leur nom à la tache sombre de leur dos, comme une selle.",
-      "vedette": "Ils partagent la savane des fauves, à distance prudente des lions."
     },
     "pantheres-nebuleuses": {
       "texte": "Elles ont, proportionnellement, les plus longues canines de tous les félins. Leurs grandes taches ressemblent à des nuages.",
@@ -952,6 +938,20 @@
       "regime": "Crabes, coquillages",
       "anecdote": "Les deux tiers des neurones d'une pieuvre se trouvent dans ses bras.",
       "vedette": "Leur aquarium est rempli de cachettes et de jeux : les soigneurs lui proposent des bocaux à ouvrir."
+    },
+    "lynx": {
+      "texte": "Avec ses pinceaux au bout des oreilles et ses grosses pattes en raquettes, le lynx se déplace sans bruit, même dans la neige.",
+      "origine": "Forêts d'Europe et d'Asie",
+      "regime": "Viande (chevreuils, lièvres et petits mammifères)",
+      "anecdote": "Le lynx boréal vit aussi dans les Alpes françaises, non loin de la Chartreuse.",
+      "vedette": "Leur sous-bois de pins et de rochers leur permet de guetter à l'abri des regards."
+    },
+    "pumas": {
+      "texte": "Le puma ne rugit pas : il siffle, feule et ronronne. Il peut bondir à plus de 5 mètres de haut d'un seul élan.",
+      "origine": "Montagnes et forêts des Amériques",
+      "regime": "Viande (cerfs et petits mammifères)",
+      "anecdote": "Le puma détient le record du mammifère aux noms les plus nombreux : cougar, lion des montagnes, panthère…",
+      "vedette": "Leur enclos en pente, parsemé de rochers, leur offre de beaux points de vue pour se poster."
     }
   },
   "footer": {

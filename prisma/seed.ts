@@ -97,14 +97,14 @@ async function main() {
       create: { slug: zone.slug, ...donnees },
     });
 
-    for (const { slug, nom, nomEn, effectif, photo: source } of zone.especes) {
+    for (const [rang, { slug, nom, nomEn, effectif, photo: source }] of zone.especes.entries()) {
       const espece = { nom, nomEn, image: await photo(source, `enclos/${slug}.webp`) };
       const { id: especeId } = await prisma.espece.upsert({
         where: { slug },
         update: espece,
         create: { slug, ...espece },
       });
-      const enclos = { zoneId, especeId, effectif };
+      const enclos = { zoneId, especeId, effectif, ordre: rang };
       const { id } = await prisma.enclos.upsert({
         where: { slug },
         update: enclos,
