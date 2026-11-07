@@ -305,7 +305,13 @@ export const ZONES: ZoneInitiale[] = [
         effectif: 6,
         photo: "https://rolcm5wg5ejsntsu.public.blob.vercel-storage.com/enclos/paons.webp",
       },
-      { slug: "tapirs-malais", nom: "Tapirs malais", nomEn: "Malayan tapirs", effectif: 2 },
+      {
+        slug: "tapirs-malais",
+        nom: "Tapirs malais",
+        nomEn: "Malayan tapirs",
+        effectif: 2,
+        photo: "https://rolcm5wg5ejsntsu.public.blob.vercel-storage.com/enclos/tapirs-malais.webp",
+      },
       {
         slug: "entelles",
         nom: "Entelles",
