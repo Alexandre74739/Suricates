@@ -12,7 +12,10 @@ export const FERMETURE_HIVERNALE: { debut: JourDuMois; fin: JourDuMois } = {
   fin: { jour: 6, mois: 2 },
 };
 
-// Provisoire : les prix viendront de la table Tarif, modifiable par l'admin.
-export const TARIFS_CENTIMES = { PLEIN: 2000, REDUIT: 1200 } as const;
+export const JOURS_FERIES_FERMES: JourDuMois[] = [
+  { jour: 1, mois: 1 },
+  { jour: 1, mois: 5 },
+  { jour: 25, mois: 12 },
+];
 
 export const PLAN_PDF = "/plan-du-domaine-des-suricates.pdf";

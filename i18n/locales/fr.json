@@ -154,6 +154,7 @@
         "haute": "En juillet et en août"
       },
       "periodeFermeture": "Du {debut} au {fin}",
+      "joursFeries": "Le {jours}",
       "ferme": "Fermé",
       "derniereEntree": "Dernière entrée 1 h avant la fermeture"
     },

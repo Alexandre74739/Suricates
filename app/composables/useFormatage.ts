@@ -59,5 +59,8 @@ export function useFormatage() {
     return { date, dateCourte, heure: formatHeure(heure) };
   };
 
-  return { formatPrix, formatHeure, formatJour, formatDateHeure };
+  const formatListe = (elements: string[]) =>
+    new Intl.ListFormat(langue.value, { type: "conjunction" }).format(elements);
+
+  return { formatPrix, formatHeure, formatJour, formatDateHeure, formatListe };
 }

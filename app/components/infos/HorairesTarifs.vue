@@ -1,14 +1,19 @@
 <script setup lang="ts">
 import { motion } from "motion-v";
-import { FERMETURE_HIVERNALE, SAISONS, TARIFS_CENTIMES } from "#shared/parc";
+import {
+  FERMETURE_HIVERNALE,
+  JOURS_FERIES_FERMES,
+  SAISONS,
+} from "#shared/parc";
 import { monterEnCascade } from "~/animations/apparitionBas";
 import { arriverDeCote } from "~/animations/apparitionCote";
 import { auDefilement } from "~/animations/auDefilement";
 
 const { t } = useI18n();
 const localePath = useLocalePath();
-const { formatPrix, formatHeure, formatJour } = useFormatage();
+const { formatPrix, formatHeure, formatJour, formatListe } = useFormatage();
 const titreId = useId();
+const { data: prix } = await useFetch("/api/tarifs");
 
 const horaires = computed(() => [
   ...SAISONS.map((s) => ({
@@ -22,19 +27,29 @@ const horaires = computed(() => [
     }),
     valeur: t("horairesTarifs.horaires.ferme"),
   },
+  {
+    libelle: t("horairesTarifs.horaires.joursFeries", {
+      jours: formatListe(JOURS_FERIES_FERMES.map(formatJour)),
+    }),
+    valeur: t("horairesTarifs.horaires.ferme"),
+  },
 ]);
 
 const tarifs = computed(() => [
-  {
-    nom: t("horairesTarifs.tarifs.plein.nom"),
-    condition: t("horairesTarifs.tarifs.plein.condition"),
-    prix: formatPrix(TARIFS_CENTIMES.PLEIN),
-  },
-  {
-    nom: t("horairesTarifs.tarifs.reduit.nom"),
-    condition: t("horairesTarifs.tarifs.reduit.condition"),
-    prix: formatPrix(TARIFS_CENTIMES.REDUIT),
-  },
+  ...(prix.value
+    ? [
+        {
+          nom: t("horairesTarifs.tarifs.plein.nom"),
+          condition: t("horairesTarifs.tarifs.plein.condition"),
+          prix: formatPrix(prix.value.PLEIN),
+        },
+        {
+          nom: t("horairesTarifs.tarifs.reduit.nom"),
+          condition: t("horairesTarifs.tarifs.reduit.condition"),
+          prix: formatPrix(prix.value.REDUIT),
+        },
+      ]
+    : []),
   {
     nom: t("horairesTarifs.tarifs.gratuit.nom"),
     condition: t("horairesTarifs.tarifs.gratuit.condition"),

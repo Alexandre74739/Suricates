@@ -154,6 +154,7 @@
         "haute": "July and August"
       },
       "periodeFermeture": "From {debut} to {fin}",
+      "joursFeries": "{jours}",
       "ferme": "Closed",
       "derniereEntree": "Last entry 1 hour before closing"
     },
