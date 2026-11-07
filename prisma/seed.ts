@@ -2,12 +2,8 @@ import { existsSync, readFileSync } from "node:fs";
 import { BlobNotFoundError, head, put } from "@vercel/blob";
 import { PrismaPg } from "@prisma/adapter-pg";
 import { PrismaClient, type Pole, type Role } from "../server/generated/prisma/client";
-import { ZONES } from "../app/data/zones";
-import { ESPECES } from "../app/data/especes";
+import { ZONES } from "./donnees/zones";
 import { ANIMATIONS } from "./donnees/animations";
-import { TARIFS_CENTIMES } from "../shared/parc";
-import fr from "../i18n/locales/fr.json";
-import en from "../i18n/locales/en.json";
 
 const prisma = new PrismaClient({
   adapter: new PrismaPg({ connectionString: process.env.DATABASE_URL }),
@@ -33,6 +29,7 @@ async function photo(source: string | undefined, chemin: string) {
   return url;
 }
 
+const TARIFS_CENTIMES = { PLEIN: 2000, REDUIT: 1200 } as const;
 const JAUGE_JOURNALIERE = 2500;
 
 const EQUIPE: { prenom: string; nom: string; role: Role; pole?: Pole }[] = [
@@ -88,12 +85,10 @@ async function main() {
 
   const enclosParEspece = new Map<string, number>();
   for (const [ordre, zone] of ZONES.entries()) {
-    const cle = zone.slug as keyof typeof fr.parc.zones.liste;
     const donnees = {
-      nom: fr.parc.zones.liste[cle].nom,
-      nomEn: en.parc.zones.liste[cle].nom,
+      nom: zone.nom,
+      nomEn: zone.nomEn,
       couleur: zone.couleur,
-      image: await photo(zone.image && `public${zone.image}`, `zones/${zone.slug}.webp`),
       ordre,
     };
     const { id: zoneId } = await prisma.zone.upsert({
@@ -102,21 +97,14 @@ async function main() {
       create: { slug: zone.slug, ...donnees },
     });
 
-    for (const slug of zone.especes) {
-      const espece = {
-        nom: fr.especes[slug as keyof typeof fr.especes],
-        nomEn: en.especes[slug as keyof typeof en.especes],
-        image: await photo(
-          ESPECES[slug]?.image?.replace(/^\//, "public/"),
-          `especes/${slug}.webp`,
-        ),
-      };
+    for (const { slug, nom, nomEn, effectif, photo: source } of zone.especes) {
+      const espece = { nom, nomEn, image: await photo(source, `enclos/${slug}.webp`) };
       const { id: especeId } = await prisma.espece.upsert({
         where: { slug },
         update: espece,
         create: { slug, ...espece },
       });
-      const enclos = { zoneId, especeId, effectif: ESPECES[slug]?.effectif ?? 0 };
+      const enclos = { zoneId, especeId, effectif };
       const { id } = await prisma.enclos.upsert({
         where: { slug },
         update: enclos,

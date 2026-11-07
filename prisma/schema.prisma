@@ -137,7 +137,6 @@ model Zone {
   nom     String
   nomEn   String?
   couleur String
-  image   String?
   ordre   Int      @default(0)
   enclos  Enclos[]
 }
