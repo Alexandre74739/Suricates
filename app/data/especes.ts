@@ -12,7 +12,7 @@ export const ESPECES: Record<string, EspeceVitrine> = {
   autruches: { effectif: 4 },
   lions: { image: "/images/parc/lion.webp", effectif: 5 },
   tigres: { image: "/images/parc/tigre-rocher.webp", effectif: 3 },
-  guepards: { image: "/images/animations/nourrissage-guepards.webp", effectif: 4 },
+  guepards: { image: "https://rolcm5wg5ejsntsu.public.blob.vercel-storage.com/especes/guepards.webp", effectif: 4 },
   gorilles: { effectif: 6 },
   hyenes: { effectif: 5 },
   lycaons: { effectif: 9 },
