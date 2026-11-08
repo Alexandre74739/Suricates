@@ -277,13 +277,13 @@
         "sentier-des-incas": {
           "accroche": "Passez la grande porte inca et suivez le sentier jusqu'aux lagunes. Capybaras, flamants roses et aras multicolores vous attendent au fil de l'eau.",
           "milieu": "On passe sous la porte inca pour suivre un chemin entre lagunes et forêt humide, comme en Amazonie.",
-          "habitants": "Lamas et alpagas sur les hauteurs, tapirs, capybaras et saïmiris dans la forêt, flamants roses sur les lagunes.",
+          "habitants": "Lamas et vigognes sur les hauteurs, tapirs, capybaras et saïmiris dans la forêt, flamants roses sur les lagunes.",
           "bouton": "Découvrir le Sentier des Incas",
           "alt": "Un ara rouge et vert perché sur une branche, devant le grillage de sa volière",
           "altHero": "Un capybara et son petit assis côte à côte sur l'herbe, au soleil",
           "milieuNaturel": {
             "titre": "Des Andes à l'Amazonie",
-            "texte": "Sur les hauts plateaux des Andes, lamas et alpagas se contentent d'une herbe rase. En descendant vers l'Amazonie, on croise les flamants des lagunes, puis le capybara, plus grand rongeur du monde, qui ne s'éloigne jamais de l'eau.",
+            "texte": "Sur les hauts plateaux des Andes, lamas et vigognes se contentent d'une herbe rase. En descendant vers l'Amazonie, on croise les flamants des lagunes, puis le capybara, plus grand rongeur du monde, qui ne s'éloigne jamais de l'eau.",
             "region": "Amérique du Sud, de la cordillère des Andes au bassin amazonien.",
             "climat": "Froid et sec en altitude, chaud et très humide en Amazonie.",
             "paysage": "Hauts plateaux, lagunes peu profondes et forêt tropicale."
@@ -525,13 +525,6 @@
       "regime": "Herbes et foin",
       "anecdote": "Pour se défendre, le lama crache, mais il vise surtout ses congénères, rarement les humains.",
       "vedette": "Leur enclos en pente rappelle les reliefs des Andes, avec vue sur les montagnes de Chartreuse. Ils sont très à l'aise avec nos hivers frais."
-    },
-    "alpagas": {
-      "texte": "Leur laine, l'une des plus douces au monde, les protège du froid des sommets. Plus petits que les lamas, ils vivent toujours en groupe.",
-      "origine": "Hauts plateaux des Andes",
-      "regime": "Herbes et foin",
-      "anecdote": "Les alpagas utilisent un « coin toilettes » commun, ce qui facilite beaucoup le travail des soigneurs.",
-      "vedette": "Ils partagent les hauteurs avec les lamas. Chaque printemps, les soigneurs les tondent pour les soulager avant les chaleurs."
     },
     "tapirs": {
       "texte": "Leur nez en petite trompe leur sert de tuba quand ils se baignent. Les jeunes naissent rayés et tachetés, comme des pastèques.",
@@ -842,11 +835,11 @@
       "vedette": "Leur immense volière en hauteur offre une vue sur la Chartreuse : on les voit souvent ailes déployées au soleil."
     },
     "vigognes": {
-      "texte": "Ancêtres sauvages des alpagas, elles portent l'une des laines les plus fines du monde.",
+      "texte": "Cousines sauvages des lamas, elles portent l'une des laines les plus fines du monde.",
       "origine": "Hauts plateaux des Andes",
       "regime": "Herbes",
       "anecdote": "Au temps des Incas, seule la famille royale pouvait porter des vêtements en laine de vigogne.",
-      "vedette": "Elles partagent les hauteurs du Sentier avec les lamas et les alpagas."
+      "vedette": "Elles partagent les hauteurs du Sentier avec les lamas."
     },
     "nandous": {
       "texte": "Cousins sud-américains de l'autruche, ils ne volent pas mais courent très vite en zigzag.",

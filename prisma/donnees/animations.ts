@@ -191,8 +191,8 @@ export const ANIMATIONS: AnimationInitiale[] = [
     heure: "14:00",
     titre: "La balade des lamas",
     titreEn: "Llama walk",
-    description: "Nos lamas et alpagas sortent se dégourdir les pattes dans les allées, en compagnie de leurs soigneurs.",
-    descriptionEn: "Our llamas and alpacas stretch their legs along the paths with their keepers.",
+    description: "Nos lamas sortent se dégourdir les pattes dans les allées, en compagnie de leurs soigneurs.",
+    descriptionEn: "Our llamas stretch their legs along the paths with their keepers.",
   },
   {
     slug: "nourrissage-jaguars",

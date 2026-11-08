@@ -277,13 +277,13 @@
         "sentier-des-incas": {
           "accroche": "Walk through the great Inca gate and follow the trail to the lagoons. Capybaras, flamingos and colourful macaws await you along the water.",
           "milieu": "Walk through the Inca gate and follow a path between lagoons and rainforest, just like in the Amazon.",
-          "habitants": "Llamas and alpacas up high, tapirs, capybaras and squirrel monkeys in the forest, flamingos on the lagoons.",
+          "habitants": "Llamas and vicuñas up high, tapirs, capybaras and squirrel monkeys in the forest, flamingos on the lagoons.",
           "bouton": "Discover the Inca Trail",
           "alt": "A red and green macaw perched on a branch in front of its aviary mesh",
           "altHero": "A capybara and its young sitting side by side on the grass in the sun",
           "milieuNaturel": {
             "titre": "From the Andes to the Amazon",
-            "texte": "On the high plateaus of the Andes, llamas and alpacas make do with short grass. Heading down towards the Amazon, you meet the flamingos of the lagoons, then the capybara, the world's largest rodent, which never strays far from water.",
+            "texte": "On the high plateaus of the Andes, llamas and vicuñas make do with short grass. Heading down towards the Amazon, you meet the flamingos of the lagoons, then the capybara, the world's largest rodent, which never strays far from water.",
             "region": "South America, from the Andes mountains to the Amazon basin.",
             "climat": "Cold and dry at altitude, hot and very humid in the Amazon.",
             "paysage": "High plateaus, shallow lagoons and tropical forest."
@@ -525,13 +525,6 @@
       "regime": "Grass and hay",
       "anecdote": "Llamas spit to defend themselves, but mostly at each other, rarely at humans.",
       "vedette": "Their sloping enclosure recalls the Andes, with a view of the Chartreuse mountains. They're perfectly at home in our cool winters."
-    },
-    "alpagas": {
-      "texte": "Their wool, among the softest in the world, keeps out the cold of the peaks. Smaller than llamas, they always live in groups.",
-      "origine": "High plateaus of the Andes",
-      "regime": "Grass and hay",
-      "anecdote": "Alpacas use a shared 'toilet spot', which makes the keepers' job much easier.",
-      "vedette": "They share the high ground with the llamas. Every spring, keepers shear them to keep them comfortable before the hot weather."
     },
     "tapirs": {
       "texte": "Their small trunk-like nose works as a snorkel when they swim. Calves are born striped and spotted, like watermelons.",
@@ -842,11 +835,11 @@
       "vedette": "Their huge high aviary looks out over the Chartreuse: you'll often see them with wings spread in the sun."
     },
     "vigognes": {
-      "texte": "The wild ancestors of alpacas have one of the finest wools in the world.",
+      "texte": "These wild cousins of the llama have one of the finest wools in the world.",
       "origine": "High plateaus of the Andes",
       "regime": "Grass",
       "anecdote": "In Inca times, only the royal family could wear vicuña wool.",
-      "vedette": "They share the heights of the Trail with the llamas and alpacas."
+      "vedette": "They share the heights of the Trail with the llamas."
     },
     "nandous": {
       "texte": "South American cousins of the ostrich, they can't fly but run very fast in zigzags.",
