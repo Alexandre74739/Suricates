@@ -184,6 +184,16 @@
       "ponctuel": "{date} · {heure}",
       "libre": "Open all day",
       "libreCourt": "Open all day"
+    },
+    "seo": {
+      "titre": "Animal talks and feeding times · Le Domaine des Suricates",
+      "description": "Feedings, keeper talks and special events: discover the animal talks programme at Le Domaine des Suricates. Free, no booking needed."
+    },
+    "hero": {
+      "titre": "On with the park shows!",
+      "texte": "Every day, our keepers meet you by the enclosures and answer every question, even the most unexpected ones. Feedings and animal talks are free, with no booking needed.",
+      "alt": "A manatee swims among large fish behind the glass of a pool, at the end of a path lined with tropical plants under the greenhouse",
+      "programme": "See the programme"
     }
   },
   "parc": {

@@ -184,6 +184,16 @@
       "ponctuel": "{date} · {heure}",
       "libre": "En accès libre",
       "libreCourt": "Accès libre"
+    },
+    "seo": {
+      "titre": "Animations et nourrissages · Le Domaine des Suricates",
+      "description": "Nourrissages, rencontres avec les soigneurs et rendez-vous exceptionnels : découvrez le programme des animations du Domaine des Suricates. Gratuites et sans réservation."
+    },
+    "hero": {
+      "titre": "Place aux animations du parc !",
+      "texte": "Chaque jour, nos soigneurs vous donnent rendez-vous au bord des enclos et répondent à toutes les questions, même les plus inattendues. Nourrissages et animations sont gratuits et sans réservation.",
+      "alt": "Un lamantin nage parmi de grands poissons derrière la vitre d'un bassin, au bout d'une allée bordée de plantes tropicales sous la serre",
+      "programme": "Voir le programme"
     }
   },
   "parc": {
