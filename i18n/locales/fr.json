@@ -911,12 +911,12 @@
       "anecdote": "Un macareux peut tenir plus de dix poissons à la fois dans son bec.",
       "vedette": "Leur falaise reconstituée domine un bassin d'eau froide où ils plongent à la recherche de poissons."
     },
-    "morses": {
-      "texte": "Leurs longues défenses leur servent à se hisser sur la glace. Leurs moustaches sensibles repèrent les coquillages au fond.",
-      "origine": "Arctique",
-      "regime": "Coquillages, vers, crustacés",
-      "anecdote": "Un morse peut manger plus de 3 000 coquillages en un seul repas.",
-      "vedette": "Ils disposent du bassin le plus froid de la Cité Marine, et adorent les douches d'eau glacée."
+    "lamantins": {
+      "texte": "Surnommés « vaches de mer », ces doux géants broutent les herbiers sous l'eau et remontent respirer toutes les quelques minutes.",
+      "origine": "Côtes et rivières des Caraïbes",
+      "regime": "Herbes aquatiques, salades, légumes",
+      "anecdote": "Un lamantin peut avaler jusqu'à 50 kg de végétaux par jour.",
+      "vedette": "Leur grand bassin d'eau tiède se découvre derrière une vitre sous-marine, au milieu des poissons."
     },
     "hippocampes": {
       "texte": "Ces poissons à tête de cheval nagent à la verticale et s'accrochent aux algues avec leur queue.",

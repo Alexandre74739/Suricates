@@ -911,12 +911,12 @@
       "anecdote": "A puffin can hold more than ten fish in its bill at once.",
       "vedette": "Their recreated cliff overlooks a cold-water pool where they dive for fish."
     },
-    "morses": {
-      "texte": "They use their long tusks to haul themselves onto the ice. Their sensitive whiskers find shellfish on the seabed.",
-      "origine": "Arctic",
-      "regime": "Shellfish, worms, crustaceans",
-      "anecdote": "A walrus can eat more than 3,000 shellfish in a single meal.",
-      "vedette": "They have the coldest pool in the Marine City and love ice-cold showers."
+    "lamantins": {
+      "texte": "Nicknamed \"sea cows\", these gentle giants graze on underwater seagrass and surface to breathe every few minutes.",
+      "origine": "Caribbean coasts and rivers",
+      "regime": "Aquatic plants, lettuce, vegetables",
+      "anecdote": "A manatee can eat up to 50 kg of plants a day.",
+      "vedette": "Their large warm-water pool can be seen through an underwater window, among the fish."
     },
     "hippocampes": {
       "texte": "These horse-headed fish swim upright and cling to seaweed with their tail.",
