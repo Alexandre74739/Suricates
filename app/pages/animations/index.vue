@@ -28,5 +28,10 @@ useSeoMeta({
         {{ $t("animations.hero.programme") }}
       </UiButton>
     </LayoutSemiHero>
+    <LazyConservationEngagements
+      :titre="$t('animations.coulisses.titre')"
+      :texte="$t('animations.coulisses.texte')"
+      hydrate-on-visible
+    />
   </main>
 </template>
