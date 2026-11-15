@@ -9,14 +9,16 @@ const props = defineProps<{
   id: string;
   image: string;
   alt: string;
-  titre: string;
-  texte?: string;
-  questions: { question: string; reponse: string }[];
+  prefixe: string;
+  questions: string[];
 }>();
 
+const { t } = useI18n();
+
 const items = computed(() =>
-  props.questions.map((item, rang) => ({
-    ...item,
+  props.questions.map((cle, rang) => ({
+    question: t(`${props.prefixe}.questions.${cle}.question`),
+    reponse: t(`${props.prefixe}.questions.${cle}.reponse`),
     ...monterEnCascade(2 + rang),
   })),
 );
@@ -64,14 +66,13 @@ const ouverte = ref<number | null>(null);
           v-bind="auDefilement(monterEnCascade(0))"
           class="font-titre text-3xl leading-tight text-balance text-acacia sm:text-4xl xl:text-5xl"
         >
-          {{ titre }}
+          {{ $t(`${prefixe}.titre`) }}
         </motion.h2>
         <motion.p
-          v-if="texte"
           v-bind="auDefilement(monterEnCascade(1))"
           class="mt-5 leading-relaxed text-pretty sm:text-lg"
         >
-          {{ texte }}
+          {{ $t(`${prefixe}.texte`) }}
         </motion.p>
 
         <div ref="liste" class="mt-8 space-y-3">
