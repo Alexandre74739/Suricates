@@ -218,6 +218,33 @@
     "coulisses": {
       "titre": "Animal talks that protect wildlife",
       "texte": "By the enclosures, our keepers don't just talk about mealtimes: they also tell the story of their wild cousins, many of them under threat. By visiting Le Domaine des Suricates, you help protect them, in the park and in the field."
+    },
+    "faq": {
+      "titre": "Your questions about the shows",
+      "texte": "Times, children, chatting with the keepers… Everything you need to know to enjoy the park's animal talks up close.",
+      "alt": "A keeper narrates the talk into a microphone as ring-tailed lemurs leap onto her shoulders to reach their meal",
+      "questions": {
+        "programme": {
+          "question": "Does the programme change from day to day?",
+          "reponse": "Feedings take place every day at set times. On some days, special events such as the birds of prey show are added: they are listed in the programme above."
+        },
+        "soigneurs": {
+          "question": "Can we ask the keepers questions?",
+          "reponse": "Of course! Keepers take time to answer at the end of every talk. No question is too curious."
+        },
+        "enfants": {
+          "question": "Are the shows suitable for young children?",
+          "reponse": "Yes, they are designed for the whole family. Let the little ones sit in the front row: they will see the animals up close and enjoy every minute."
+        },
+        "accessibilite": {
+          "question": "Are the shows accessible with a pushchair or wheelchair?",
+          "reponse": "The show areas are linked by the park's paths. Feel free to ask our staff on site for help getting settled."
+        },
+        "rate": {
+          "question": "I missed a show, is there another one?",
+          "reponse": "Each feeding happens once a day, but other talks take place throughout the day: check the programme to find the next one."
+        }
+      }
     }
   },
   "parc": {

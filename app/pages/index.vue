@@ -18,13 +18,6 @@ const SERVICES = [
   { cle: "services", icone: Toilet },
   { cle: "parkings", icone: SquareParking },
 ];
-
-const questions = computed(() =>
-  ["billet", "animations", "duree", "repas", "groupes"].map((cle) => ({
-    question: t(`accueil.faq.questions.${cle}.question`),
-    reponse: t(`accueil.faq.questions.${cle}.reponse`),
-  })),
-);
 </script>
 
 <template>
@@ -46,9 +39,8 @@ const questions = computed(() =>
       id="faq"
       image="/images/illustrations/girafes-zebre.webp"
       :alt="$t('accueil.faq.alt')"
-      :titre="$t('accueil.faq.titre')"
-      :texte="$t('accueil.faq.texte')"
-      :questions="questions"
+      prefixe="accueil.faq"
+      :questions="['billet', 'animations', 'duree', 'repas', 'groupes']"
     />
   </main>
 </template>

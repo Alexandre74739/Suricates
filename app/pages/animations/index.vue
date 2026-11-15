@@ -56,5 +56,13 @@ useSeoMeta({
       :texte="$t('animations.coulisses.texte')"
       hydrate-on-visible
     />
+    <LazyUiFaq
+      id="faq"
+      image="/images/animations/lemuriens-soigneuse.webp"
+      :alt="$t('animations.faq.alt')"
+      prefixe="animations.faq"
+      :questions="['programme', 'soigneurs', 'enfants', 'accessibilite', 'rate']"
+      hydrate-on-visible
+    />
   </main>
 </template>

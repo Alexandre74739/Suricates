@@ -218,6 +218,33 @@
     "coulisses": {
       "titre": "Des animations pour protéger la faune",
       "texte": "Au bord des enclos, nos soigneurs ne parlent pas seulement de repas : ils racontent aussi la vie de leurs cousins sauvages, souvent menacés. En venant au Domaine des Suricates, vous soutenez leur sauvegarde, au parc comme sur le terrain."
+    },
+    "faq": {
+      "titre": "Vos questions sur les animations",
+      "texte": "Horaires, enfants, échanges avec les soigneurs… Tout ce qu'il faut savoir pour vivre les animations du Domaine au plus près.",
+      "alt": "Une soigneuse commente l'animation au micro pendant que des makis cattas lui sautent sur les épaules pour attraper leur repas",
+      "questions": {
+        "programme": {
+          "question": "Le programme change-t-il d'un jour à l'autre ?",
+          "reponse": "Les nourrissages ont lieu tous les jours, à heure fixe. Certains jours, des rendez-vous exceptionnels comme le show des rapaces s'y ajoutent : ils sont signalés dans le programme ci-dessus."
+        },
+        "soigneurs": {
+          "question": "Peut-on poser des questions aux soigneurs ?",
+          "reponse": "Bien sûr ! Les soigneurs prennent le temps de répondre à la fin de chaque animation. Aucune question n'est trop curieuse."
+        },
+        "enfants": {
+          "question": "Les animations conviennent-elles aux jeunes enfants ?",
+          "reponse": "Oui, elles sont pensées pour toute la famille. Installez les plus petits au premier rang : ils verront les animaux de près et en profiteront pleinement."
+        },
+        "accessibilite": {
+          "question": "Les animations sont-elles accessibles en poussette ou en fauteuil ?",
+          "reponse": "Les espaces d'animation sont reliés par les allées du parc. N'hésitez pas à demander de l'aide à nos équipes sur place pour vous installer."
+        },
+        "rate": {
+          "question": "J'ai raté une animation, y en a-t-il une autre ?",
+          "reponse": "Chaque nourrissage a lieu une fois par jour, mais d'autres animations rythment la journée : consultez le programme pour trouver la prochaine."
+        }
+      }
     }
   },
   "parc": {
