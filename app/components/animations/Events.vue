@@ -7,6 +7,10 @@ const props = defineProps<{
   especes?: string[];
   titre?: string;
   texte?: string;
+  lienPrincipal?: string;
+  textePrincipal?: string;
+  lienSecondaire?: string;
+  texteSecondaire?: string;
 }>();
 
 const localePath = useLocalePath();
@@ -72,11 +76,14 @@ const { animations } = await useAnimations(() => props.especes);
       </p>
 
       <div class="mt-8 flex flex-wrap justify-center gap-4 sm:mt-6">
-        <UiButton :to="localePath('/animations')" couleur="acacia">
-          {{ $t("accueil.animations.toutes") }}
+        <UiButton :to="localePath(lienPrincipal ?? '/billetterie')">
+          {{ textePrincipal ?? $t("menu.reserver") }}
         </UiButton>
-        <UiButton :to="localePath('/billetterie')">
-          {{ $t("menu.reserver") }}
+        <UiButton
+          :to="localePath(lienSecondaire ?? '/animations')"
+          couleur="acacia"
+        >
+          {{ texteSecondaire ?? $t("accueil.animations.toutes") }}
         </UiButton>
       </div>
     </div>

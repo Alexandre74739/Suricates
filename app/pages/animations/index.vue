@@ -28,6 +28,11 @@ useSeoMeta({
         {{ $t("animations.hero.infos") }}
       </UiButton>
     </LayoutSemiHero>
+    <LazyAnimationsEvents
+      lien-secondaire="/parc"
+      :texte-secondaire="$t('accueil.hero.decouvrir')"
+      hydrate-on-visible
+    />
     <LazyConservationEngagements
       :titre="$t('animations.coulisses.titre')"
       :texte="$t('animations.coulisses.texte')"
