@@ -24,8 +24,8 @@ useSeoMeta({
       <UiButton :to="localePath('/billetterie')" taille="xl">
         {{ $t("menu.reserver") }}
       </UiButton>
-      <UiButton to="#programme" couleur="acacia" taille="xl">
-        {{ $t("animations.hero.programme") }}
+      <UiButton :to="localePath('/infos-pratiques')" couleur="acacia" taille="xl">
+        {{ $t("animations.hero.infos") }}
       </UiButton>
     </LayoutSemiHero>
     <LazyConservationEngagements
