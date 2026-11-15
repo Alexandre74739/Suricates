@@ -118,7 +118,7 @@
       "texte": "From the Kalahari desert to the forests of Asia, a visit to the Domaine is like a little trip around the world. Find the paths and facilities before you set off.",
       "planAlt": "Illustrated map of the Domaine's pedestrian area: coloured areas linked by paths, with restaurants, shops, toilets, picnic areas, the first-aid post and car parks.",
       "agrandir": "View the full-size map",
-      "decouvrir": "Explore the park",
+      "bouton": "Explore the park",
       "telecharger": "Download the map",
       "fermer": "Close the map",
       "pratique": {
@@ -194,6 +194,26 @@
       "texte": "Every day, our keepers meet you by the enclosures and answer every question, even the most unexpected ones. Feedings and animal talks are free, with no booking needed.",
       "alt": "A manatee swims among large fish behind the glass of a pool, at the end of a path lined with tropical plants under the greenhouse",
       "infos": "Plan my visit"
+    },
+    "bonASavoir": {
+      "titre": "Everything you need to catch every show",
+      "texte": "One look at the map to find the enclosures, another at the programme to note the times: you're all set to go from one talk to the next without missing a thing.",
+      "bouton": "Plan my visit",
+      "pratique": {
+        "titre": "Good to know",
+        "gratuit": {
+          "titre": "Free, no booking",
+          "texte": "Every animal talk is included in your admission ticket."
+        },
+        "meteo": {
+          "titre": "Weather permitting",
+          "texte": "In heavy rain or strong wind, some talks may be moved or cancelled."
+        },
+        "respect": {
+          "titre": "No flash, no feeding",
+          "texte": "Camera flashes stress the animals, and only keepers may feed them."
+        }
+      }
     },
     "coulisses": {
       "titre": "Animal talks that protect wildlife",

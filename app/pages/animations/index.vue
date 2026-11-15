@@ -1,8 +1,16 @@
 <script setup lang="ts">
+import { CameraOff, CloudSun, Ticket } from "lucide-vue-next";
+
 definePageMeta({ surHero: true });
 
 const { t } = useI18n();
 const localePath = useLocalePath();
+
+const CONSEILS = [
+  { cle: "gratuit", icone: Ticket },
+  { cle: "meteo", icone: CloudSun },
+  { cle: "respect", icone: CameraOff },
+];
 
 useSeoMeta({
   title: () => t("animations.seo.titre"),
@@ -24,13 +32,23 @@ useSeoMeta({
       <UiButton :to="localePath('/billetterie')" taille="xl">
         {{ $t("menu.reserver") }}
       </UiButton>
-      <UiButton :to="localePath('/infos-pratiques')" couleur="acacia" taille="xl">
+      <UiButton
+        :to="localePath('/infos-pratiques')"
+        couleur="acacia"
+        taille="xl"
+      >
         {{ $t("animations.hero.infos") }}
       </UiButton>
     </LayoutSemiHero>
     <LazyAnimationsEvents
       lien-secondaire="/parc"
       :texte-secondaire="$t('accueil.hero.decouvrir')"
+      hydrate-on-visible
+    />
+    <LazyAccueilZones
+      prefixe="animations.bonASavoir"
+      :points="CONSEILS"
+      lien="/infos-pratiques"
       hydrate-on-visible
     />
     <LazyConservationEngagements

@@ -118,7 +118,7 @@
       "texte": "Du désert du Kalahari aux forêts d'Asie, le Domaine se parcourt comme un petit tour du monde. Repérez les allées et les services avant de partir à l'aventure.",
       "planAlt": "Plan illustré de la zone piétonne du Domaine : les zones colorées reliées par les allées, avec les restaurants, boutiques, toilettes, aires de pique-nique, l'infirmerie et les parkings.",
       "agrandir": "Voir le plan en grand",
-      "decouvrir": "Découvrir le parc",
+      "bouton": "Découvrir le parc",
       "telecharger": "Télécharger le plan",
       "fermer": "Fermer le plan",
       "pratique": {
@@ -194,6 +194,26 @@
       "texte": "Chaque jour, nos soigneurs vous donnent rendez-vous au bord des enclos et répondent à toutes les questions, même les plus inattendues. Nourrissages et animations sont gratuits et sans réservation.",
       "alt": "Un lamantin nage parmi de grands poissons derrière la vitre d'un bassin, au bout d'une allée bordée de plantes tropicales sous la serre",
       "infos": "Préparer ma visite"
+    },
+    "bonASavoir": {
+      "titre": "Tout savoir pour ne rien manquer",
+      "texte": "Un coup d'œil au plan pour repérer les enclos, un autre au programme pour noter les horaires : vous voilà prêts à passer d'une animation à l'autre sans en perdre une miette.",
+      "bouton": "Préparer ma visite",
+      "pratique": {
+        "titre": "Bon à savoir",
+        "gratuit": {
+          "titre": "Gratuit et sans réservation",
+          "texte": "Toutes les animations sont comprises dans votre billet."
+        },
+        "meteo": {
+          "titre": "Selon la météo",
+          "texte": "Par fortes pluies ou grand vent, certaines animations peuvent être décalées ou annulées."
+        },
+        "respect": {
+          "titre": "Pas de flash, pas de nourriture",
+          "texte": "Les flashs stressent les animaux, et seuls les soigneurs les nourrissent."
+        }
+      }
     },
     "coulisses": {
       "titre": "Des animations pour protéger la faune",

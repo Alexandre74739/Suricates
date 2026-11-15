@@ -1,31 +1,27 @@
 <script setup lang="ts">
 import { motion } from "motion-v";
-import {
-  MapPlus,
-  Sandwich,
-  SquareParking,
-  Toilet,
-  Utensils,
-} from "lucide-vue-next";
+import { MapPlus } from "lucide-vue-next";
 import { monterEnCascade } from "~/animations/apparitionBas";
 import { arriverDeCote } from "~/animations/apparitionCote";
 import { auDefilement } from "~/animations/auDefilement";
 import { PLAN_PDF } from "#shared/parc";
+import type { Component } from "vue";
+
+const props = defineProps<{
+  prefixe: string;
+  points: { cle: string; icone: Component }[];
+  lien: string;
+}>();
 
 const { t } = useI18n();
 const localePath = useLocalePath();
 const id = useId();
 
 const pratique = computed(() =>
-  [
-    { cle: "restauration", icone: Utensils },
-    { cle: "piqueNique", icone: Sandwich },
-    { cle: "services", icone: Toilet },
-    { cle: "parkings", icone: SquareParking },
-  ].map(({ cle, icone }) => ({
+  props.points.map(({ cle, icone }) => ({
     icone,
-    titre: t(`accueil.zones.pratique.${cle}.titre`),
-    texte: t(`accueil.zones.pratique.${cle}.texte`),
+    titre: t(`${props.prefixe}.pratique.${cle}.titre`),
+    texte: t(`${props.prefixe}.pratique.${cle}.texte`),
   })),
 );
 </script>
@@ -46,13 +42,13 @@ const pratique = computed(() =>
           v-bind="auDefilement(monterEnCascade(0))"
           class="font-titre text-4xl leading-tight text-balance sm:text-5xl"
         >
-          {{ $t("accueil.zones.titre") }}
+          {{ $t(`${prefixe}.titre`) }}
         </motion.h2>
         <motion.p
           v-bind="auDefilement(monterEnCascade(1))"
           class="mt-5 max-w-2xl leading-relaxed text-pretty text-white/85 sm:text-lg"
         >
-          {{ $t("accueil.zones.texte") }}
+          {{ $t(`${prefixe}.texte`) }}
         </motion.p>
       </div>
 
@@ -78,7 +74,7 @@ const pratique = computed(() =>
           class="relative mx-auto w-full max-w-md lg:col-span-4 lg:max-w-none"
         >
           <InfosCartePratique
-            :titre="$t('accueil.zones.pratique.titre')"
+            :titre="$t(`${prefixe}.pratique.titre`)"
             :points="pratique"
             :boutons="[
               {
@@ -88,8 +84,8 @@ const pratique = computed(() =>
                 telecharger: true,
               },
               {
-                libelle: $t('accueil.zones.decouvrir'),
-                lien: localePath('/parc'),
+                libelle: $t(`${prefixe}.bouton`),
+                lien: localePath(lien),
                 couleur: 'acacia',
               },
             ]"
